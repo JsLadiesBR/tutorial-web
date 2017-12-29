@@ -17,3 +17,24 @@ Gradualmente criar um site com HTML5/CSS3 usando git para controlar a versão do
 - Estilizando com CSS
 - Importanto bibliotecas
 - Validando formularios com JS
+
+
+## Colaborar
+
+#### Install
+```bash
+npm install -g gitbook-cli
+```
+
+#### Server
+```bash
+gitbook serve
+```
+
+#### Build to gh-pages
+```bash
+gitbook install && gitbook build
+cp -R _book/* .
+git clean -fx node_modules
+git clean -fx _book
+```
