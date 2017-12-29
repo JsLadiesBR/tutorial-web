@@ -11,7 +11,7 @@ Criado a principio para o workshop da Campus Party 2018 de [Introdução ao Dese
 ## Objetivo
 Gradualmente criar um site com HTML5/CSS3 usando git para controlar a versão do projeto em cada parte do aprendizado.
 
-## Passos
+## Conteúdo
 - O que é desenvolvimento web?
 - Adicionando conteúdo com HTML
 - Estilizando com CSS
@@ -35,6 +35,5 @@ gitbook serve
 ```bash
 gitbook install && gitbook build
 cp -R _book/* .
-git clean -fx node_modules
 git clean -fx _book
 ```
