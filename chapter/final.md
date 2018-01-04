@@ -28,5 +28,5 @@
 - [Comandos git - Aprenda Git do básico ao avançado](http://comandosgit.github.io/)
 
 #### Para praticar
-Escolha um site qualquer e tente replicar o layout dele(Não precisa ser funcional. Apenas os elementos da página)
+Escolha um site qualquer e tente replicar o layout dele (Não precisa ser funcional. Apenas os elementos da página)
 

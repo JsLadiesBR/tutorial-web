@@ -85,6 +85,8 @@
 
     
         
+        <li class="header">Introdução ao desenvolvimento web</li>
+        
         
     
         <li class="chapter active" data-level="1.1" data-path="./">
@@ -105,7 +107,7 @@
                 <a href="chapter/chapter1.html">
             
                     
-                    Passo 1
+                    Passo 1 - Ambiente
             
                 </a>
             
@@ -118,7 +120,7 @@
                 <a href="chapter/chapter2.html">
             
                     
-                    Passo 2
+                    Passo 2 - HTML
             
                 </a>
             
@@ -131,7 +133,7 @@
                 <a href="chapter/chapter3.html">
             
                     
-                    Passo 3
+                    Passo 3 - CSS
             
                 </a>
             
@@ -157,7 +159,7 @@
                 <a href="chapter/final.html">
             
                     
-                    Para estudar
+                    Conteúdos para estudar
             
                 </a>
             
@@ -212,23 +214,30 @@
                                 
                                 <h2 id="tutorial-desenvolvimento-web">Tutorial Desenvolvimento Web</h2>
 <p>Criado a principio para o workshop da Campus Party 2018 de <a href="https://campuse.ro/events/campus-party-brasil-2018/workshop/introducao-ao-desenvolvimento-web/" target="_blank">Introdu&#xE7;&#xE3;o ao Desenvolvimento Web</a>.</p>
+<h2 id="conte&#xFA;do">Conte&#xFA;do</h2>
+<ul>
+<li><a href="chapter/chapter1.html">Introdu&#xE7;&#xE3;o ao desenvolvimento web</a></li>
+<li><a href="chapter/chapter2.html">Conte&#xFA;do com HTML</a></li>
+<li><a href="chapter/chapter3.html">Estilizando com CSS</a></li>
+<li><a href="chapter/guide.html">Guia</a></li>
+<li><a href="chapter/final.html">Para estudar</a></li>
+</ul>
 <h2 id="ferramental">Ferramental</h2>
 <ul>
-<li>Computador</li>
+<li>Computador com internet</li>
 <li>Git / Github pages</li>
 <li>CodeAnywhere</li>
 </ul>
 <h2 id="objetivo">Objetivo</h2>
 <p>Gradualmente criar um site com HTML5/CSS3 usando git para controlar a vers&#xE3;o do projeto em cada parte do aprendizado.</p>
-<h2 id="conte&#xFA;do">Conte&#xFA;do</h2>
-<ul>
-<li>O que &#xE9; desenvolvimento web?</li>
-<li>Adicionando conte&#xFA;do com HTML</li>
-<li>Estilizando com CSS</li>
-<li>Importanto bibliotecas</li>
-<li>Validando formularios com JS</li>
-</ul>
-<h2 id="colaborar">Colaborar</h2>
+<h2 id="sobre-o-jsladies">Sobre o JSLadies</h2>
+<p>Grupo para unir mulheres interessadas em desenvolvimento web e javascript com encontros abertos e gratuitos com o intuito de preparar mulheres(participantes, palestrantes e coachs) e gerar representatividade feminina no desenvolvimento web! Voltado pra qualquer uma com interesse em aprender.</p>
+<p>Nosso grupo no telegram: @Jsladies
+<a href="https://facebook.com/jsladiesbr/" target="_blank">Facebook</a> - <a href="https://www.meetup.com/JsLadies-BR/" target="_blank">Meetup</a> - <a href="http://github.com/jsladiesbr" target="_blank">GitHub</a> - <a href="https://twitter.com/jsladiessp" target="_blank">Twitter</a></p>
+<p>Esse rep&#xF3;sit&#xF3;rio est&#xE1; em <a href="https://github.com/JsLadiesBR/tutorial-web" target="_blank">github.com/JsLadiesBR/tutorial-web</a></p>
+<h2 id="colaborar-com-o-tutorial">Colaborar com o tutorial</h2>
+<p>Como instalar, servir e buildar esse tutorial.
+Para quem quiser adicionar conte&#xFA;do ou corrigir erros :)</p>
 <h4 id="install">Install</h4>
 <pre><code class="lang-bash">npm install -g gitbook-cli
 </code></pre>
@@ -238,9 +247,9 @@
 <h4 id="build-to-gh-pages">Build to gh-pages</h4>
 <pre><code class="lang-bash">gitbook install &amp;&amp; gitbook build
 cp -R _book/* .
-git clean -fx node_modules
 git clean -fx _book
 </code></pre>
+<h4 id="ir-para-o-passo-1"><a href="chapter/chapter1.html">Ir para o passo 1</a></h4>
 
                                 
                                 </section>
@@ -269,7 +278,7 @@ git clean -fx _book
             
                 
                 
-                <a href="chapter/chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Passo 1">
+                <a href="chapter/chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Passo 1 - Ambiente">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -280,7 +289,7 @@ git clean -fx _book
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introdução","level":"1.1","depth":1,"next":{"title":"Passo 1","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-29T19:10:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-29T20:17:41.171Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introdução","level":"1.1","depth":1,"next":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-29T20:42:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-04T01:49:06.486Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
