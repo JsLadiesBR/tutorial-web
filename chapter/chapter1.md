@@ -12,11 +12,7 @@ Portanto trabalham para ajudar clientes que querem um produto ou serviço na web
 
 O trabalho de um desenvolvedor web é focado em projetos e envolve colaborar com um time que se ajuda a coordenar as necessidades do produto. 
 Esse trabalho pode envolver a parte de front-end, back-end e full-stack.
-
-The “front end languages” live in the browser. After you type in an address in the address bar at the top and hit Enter, your browser will receive at least an HTML file from the web server. That file will likely tell the browser to go and also ask for a CSS file and a Javascript file as well (probably many more than one, but we’ll keep it simple).
-Each of these languages performs a separate but very important function and they work harmoniously together to determine how the web page is STRUCTURED (HTML), how it LOOKS (CSS), and how it FUNCTIONS (Javascript). And keep in mind that your browser handles figuring out how to make these files into a functioning webpage (not the server).
-but a front end developer does apply the work of designers to the webpage by translating their well-designed layouts into real code. 
-
+Nesse workshop vamos aprender o básico de linguagens front end. Ao digitarmos um endereço no navegador, ele recebe pelo menos o arquivo HTML do web server que vai renderizar o conteúdo. Esse arquivo vai pedir para o navegador verificar também os arquivos CSS e Javascript. Cada uma dessas linguagens tem uma função diferente no nosso site e juntos determinam como vai ser estruturado(Por meio HTML), como vai ser visualizado(CSS) e como ele vai funcionar(Javascript).
 
 É um trabalho que é legal se você gosta de resolver problemas, construir coisas uteis
 e experimentar novas tecnologias. Além disso está em altissima demanda :smile:
@@ -48,21 +44,31 @@ Enquanto git funciona na sua maquina local, Github é como se fosse um repositó
 
 Primeiramente crie uma conta no Github aqui: [https://github.com/join](https://github.com/join).
 
-img
-Crie um repositório 
+Crie um repositório pelo [https://github.com/new](https://github.com/new)
 NOMEDASUACONTA.github.io
 
-img
-e em configurações coloque coloque o github pages
+![Exemplo novo repositório](imgs/cap1-newRepo.png)
 
-## Ambiente no CodeAnywhere
+Copie o link do seu repositório(Algo como `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`). Ele vai ser usado mais tarde para você criar seu ambiente de desenvolvimento.
 
-img
-Se logue pelo github
+Clique em configurações do seu repositório e na parte chamada "Github Pages"
+Selecione para a branch "master", assim todas as modificações que forem feitas no seu projeto vão ser publicadas na url do nome do seu repositório(NOMEDASUACONTA.github.io).
 
-img
-No menu selecione para usar um repositório do github e selecione o seu github pages recentemente criado.
-https://github.com/JsLadiesBR/tutorial-web.git
+![Exemplo configuração de github pages](imgs/cap1-config.png)
+
+Se você receber uma mensagem de `"Your site is ready to be published at http://NOMEDASUACONTA.github.io/."`
+é porque tudo está ok.
+
+## Ambiente no Cloud9
+
+Se logue pelo icone do github no [Cloud9](https://c9.io/).
+
+Clique em "Create Workspace"
+Dessa forma o Cloud9 vai criar um ambiente de desenvolvimento online para você :)
+Preencha o form com o nome da workspace: "Minha Página"
+E na opção "Clone from Git or Mercurial URL (optional)" Coloque o link do repositório que você criou
+
+![Exemplo de configuração c9](imgs/cap1-c9.png)
 
 Se reclamar de não ter email registrado vá para o ["dashboard"](https://codeanywhere.com/dashboard) e clique em **Resend Verification Email**. Nesse caso você precisa verificar seu email cadastrado no github 
 
@@ -74,15 +80,13 @@ Com o index.html aberto escreva nas linhas:
 <h1>Hello World</h1>
 <p>Campus Party 2018</p>
 ```
-No próximo cápitulo vamos abordar mais sobre HTML e o que foi feito.
 
-
-Vai ficar mais ou menos assim:
-img
 Clique no botão verde de **Run**. Logo abaixo no terminal vai aparecer um link.
-img
+Ao entrar nesse link você pode ver o resultado do seu HTML.
 
-Ao entrar nesse link você pode ver o resultado do seu HTMl, que vai parecer mais ou menos assim:
-img
+![Exemplo de configuração c9](imgs/cap1-editor.png)
+
+Mas suas modificações ainda não estão no ar no [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io) pois ainda precisamos publica-las!
+No próximo cápitulo vamos abordar mais sobre HTML e faremos nosso primeiro commit no git, que vai publicar nossas moficações na web.
 
 #### [Ir para o passo 2](chapter2.md)

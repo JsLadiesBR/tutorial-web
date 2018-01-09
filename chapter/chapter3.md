@@ -2,7 +2,7 @@
 
 #### Indice
 - [O que é CSS](#o-que-e-css)
-- [Estilizando com CSS](#estilizando-com-css)
+- [Estilizando o HTML](#estilizando-o-html)
 - [Seu segundo commit](#seu-segundo-commit)
 
 ## Estilizando com CSS
@@ -27,7 +27,7 @@ https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg
 
 https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico
 
-## Estilizando com CSS
+## Estilizando o HTML
 
 ## Seu segundo commit
 
