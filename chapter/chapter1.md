@@ -2,8 +2,10 @@
 
 #### Indice
 * [Desenvolvimento Web](#desenvolvimento-web)
-* [Ambiente no CodeAnywhere](#ambiente-no-codeanywhere)
+* [Ambiente no C9](#ambiente-no-c9)
 * [Conta no github](#conta-no-github)
+* [Comandos comuns do git](#comandos-comuns-do-git)
+
 
 ## Desenvolvimento Web
 
@@ -31,10 +33,10 @@ A melhor caracterista que você pode ter como estudante é desejo por construir 
 
 #### O que vamos criar
 
-* Um portfolio
-* Uma landing page de um produto
-* Site sobre coisas de algum jogo
-* Site sobre eventos do campus party
+Colocar no ar uma pagina pessoal responsiva que pode servir como:
+* Curriculo pessoal.
+* Portfolio de trabalho.
+* Meio de redirecionar pessoas pra suas redes sociais.
 
 ## Conta no Github
 
@@ -59,7 +61,7 @@ Selecione para a branch "master", assim todas as modificações que forem feitas
 Se você receber uma mensagem de `"Your site is ready to be published at http://NOMEDASUACONTA.github.io/."`
 é porque tudo está ok.
 
-## Ambiente no Cloud9
+## Ambiente no C9
 
 Se logue pelo icone do github no [Cloud9](https://c9.io/).
 

@@ -143,7 +143,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="guide.html">
+        <li class="chapter " data-level="1.5" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    Passo 4 - Bibliotecas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="guide.html">
             
                 <a href="guide.html">
             
@@ -156,7 +169,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="final.html">
+        <li class="chapter " data-level="1.7" data-path="final.html">
             
                 <a href="final.html">
             
@@ -217,22 +230,19 @@
                                 <h2 id="passo-2">Passo 2</h2>
 <h4 id="indice">Indice</h4>
 <ul>
-<li><a href="#conteudo-em-html">Conte&#xFA;do em HTML</a></li>
-<li><a href="#sobre-html">Sobre html</a></li>
+<li><a href="#O-que-e-HTML?">O que &#xE9; HTML</a></li>
+<li><a href="#adicionando-conteudo">Adicionando Conte&#xFA;do</a></li>
 <li><a href="#seu-primeiro-commit">Seu primeiro commit</a></li>
 </ul>
-<h2 id="conteudo-em-html">Conteudo em HTML</h2>
-<h4 id="o-que-&#xE9;-html">O que &#xE9; HTML?</h4>
+<h2 id="o-que-e-html">O que e HTML?</h2>
 <p>HTML descreve cada parte de uma pagina web no seu navegador.
 Quando voc&#xEA; visita um site ele consegue diferenciar cada tipo de texto pq ele tem um HTML tag diferente
 All the text on this page you&#x2019;re reading right now lives inside HTML tags that tell your browser how to order the content on the page. </p>
-<p>Headlines geralmente s&#xE3;o <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> enquanto paragramos s&#xE3;o a tag </p><p></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragrafo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 <p>No html todas as tags s&#xE3;o abertas com a tag em si e fechadas com um / </p>
-<p>bbalablabalbalabal html</p>
-<p>Para nossa pagina copie e cole o seguinte</p>
+<p>Para nossa pagina copie e cole o seguinte.</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -245,25 +255,41 @@ All the text on this page you&#x2019;re reading right now lives inside HTML tags
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <ul>
-<li>html &#xE9; a tag que define tudo dentro do html</li>
-<li>Todo html tem um head e body, head tem informa&#xE7;&#xF5;es sobre a p&#xE1;gina enquanto o body tem o conte&#xFA;do da p&#xE1;gina</li>
+<li><code>&lt;html&gt;</code> &#xE9; a tag que define tudo dentro do HTML.</li>
+<li>Todo HTML tem um <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>, head tem informa&#xE7;&#xF5;es sobre a p&#xE1;gina enquanto o body tem o conte&#xFA;do da p&#xE1;gina.</li>
 </ul>
 <p>Todo o conte&#xFA;do a ser modificado deve ficar dentro do <code>&lt;body&gt;</code></p>
 <p>Note que ao inv&#xE9;s de 
 <code>&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;Campus Pary 2018&lt;/p&gt;&lt;/body&gt;</code></p>
-<p>Fica muito mais legivel se colocassemos o conte&#xFA;do em outra linha.
-Mas &#xE9; importante sempre dar <strong>tab</strong> ou <strong>4 espa&#xE7;os</strong> para simbolizar que o conte&#xFA;do do <code>h1</code> e do <code>p</code> est&#xE3;o dentro do <code>body</code> e deixar o c&#xF3;digo mais legivel.</p>
+<p>Fica muito mais legivel quando colocamos o conte&#xFA;do dentro do body  em outra linha.
+&#xC9; muito importante sempre dar <strong>tab</strong> ou <strong>4 espa&#xE7;os</strong> para simbolizar que o conte&#xFA;do do <code>h1</code> e do <code>p</code> est&#xE1; dentro do <code>body</code> e deixar o c&#xF3;digo mais legivel. O nome disso &#xE9; <strong>identa&#xE7;&#xE3;o</strong></p>
 <pre><code class="lang-css">&lt;body&gt;
     &lt;h1&gt;Hello World&lt;/h1&gt;
     &lt;p&gt;Campus Pary 2018&lt;/p&gt;
 &lt;/body&gt;
 </code></pre>
-<h2 id="sobre-html">Sobre HTML</h2>
-<p>html
-conteudo etc</p>
+<h2 id="adicionando-conte&#xFA;do">Adicionando conte&#xFA;do</h2>
+<h5 id="headers-e-texto">Headers e texto</h5>
+<p>Headlines s&#xE3;o <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> enquanto paragrafos s&#xE3;o a tag <code>&lt;p&gt;</code></p>
+<p><code>&lt;h1&gt;Test&lt;/h1&gt;</code></p>
+<h1 id="test">Test</h1>
+<p><code>&lt;h2&gt;Test&lt;/h2&gt;</code></p>
+<h2 id="test">Test</h2>
+<p><code>&lt;h4&gt;Test&lt;/h4&gt;</code></p>
+<h4 id="test">Test</h4>
+<p><code>&lt;p&gt;Test&lt;p&gt;</code>
+Test</p>
+<h5 id="listas">Listas</h5>
+<p><strong>Listas n&#xE3;o-enumeradas</strong></p>
+<p><strong>Listas enumeradas</strong></p>
+<h5 id="tables">Tables</h5>
+<h5 id="links">Links</h5>
+<h5 id="images">Images</h5>
+<h5 id="videos">Videos</h5>
+<h5 id="formul&#xE1;rios">Formul&#xE1;rios</h5>
 <h2 id="seu-primeiro-commit">Seu primeiro commit</h2>
-<p>Nas abas de console existe uma chamada &quot;bash - &quot;seu nome&quot;&quot;
-img</p>
+<p>Nas abas de console existe uma chamada &quot;bash - &quot;seu nome&quot;&quot;</p>
+<p><img src="imgs/cap2-git.png" alt="Usando o bash do c9"></p>
 <p>Clique na aba e voc&#xEA; vai ter como se fosse um terminal em que podemos usar comandos git.
 Para inserir no nosso reposit&#xF3;rio as modifica&#xE7;&#xF5;es que fizemos &#xE9; preciso seguir os seguintes passos:</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># Verifique status do reposit&#xF3;rio.</span>
@@ -321,7 +347,7 @@ Demora algns minutos para as mudan&#xE7;as realmente irem ao ar mas em pouco ser
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-01-09T13:43:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-09T14:22:59.680Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-01-22T00:55:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T01:14:17.587Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

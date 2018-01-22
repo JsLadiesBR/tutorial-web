@@ -1,4 +1,8 @@
-## Fontes de estudo
+## E agora?
+
+### [Como apontar a página que criamos para um dominio proprio?](https://willianjusten.com.br/dominio-proprio-no-github-pages/)
+
+### Fontes de estudo
 
 - [Curso completo de HTML, CSS e Javascript - do inicio ao avançado](https://www.freecodecamp.org/map)
 - [Curso do Come Academy de HTML e CSS](https://www.codecademy.com/pt-BR/tracks/web)
@@ -27,6 +31,6 @@
 - [Git - Guia Pratico traduzido](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 - [Comandos git - Aprenda Git do básico ao avançado](http://comandosgit.github.io/)
 
-#### Para praticar
-Escolha um site qualquer e tente replicar o layout dele (Não precisa ser funcional. Apenas os elementos da página)
+#### Dicas para praticar
+Escolha um site qualquer e tente replicar o layout dele (Não precisa ser funcional. Apenas os elementos da página).
 

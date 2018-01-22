@@ -1,46 +1,15 @@
 ## Guia
 
-- [HTML5](html5)
-- [CSS3](css3)
+<!-- - [HTML5](html5) -->
+<!-- - [CSS3](css3) -->
 - [Git / Github](git-/-github)
 
-### HTML5
-
-##### Headers e texto
-
-`<h1>Test</h1>`
-# Test
-
-`<h2>Test</h2>`
-## Test
-
-`<h4>Test</h4>`
-#### Test
-
-`<p>Test<p>`
-Test
-
-##### Tables
-##### Links
-##### Images
-##### Videos
-##### Formulários
-
-### CSS3
-
-##### Selecionando elementos HTML
-##### Background
-background color background img
-##### Selecionando elementos com Id
-##### Selecionando elementos com Class
-##### Fontes e cores
-size color font-family etc bold italic
-##### Tamanho
-width height
-##### Posicionamento
-left right float
+<!-- ### HTML5 -->
+<!-- ### CSS3 -->
 
 ### Git / Github
+
+## Comandos Comuns do git
 
 ```bash
 # Como clonar um repositório
