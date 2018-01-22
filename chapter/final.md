@@ -1,6 +1,6 @@
 ## E agora?
 
-### [Como apontar a página que criamos para um dominio proprio?](https://willianjusten.com.br/dominio-proprio-no-github-pages/)
+#### [Como apontar a página que criamos para um dominio proprio?](https://willianjusten.com.br/dominio-proprio-no-github-pages/)
 
 ### Fontes de estudo
 

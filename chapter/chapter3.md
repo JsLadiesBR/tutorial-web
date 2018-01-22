@@ -37,7 +37,18 @@ E a fonte de tudo dentro do body vai ser a definida pelo css.
 Agora, é necessário importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem.
 Pra isso, dentro do `<head>` cole esta linha `<link rel="stylesheet" type="text/css" href="main.css">`
 
-Clique no botão verde de **Run**. Logo abaixo no terminal e ao entrar no link verifique se o fundo está de fato vermelho. Se sim, você está pronto pro seu segundo commit.s
+```html
+<head>
+    <title>Minha Pagina</title>
+       <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+```
+
+Clique no botão verde de **Run**. Logo abaixo no terminal e ao entrar no link verifique se o fundo está de fato vermelho.
+
+![Exemplo do estado atual](imgs/cap3-css.png)
+
+### Mais CSS
 
 ##### Selecionando elementos HTML
 ##### Background

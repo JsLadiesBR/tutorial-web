@@ -12,6 +12,7 @@
 Bootstrap é a biblioteca mais popular de HTML, CSS e JS para o desenvolvimento de sites responsivos e é completamente gratis.
 
 Para importar basta entrar na [página de downloads do bootstrap](https://getbootstrap.com/docs/4.0/getting-started/download/) e copiar o conteúdo do **BootstrapCDN** e colar dentro do `<HEAD>` do seu html.
+Nessa pagina vamos usar a versão 4 do bootstrap.
 
 Podemos também baixar o Bootstrap no nosso projeto e importa-lo no nosso HTML especificando o caminho dele assim como fizemos no main.css. É um padrão sempre importar arquivos externos ou internos dentro do nosso `<head>`.
 
