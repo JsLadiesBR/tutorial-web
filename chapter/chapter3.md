@@ -50,16 +50,83 @@ Clique no botão verde de **Run**. Logo abaixo no terminal e ao entrar no link v
 
 ### Mais CSS
 
+##### Fontes e Cores
+Cores podem ser em hexadecimal os nomes defaults do CSS.
+
+[img nomes default]
+
+Você pode selecionar sua cor em hexadecinal aqui.
+
+```css
+body {
+  background-color: #FFFFF 
+}
+```
+
+Podemos modificar também as caracteristicas de um texto.
+
+```css
+p {
+  font-size: 20px;
+  font-color: darkgray;
+  font-family: Arial;
+  font-style: bold;
+}
+```
+
+
+
 ##### Selecionando elementos HTML
+
+Para selecionar podemos usar ou a propria tag html ou criar uma propriedade `class`.
+Assim podemos nomear o que o conteúdo é e pela propria nomemclatura de `class` estiliza-lo
+
+HTML:
+```html
+<p class="titulo"></p>
+<img class="logo" src="url">
+```
+
+```css
+.titulo {
+  font-size: 30px;
+}
+.logo {
+  width: 300px;
+}
+```
+
+No exemplo, criamos as classes "titulo" pra uma tag `<p>` e "logo" para uma imagem. Isso possibilita que possamos estilizar esse elemento especifico. Todo elemento que tiver classe titulo terá tamanho de fonte 30px, e todo elemento que tiver classe logo terá tamanho de 300px.
+
+No css colocamos um ponto e o nome da classe para definir os estilos da classe.
+
+É importante usar classes pois podemos também reutilizar estilos e definir o que cada coisa é.
+
+Lembrando que cada elemento pode ter mais de uma classe.
+
+Elementos também podem ser selecionados por id.
+
 ##### Background
 background color background img
-##### Selecionando elementos com Id
-##### Selecionando elementos com Class
-##### Fontes e cores
-size color font-family etc bold italic
 ##### Tamanho
+.box {
+  width: 300px;
+  height: 500px;
+}
+
+500px de altura e 300px de largura.
+
+##### Bordas
+
 ##### Deixando redondo
-width height
+Para arredondar objetos usa-se a propriedade border radius
+
+.avatar{
+  border-radius: 50%;
+}
+
+A medida é em porcentagem de arredondamento e 50% equivale a um circulo.
+
 ##### Posicionamento
 left right float
 

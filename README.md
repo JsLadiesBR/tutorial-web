@@ -1,19 +1,21 @@
 ## Tutorial Desenvolvimento Web
 
 
-Criado a principio para o workshop da Campus Party 2018 de [Introdução ao Desenvolvimento Web](https://campuse.ro/events/campus-party-brasil-2018/workshop/introducao-ao-desenvolvimento-web/).
+Criado para o workshop da Campus Party 2018 de [Introdução ao Desenvolvimento Web](https://campuse.ro/events/campus-party-brasil-2018/workshop/introducao-ao-desenvolvimento-web/).
+Os slides estão salvos no [Speaker Deck](https://speakerdeck.com/anabastos/campus-party-2018-workshop-introducao-a-web)
 
 ## Conteúdo
-- [Introdução ao desenvolvimento web](chapter/chapter1.md)
-- [Conteúdo com HTML](chapter/chapter2.md)
-- [Estilizando com CSS](chapter/chapter3.md)
+- [Passo 1 - Ambiente](chapter/chapter1.md)
+- [Passo 2 - HTML](chapter/chapter2.md)
+- [Passo 3 - CSS](chapter/chapter3.md)
+- [Passo 4 - Bibliotecas](chapter/chapter4.md)
 - [Guia](chapter/guide.md)
 - [Para estudar](chapter/final.md)
 
 ## Ferramental
 - Computador com internet
 - Git / Github pages
-- CodeAnywhere
+- Cloud9
 
 ## Objetivo
 Gradualmente criar um site com HTML5/CSS3 usando git para controlar a versão do projeto em cada parte do aprendizado.
