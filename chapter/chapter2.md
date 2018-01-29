@@ -14,16 +14,13 @@
 
 ## O que e HTML?
 
-HTML descreve cada parte de uma pagina web no seu navegador.
-Quando você visita um site ele consegue diferenciar cada tipo de texto pq ele tem um HTML tag diferente
-All the text on this page you’re reading right now lives inside HTML tags that tell your browser how to order the content on the page. 
+**HTML** significa **Hyper Text Markup Language** e funciona para descrever cada parte da estrutura de uma pagina web no seu navegador.
+Quando você visita um site ele consegue diferenciar cada tipo de texto pois ele os elementos são diferenciados por tags HTML diferentes que contam pro navegador como ordenar e mostrar o conteúdo da página que renderizam de forma correta o conteúdo.
 
 ```html
 <h1>Headline</h1>
 <p>Paragrafo</p>
 ```
-
-No html todas as tags são abertas com a tag em si e fechadas com um / 
 
 Para nossa pagina copie e cole o seguinte.
 
@@ -40,12 +37,15 @@ Para nossa pagina copie e cole o seguinte.
 </html>
 ```
 
+- `<!DOCTYPE html>` define a versão do HTML.
 - `<html>` é a tag que define tudo dentro do HTML.
-- Todo HTML tem um `<head>` e `<body>`, head tem informações sobre a página enquanto o body tem o conteúdo da página.
+- O `<head>` tem meta informações sobre a página 
+- O `<body>` contém todo conteúdo visivel da página.
 
-Todo o conteúdo a ser modificado deve ficar dentro do `<body>`
+
 
 Note que ao invés de 
+
 `<body><h1>Hello World</h1><p>Campus Pary 2018</p></body>`
 
 Fica muito mais legivel quando colocamos o conteúdo dentro do body  em outra linha.
@@ -58,10 +58,11 @@ Fica muito mais legivel quando colocamos o conteúdo dentro do body  em outra li
 </body>
 ```
 
-Atualmente se apertamos o botão de **run** não temos nada demais.
+Atualmente se apertamos o botão de **run** não temos nada demais além de um Hello World.
+
 ![Exemplo do estado atual](imgs/cap2-hello.png)
 
-Mas é agora que começamos a adicionar conteúdo.
+Mostrar **"Hello, World!"** é como se fosse uma "tradição" no mundo da programação quando é nossa primeira vez em alguma linguagem e geralmente é usada pra mostrar sintaxe basica de algo funcional.
 
 ## Adicionando conteúdo
 
@@ -69,7 +70,7 @@ Mas é agora que começamos a adicionar conteúdo.
 
 Headlines são `<h1>`, `<h2>`, `<h3>` enquanto paragrafos são a tag `<p>`.
 
-Geralmente toda página tem um `<h1>` que geralmente é o nome da pagina em si. Se é um curriculo então nosso `<h1>` pode ser o nosso próprio nome.
+Geralmente toda página tem um `<h1>` que é o nome da pagina em si.
 
 ```html
 <h1>Maria Lúcia - Portfolio</h1>
@@ -98,7 +99,7 @@ Este site é um portfolio de minha habilidades e experiencias
 
 ### Formatação
 
-Algumas tags que formatam textos:
+Para formatar textos usa-se estas tags em volta das palavras:
 
 - `<b>` - <b>Negrito</b>
 - `<strong>` - <strong>Importante</strong>
@@ -226,13 +227,16 @@ Resultado:
 ### Links
 
 Para linkar textos usa-se a tag `<a>`, em que a propriedade `href` é a url do texto e o texto em si fica dentro da tag.
+
 Esta sintaxe:
 ```html
-<a href="fb.com">Facebook</a> - <a href="github.com">Github</a>
+<a href="http://fb.com">Facebook</a>
+<a href="http://google.com">Google</a> - <a href="http://github.com">Github</a>
 ```
 Resultado:
 
-[Facebook](fb.com) - [Github](github.com)
+[Facebook](http://fb.com)
+[Google](http://google.com) - [Github](http://github.com)
 
 ### Images
 
@@ -285,7 +289,7 @@ Você pode usar esse exemplo de referência:
 </html>
 ```
 
-Com HTML podemos também adicionar audio, video, canvas, formularios, dentre muitas outras coisas. No [final do curso](final.md) tem vários links com tutoriais e guias pra esse conteúdo remanescente.
+Com HTML podemos também adicionar audio, video, canvas, formulários, dentre muitas outras coisas. No [final do curso](final.md) tem vários links com tutoriais e guias pra esse conteúdo remanescente.
 
 ## Seu primeiro commit
 

@@ -236,53 +236,63 @@
 </ul>
 <h2 id="estilizando-com-css">Estilizando com CSS</h2>
 <h2 id="o-que-e-css">O que e CSS</h2>
-<p>blablablala explicar melhor
-CSS contra pro browser de que forma voc&#xEA; quer mostrar as tags html, mudando sua aparencia, posi&#xE7;&#xE3;o, etc. </p>
-<p><a href="https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg" target="_blank">https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg</a></p>
-<p><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico" target="_blank">https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico</a></p>
-<h4 id="guia-css"><a href="guide.html">Guia CSS</a></h4>
+<p><strong>CSS</strong> vem de <strong>Cascading Stylesheets</strong>, que n&#xE3;o &#xE9; realmente uma linguagem de programa&#xE7;&#xE3;o. &#xC9; uma linguagem de folhas de estilos. Que s&#xE3;o c&#xF3;digos contam pro browser de que forma voc&#xEA; quer mostrar as tags HTML, mudando sua aparencia, posi&#xE7;&#xE3;o, etc e estilizar seletivamente os elementos no documentos HTML. </p>
 <h2 id="estilizando-o-html">Estilizando o HTML</h2>
 <p>Clique em <strong>&quot;File/New File&quot;</strong>, uma nova aba vai abrir no editor.
-Tecle <strong>Crtl + S</strong> ou ent&#xE3;o clique em <strong>&quot;File/Save as...&quot;</strong> e mude o Filename para <strong>main.css</strong> e clique no bot&#xE3;o verde de <strong>Save</strong>.</p>
-<p>No main.css cole:</p>
+Tecle <strong>Crtl + S</strong> ou ent&#xE3;o clique em <strong>&quot;File/Save as...&quot;</strong> e mude o Filename para <strong>style.css</strong> e clique no bot&#xE3;o verde de <strong>Save</strong>.</p>
+<p>No style.css cole:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
     <span class="hljs-attribute">background-color</span>: red;
     <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Gill Sans Extrabold&quot;</span>, sans-serif;
 }
 </code></pre>
-<p>O que isso quer dizer? Tudo dentro do nosso body fica com cor de background vermelho. O background pode ser uma cor em ingles, uma cor em hexadecimal e at&#xE9; uma imagem.
-E a fonte de tudo dentro do body vai ser a definida pelo css.</p>
+<p>O que isso quer dizer? Tudo dentro do nosso body ficar&#xE1; com cor de background vermelho. O background pode ser uma cor em ingles, uma cor em hexadecimal e at&#xE9; uma imagem. E a fonte de tudo dentro do body vai ser&#xE1; <em>&quot;Gill Sans Extrabold&quot;</em></p>
+<p>O body &#xE9; o nosso <strong>seletor</strong>, ou seja, selecionamos tudo que est&#xE1; dentro do body. O que est&#xE1; entre parenteses &#xE9; a <strong>declara&#xE7;&#xE3;o</strong>, nela temos a <strong>propriedade</strong> e o valor dela seguido do <code>:</code>. Cada propriedade deve ter um <code>;</code> no final para representar o fim da linha.</p>
 <p>Agora, &#xE9; necess&#xE1;rio importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem.
-Pra isso, dentro do <code>&lt;head&gt;</code> cole esta linha <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;main.css&quot;&gt;</code></p>
+Pra isso, dentro do <code>&lt;head&gt;</code> cole esta linha <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-       <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;main.css&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
 <p>Clique no bot&#xE3;o verde de <strong>Run</strong>. Logo abaixo no terminal e ao entrar no link verifique se o fundo est&#xE1; de fato vermelho.</p>
 <p><img src="imgs/cap3-css.png" alt="Exemplo do estado atual"></p>
 <h3 id="mais-css">Mais CSS</h3>
 <h5 id="fontes-e-cores">Fontes e Cores</h5>
-<p>Cores podem ser em hexadecimal os nomes defaults do CSS.</p>
-<p>[img nomes default]</p>
-<p>Voc&#xEA; pode selecionar sua cor em hexadecinal aqui.</p>
+<p>Cores podem ser em hexadecimal os nomes defaults do CSS que voc&#xEA; pode ver aqui: <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a>.
+Ou voc&#xEA; pode selecionar sua cor em hexadecinal aqui: <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">https://www.w3schools.com/colors/colors_picker.asp</a>.</p>
+<p>Anteriormente definimos o background como <strong>red</strong> mas podemos tamb&#xE9;m usar o seu valor hexadecimal <strong>#FF0000</strong></p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFFFF</span> 
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FF0000</span>;
 }
 </code></pre>
-<p>Podemos modificar tamb&#xE9;m as caracteristicas de um texto.</p>
+<p>Para modificar as caracteristicas de todos os paragrafos podemos:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
-  <span class="hljs-attribute">font-color</span>: darkgray;
+  <span class="hljs-attribute">color</span>: darkgray;
   <span class="hljs-attribute">font-family</span>: Arial;
   <span class="hljs-attribute">font-style</span>: bold;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
 }
 </code></pre>
+<ul>
+<li><strong>font-size</strong> &#xE9; o tamanho da fonte em pixels.</li>
+<li><strong>color</strong> &#xE9; a cor do texto.</li>
+<li><strong>font-family</strong> &#xE9; a fonte do texto.</li>
+<li><strong>font-style</strong> &#xE9; propriedades como negrito ou italico.</li>
+<li><strong>line-height</strong> &#xE9; a altura da letra.</li>
+<li><strong>letter-spacing</strong> &#xE9; o espa&#xE7;amento das letras.</li>
+<li><strong>text-align</strong> &#xE9; o alinhamento do texto.</li>
+</ul>
 <h5 id="selecionando-elementos-html">Selecionando elementos HTML</h5>
-<p>Para selecionar podemos usar ou a propria tag html ou criar uma propriedade <code>class</code>.
-Assim podemos nomear o que o conte&#xFA;do &#xE9; e pela propria nomemclatura de <code>class</code> estiliza-lo</p>
+<p>Para n&#xE3;o selecionarmos sempre a propria tag html devemos usar uma propriedade <code>class</code> dentro de todos os elementos html que queremos selecionar.
+Assim podemos nomear o que o conte&#xFA;do &#xE9; e pela propria nomemclatura de <code>class</code> o selecionamos e estilizamos.</p>
+<p>No css colocamos um ponto e o nome da classe para definir os estilos da classe.</p>
 <p>HTML:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;titulo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;titulo&quot;</span>&gt;</span>Titulo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span>
 </code></pre>
 <pre><code class="lang-css"><span class="hljs-selector-class">.titulo</span> {
@@ -292,18 +302,27 @@ Assim podemos nomear o que o conte&#xFA;do &#xE9; e pela propria nomemclatura de
   <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
 }
 </code></pre>
-<p>No exemplo, criamos as classes &quot;titulo&quot; pra uma tag <code>&lt;p&gt;</code> e &quot;logo&quot; para uma imagem. Isso possibilita que possamos estilizar esse elemento especifico. Todo elemento que tiver classe titulo ter&#xE1; tamanho de fonte 30px, e todo elemento que tiver classe logo ter&#xE1; tamanho de 300px.</p>
-<p>No css colocamos um ponto e o nome da classe para definir os estilos da classe.</p>
-<p>&#xC9; importante usar classes pois podemos tamb&#xE9;m reutilizar estilos e definir o que cada coisa &#xE9;.</p>
-<p>Lembrando que cada elemento pode ter mais de uma classe.</p>
-<p>Elementos tamb&#xE9;m podem ser selecionados por id.</p>
+<p>No exemplo, criamos as classes <strong>&quot;titulo&quot;</strong> pra uma tag <code>&lt;p&gt;</code> e <strong>&quot;logo&quot;</strong> para uma imagem. Isso possibilita que possamos estilizar esses elementos especificos. Todo elemento que tiver classe <strong>titulo</strong> ter&#xE1; tamanho de fonte 30px, e todo elemento que tiver classe <strong>logo</strong> ter&#xE1; tamanho de 300px.</p>
+<p>&#xC9; importante usar classes pois podemos tamb&#xE9;m reutilizar estilos e definir o que cada coisa &#xE9;. Lembrando que cada elemento pode ter mais de uma classe.</p>
 <h5 id="background">Background</h5>
-<p>background color background img</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;https://i2.wp.com/likecoaching.com.br/wp-content/uploads/2016/11/Fundo-Estrelas.jpg&quot;</span>);
+   <span class="hljs-attribute">background-repeat</span>: no-repeat, repeat
+   background-color: <span class="hljs-number">#cccccc</span>;
+}
+</code></pre>
+<p>Gradiente</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#cccccc</span>;  
+   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(red, yellow);
+}
+</code></pre>
 <h5 id="tamanho">Tamanho</h5>
-<p>.box {
-  width: 300px;
-  height: 500px;
-}</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+}
+</code></pre>
 <p>500px de altura e 300px de largura.</p>
 <h5 id="bordas">Bordas</h5>
 <h5 id="deixando-redondo">Deixando redondo</h5>
@@ -321,7 +340,7 @@ git status
 <span class="hljs-comment"># Adiciona todos os arquivos modificados p/ staging</span>
 git add *
 <span class="hljs-comment"># Ou individualmente</span>
-git add main.css
+git add style.css
 git add index.html
 <span class="hljs-comment"># Faz commit</span>
 git commit -m <span class="hljs-string">&quot;Adicionando estilos&quot;</span>
@@ -373,7 +392,7 @@ git push
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"next":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"path":"chapter/chapter4.md","ref":"chapter/chapter4.md","articles":[]},"previous":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter3.md","mtime":"2018-01-24T15:59:01.657Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-24T15:59:08.827Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"next":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"path":"chapter/chapter4.md","ref":"chapter/chapter4.md","articles":[]},"previous":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter3.md","mtime":"2018-01-29T21:08:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-29T21:08:42.316Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

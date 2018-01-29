@@ -6,6 +6,7 @@
 * [Conta no github](#conta-no-github)
 * [Comandos comuns do git](#comandos-comuns-do-git)
 
+---
 
 ## Desenvolvimento Web
 
@@ -17,7 +18,7 @@ Esse trabalho pode envolver a parte de front-end, back-end e full-stack.
 Nesse workshop vamos aprender o básico de linguagens front end. Ao digitarmos um endereço no navegador, ele recebe pelo menos o arquivo HTML do web server que vai renderizar o conteúdo. Esse arquivo vai pedir para o navegador verificar também os arquivos CSS e Javascript. Cada uma dessas linguagens tem uma função diferente no nosso site e juntos determinam como vai ser estruturado(Por meio HTML), como vai ser visualizado(CSS) e como ele vai funcionar(Javascript).
 
 É um trabalho que é legal se você gosta de resolver problemas, construir coisas uteis
-e experimentar novas tecnologias. Além disso está em altissima demanda :smile:
+e experimentar novas tecnologias. Além disso é um oficio com altissima demanda de mercado.
 A melhor caracterista que você pode ter como estudante é desejo por construir e persistência. 
 
 * [The odin project](https://www.theodinproject.com/courses/web-development-101)
@@ -44,17 +45,22 @@ Git é um sistema de controle de versionamento de projetos e é uma ferramenta e
 O git permite que você revise e escale seu projeto sem precisar ficar restaurando estado de arquivo passados além de ajudar muito quando estamos trabalhando em grupo. Se conectado em na internet, você pode dar colocar seu projeto no Github, que é um site que serve para compartilhar e colaborar código de outros desenvolvedores.
 Enquanto git funciona na sua maquina local, Github é como se fosse um repositório remoto na web para todos os projetos de código. Dessa forma, aprendendo Git fica muita mais facil mostrar seu portfolio pelo github e é uma habilidade essencial para o desenvolvedor moderno :)
 
+
 Primeiramente crie uma conta no Github aqui: [https://github.com/join](https://github.com/join).
 
-Crie um repositório pelo [https://github.com/new](https://github.com/new)
-NOMEDASUACONTA.github.io
+O proposito do github é lidar com projeto, sendo ele diversos arquivos que serão modificados com seu desenvolvimento. O Github salva toda a estrutura de dados em algo chamado "Repositorio" e é geralmente nosso ambiente de trabalho.
+
+Crie um repositório pelo [https://github.com/new](https://github.com/new) com o nome **"NOMEDASUACONTA.github.io"** substituindo claro, **NOMEDASUACONTA** pelo nome da conta que você acabou de criar. 
+
+ *Nota 1: O nome do repositório precisa ser necessariamente nesse formato!*
+ *Nota 2: lembre-se que as contas gratuitas do GitHub se destinam a projetos OpenSource e por isso os seus repositórios estarão abertos a qualquer interessado.*
 
 ![Exemplo novo repositório](imgs/cap1-newRepo.png)
 
-Copie o link do seu repositório(Algo como `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`). Ele vai ser usado mais tarde para você criar seu ambiente de desenvolvimento.
+Copie o link do repositório que acabou de ser criado (Algo como `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`). Ele vai ser usado mais tarde para você criar seu ambiente de desenvolvimento.
 
-Clique em configurações do seu repositório e na parte chamada "Github Pages"
-Selecione para a branch "master", assim todas as modificações que forem feitas no seu projeto vão ser publicadas na url do nome do seu repositório(NOMEDASUACONTA.github.io).
+Clique em configurações no lado direito da pagina do seu repositório e na parte chamada **"Github Pages"**
+Selecione para a branch "master", assim todas as modificações que forem feitas no seu projeto dentro deste repositorio vão ser publicadas na url `NOMEDASUACONTA.github.io`.
 
 ![Exemplo configuração de github pages](imgs/cap1-config.png)
 
@@ -82,6 +88,8 @@ Com o index.html aberto escreva nas linhas:
 <h1>Hello World</h1>
 <p>Campus Party 2018</p>
 ```
+
+Nesse exemplo estamos colocando o `Hello World` dentro da tag de `h1`, que signfica que ele será um header, e o `Campus Party 2018` dentro da tag `p`, simbolizando que ele é um paragrafo.
 
 Clique no botão verde de **Run**. Logo abaixo no terminal vai aparecer um link.
 Ao entrar nesse link você pode ver o resultado do seu HTML.

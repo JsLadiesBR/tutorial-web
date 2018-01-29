@@ -9,21 +9,14 @@
 
 ## O que e CSS
 
-blablablala explicar melhor
-CSS contra pro browser de que forma você quer mostrar as tags html, mudando sua aparencia, posição, etc. 
-
-https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg
-
-https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico
-
-#### [Guia CSS](guide.md)
+**CSS** vem de **Cascading Stylesheets**, que não é realmente uma linguagem de programação. É uma linguagem de folhas de estilos. Que são códigos contam pro browser de que forma você quer mostrar as tags HTML, mudando sua aparencia, posição, etc e estilizar seletivamente os elementos no documentos HTML. 
 
 ## Estilizando o HTML
 
 Clique em **"File/New File"**, uma nova aba vai abrir no editor.
-Tecle **Crtl + S** ou então clique em **"File/Save as..."** e mude o Filename para **main.css** e clique no botão verde de **Save**.
+Tecle **Crtl + S** ou então clique em **"File/Save as..."** e mude o Filename para **style.css** e clique no botão verde de **Save**.
 
-No main.css cole:
+No style.css cole:
 ```css
 body {
     background-color: red;
@@ -31,16 +24,17 @@ body {
 }
 ```
 
-O que isso quer dizer? Tudo dentro do nosso body fica com cor de background vermelho. O background pode ser uma cor em ingles, uma cor em hexadecimal e até uma imagem.
-E a fonte de tudo dentro do body vai ser a definida pelo css.
+O que isso quer dizer? Tudo dentro do nosso body ficará com cor de background vermelho. O background pode ser uma cor em ingles, uma cor em hexadecimal e até uma imagem. E a fonte de tudo dentro do body vai será *"Gill Sans Extrabold"*
+
+O body é o nosso **seletor**, ou seja, selecionamos tudo que está dentro do body. O que está entre parenteses é a **declaração**, nela temos a **propriedade** e o valor dela seguido do `:`. Cada propriedade deve ter um `;` no final para representar o fim da linha.
 
 Agora, é necessário importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem.
-Pra isso, dentro do `<head>` cole esta linha `<link rel="stylesheet" type="text/css" href="main.css">`
+Pra isso, dentro do `<head>` cole esta linha `<link rel="stylesheet" type="text/css" href="style.css">`
 
 ```html
 <head>
     <title>Minha Pagina</title>
-       <link rel="stylesheet" type="text/css" href="main.css">
+       <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 ```
 
@@ -51,39 +45,49 @@ Clique no botão verde de **Run**. Logo abaixo no terminal e ao entrar no link v
 ### Mais CSS
 
 ##### Fontes e Cores
-Cores podem ser em hexadecimal os nomes defaults do CSS.
+Cores podem ser em hexadecimal os nomes defaults do CSS que você pode ver aqui: [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp).
+Ou você pode selecionar sua cor em hexadecinal aqui: [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp).
 
-[img nomes default]
-
-Você pode selecionar sua cor em hexadecinal aqui.
+Anteriormente definimos o background como **red** mas podemos também usar o seu valor hexadecimal **#FF0000**
 
 ```css
 body {
-  background-color: #FFFFF 
+  background-color: #FF0000;
 }
 ```
 
-Podemos modificar também as caracteristicas de um texto.
+Para modificar as caracteristicas de todos os paragrafos podemos:
 
 ```css
 p {
   font-size: 20px;
-  font-color: darkgray;
+  color: darkgray;
   font-family: Arial;
   font-style: bold;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
 }
 ```
-
-
+- **font-size** é o tamanho da fonte em pixels.
+- **color** é a cor do texto.
+- **font-family** é a fonte do texto.
+- **font-style** é propriedades como negrito ou italico.
+- **line-height** é a altura da letra.
+- **letter-spacing** é o espaçamento das letras.
+- **text-align** é o alinhamento do texto.
 
 ##### Selecionando elementos HTML
 
-Para selecionar podemos usar ou a propria tag html ou criar uma propriedade `class`.
-Assim podemos nomear o que o conteúdo é e pela propria nomemclatura de `class` estiliza-lo
+Para não selecionarmos sempre a propria tag html devemos usar uma propriedade `class` dentro de todos os elementos html que queremos selecionar.
+Assim podemos nomear o que o conteúdo é e pela propria nomemclatura de `class` o selecionamos e estilizamos.
+
+No css colocamos um ponto e o nome da classe para definir os estilos da classe.
 
 HTML:
 ```html
-<p class="titulo"></p>
+<p class="titulo">Titulo</p>
 <img class="logo" src="url">
 ```
 
@@ -96,23 +100,37 @@ HTML:
 }
 ```
 
-No exemplo, criamos as classes "titulo" pra uma tag `<p>` e "logo" para uma imagem. Isso possibilita que possamos estilizar esse elemento especifico. Todo elemento que tiver classe titulo terá tamanho de fonte 30px, e todo elemento que tiver classe logo terá tamanho de 300px.
+No exemplo, criamos as classes **"titulo"** pra uma tag `<p>` e **"logo"** para uma imagem. Isso possibilita que possamos estilizar esses elementos especificos. Todo elemento que tiver classe **titulo** terá tamanho de fonte 30px, e todo elemento que tiver classe **logo** terá tamanho de 300px.
 
-No css colocamos um ponto e o nome da classe para definir os estilos da classe.
-
-É importante usar classes pois podemos também reutilizar estilos e definir o que cada coisa é.
-
-Lembrando que cada elemento pode ter mais de uma classe.
-
-Elementos também podem ser selecionados por id.
+É importante usar classes pois podemos também reutilizar estilos e definir o que cada coisa é. Lembrando que cada elemento pode ter mais de uma classe.
 
 ##### Background
-background color background img
+
+```css
+body {
+   background-image: url("https://i2.wp.com/likecoaching.com.br/wp-content/uploads/2016/11/Fundo-Estrelas.jpg");
+   background-repeat: no-repeat, repeat
+   background-color: #cccccc;
+}
+```
+
+
+Gradiente
+```css
+body {
+   background-color: #cccccc;  
+   background-image: linear-gradient(red, yellow);
+}
+```
+
 ##### Tamanho
+
+```css
 .box {
   width: 300px;
   height: 500px;
 }
+```
 
 500px de altura e 300px de largura.
 
@@ -139,7 +157,7 @@ git status
 # Adiciona todos os arquivos modificados p/ staging
 git add *
 # Ou individualmente
-git add main.css
+git add style.css
 git add index.html
 # Faz commit
 git commit -m "Adicionando estilos"
