@@ -24,7 +24,6 @@ Gradualmente criar um site com HTML5/CSS3 usando git para controlar a versão do
 
 Grupo para unir mulheres interessadas em desenvolvimento web e javascript com encontros abertos e gratuitos com o intuito de preparar mulheres(participantes, palestrantes e coachs) e gerar representatividade feminina no desenvolvimento web! Voltado pra qualquer uma com interesse em aprender.
 
-Nosso grupo no telegram: @Jsladies
 [Facebook](https://facebook.com/jsladiesbr/) - [Meetup](https://www.meetup.com/JsLadies-BR/) - [GitHub](http://github.com/jsladiesbr) - [Twitter](https://twitter.com/jsladiessp)
 
 Esse repósitório está em [github.com/JsLadiesBR/tutorial-web](https://github.com/JsLadiesBR/tutorial-web)

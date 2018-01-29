@@ -1,4 +1,4 @@
-## Passo 2
+## Passo 4
 
 #### Indice
 * [Importando Boostrap](#importanto-bootstrap)
@@ -94,4 +94,4 @@ git push
 Agora se você acessar o link [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io) verá o conteúdo do seu site
 Demora algns minutos para as mudanças realmente irem ao ar mas em pouco será posivel ver suas modificações no ar.
 
-#### [Ir para o passo 3](chapter3.md)
+#### [Ir para o conteúdos de estudo](final.md)
