@@ -260,7 +260,6 @@ Por exemplo, coloque este c&#xF3;digo no body do seu HTML:</p>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<p>(img disso)</p>
 <p>Para uma p&#xE1;gina pessoal &#xE9; legal sempre linkar com suas redes sociais ent&#xE3;o vamos tentar fazer um grid resposivo de links.</p>
 <h2 id="importando-fontawesome">Importando FontAwesome</h2>
 <p>FontAwesome &#xE9; um Toolkit para usar icones escalaveis e customizaveis.
@@ -277,6 +276,38 @@ Ao inv&#xE9;s de links n&#xE3;o podemos usar os respectivos icones da rede socia
 <p>Para tornar esse icone linkavel basta coloca-lo dentro do <code>&lt;link&gt;</code>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/anabastos8&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
+<h4 id="icones-responsivos">Icones responsivos</h4>
+<p>Para tornar icones do font awesome responsivos com bootstrap vamos misturar o sistemas de grids com os icones linkaveis. Para isso vamos colocar os icones como conte&#xFA;do das colunas:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-md-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/anabastos8&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-md-3&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/anabastos8&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-google fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-md-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/anabastos8&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-twitter fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-md-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/anabastos8&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-github fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>O <code>col-sm</code> significa quanto de espa&#xE7;amento do grid esse elemento vai ter quando estiver em telas desktop, se ele vai ter um espa&#xE7;amento de 3, conseguindo ter espa&#xE7;o para ficar alinhados j&#xE1; que o grid total &#xE9; 12. O alinhamento da coluna ficar&#xE1; assim:</p>
+<p><img class="avatar" src="imgs/cap4-colsm.png" alt="Exemplo sm"></p>
+<p>Enquanto o <code>col-xs</code> funciona quando estiver em telas mobile. Portanto os 4 icones vao ter um espa&#xE7;amento como nas imagens do dobro do tamanho, por ter 6 de espa&#xE7;amento quebramos os icones em duas colunas, sendo mais visual em telas mobile</p>
+<p><img class="avatar" src="imgs/cap4-colxs.png" alt="Exemplo xs"></p>
+<p>Usamos <code>fa-3x</code> pois &#xE9; uma classe dentro do <em>fontawesome</em> que aumenta o tamanho do icone.
+Para alterar a cor do icone basta selecionar a propria classe <em>fontawesome</em> do icone.</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.fa</span> {
+    <span class="hljs-attribute">color</span>: gray
+}
+</code></pre>
+<p>Assim temos o seguinte resultado(Primeira imagem para desktop e segunda para mobile):</p>
+<p><img class="avatar" style="width:300px;" src="imgs/cap4-desktop.png" alt="Exemplo mobile">
+<img class="avatar" style="width:300px;" src="imgs/cap4-mobile.png" alt="Exemplo mobile"></p>
 <h2 id="terceiro-commit">Terceiro Commit</h2>
 <p>Voc&#xEA; pode usar o comando Git Log para verificar os seus commits at&#xE9; agora.</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># Logs</span>
@@ -338,7 +369,7 @@ Demora algns minutos para as mudan&#xE7;as realmente irem ao ar mas em pouco ser
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"next":{"title":"Guia","level":"1.6","depth":1,"path":"chapter/guide.md","ref":"chapter/guide.md","articles":[]},"previous":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter4.md","mtime":"2018-01-29T22:32:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-29T22:55:30.388Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"next":{"title":"Guia","level":"1.6","depth":1,"path":"chapter/guide.md","ref":"chapter/guide.md","articles":[]},"previous":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter4.md","mtime":"2018-01-29T23:22:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-29T23:23:26.756Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

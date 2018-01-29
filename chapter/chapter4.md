@@ -41,8 +41,6 @@ Por exemplo, coloque este código no body do seu HTML:
 </div>
 ```
 
-(img disso)
-
 Para uma página pessoal é legal sempre linkar com suas redes sociais então vamos tentar fazer um grid resposivo de links.
 
 ## Importando FontAwesome
@@ -70,6 +68,50 @@ Para tornar esse icone linkavel basta coloca-lo dentro do `<link>`:
 ```html
 <a href="https://www.facebook.com/anabastos8" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 ```
+
+#### Icones responsivos
+Para tornar icones do font awesome responsivos com bootstrap vamos misturar o sistemas de grids com os icones linkaveis. Para isso vamos colocar os icones como conteúdo das colunas:
+
+```html
+<div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="https://www.facebook.com/anabastos8" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+          <a href="https://www.facebook.com/anabastos8" target="_blank"><i class="fa fa-google fa-3x" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="https://www.facebook.com/anabastos8" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="https://www.facebook.com/anabastos8" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+```
+
+O `col-sm` significa quanto de espaçamento do grid esse elemento vai ter quando estiver em telas desktop, se ele vai ter um espaçamento de 3, conseguindo ter espaço para ficar alinhados já que o grid total é 12. O alinhamento da coluna ficará assim:
+
+<img class="avatar" src="imgs/cap4-colsm.png" alt="Exemplo sm">
+
+Enquanto o `col-xs` funciona quando estiver em telas mobile. Portanto os 4 icones vao ter um espaçamento como nas imagens do dobro do tamanho, por ter 6 de espaçamento quebramos os icones em duas colunas, sendo mais visual em telas mobile
+
+<img class="avatar" src="imgs/cap4-colxs.png" alt="Exemplo xs">
+
+Usamos `fa-3x` pois é uma classe dentro do *fontawesome* que aumenta o tamanho do icone.
+Para alterar a cor do icone basta selecionar a propria classe *fontawesome* do icone.
+
+```css
+.fa {
+    color: gray
+}
+```
+
+Assim temos o seguinte resultado(Primeira imagem para desktop e segunda para mobile):
+
+<img class="avatar" style="width:300px;" src="imgs/cap4-desktop.png" alt="Exemplo mobile">
+<img class="avatar" style="width:300px;" src="imgs/cap4-mobile.png" alt="Exemplo mobile">
 
 ## Terceiro Commit
 
