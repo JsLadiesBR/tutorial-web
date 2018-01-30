@@ -18,8 +18,7 @@ Podemos também baixar o Bootstrap no nosso projeto e importa-lo no nosso HTML e
 
 #### Adicionando componentes
 
-https://getbootstrap.com/docs/4.0/components/alerts/
-blabalbla
+https://getbootstrap.com/docs/4.0/components/alerts
 
 #### Sistema de grids
 
