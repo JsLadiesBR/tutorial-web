@@ -310,6 +310,14 @@ git commit -m "Initial Commit"
 git push
 ```
 
+Clique em configurações no lado direito da pagina do seu repositório no github e na parte chamada **"Github Pages"**
+Selecione para a branch "master", assim todas as modificações que forem feitas no seu projeto dentro deste repositorio vão ser publicadas na url `NOMEDASUACONTA.github.io`.
+
+![Exemplo configuração de github pages](imgs/cap1-config.png)
+
+Se você receber uma mensagem de `"Your site is ready to be published at http://NOMEDASUACONTA.github.io/."`
+é porque tudo está ok.
+
 Agora se você acessar o link [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io) verá o conteúdo do seu site
 Demora algns minutos para as mudanças realmente irem ao ar mas em pouco será posivel ver suas modificações no ar.
 

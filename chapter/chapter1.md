@@ -59,14 +59,6 @@ Crie um repositório pelo [https://github.com/new](https://github.com/new) com o
 
 Copie o link do repositório que acabou de ser criado (Algo como `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`). Ele vai ser usado mais tarde para você criar seu ambiente de desenvolvimento.
 
-Clique em configurações no lado direito da pagina do seu repositório e na parte chamada **"Github Pages"**
-Selecione para a branch "master", assim todas as modificações que forem feitas no seu projeto dentro deste repositorio vão ser publicadas na url `NOMEDASUACONTA.github.io`.
-
-![Exemplo configuração de github pages](imgs/cap1-config.png)
-
-Se você receber uma mensagem de `"Your site is ready to be published at http://NOMEDASUACONTA.github.io/."`
-é porque tudo está ok.
-
 ## Ambiente no C9
 
 Se logue pelo icone do github no [Cloud9](https://c9.io/).
@@ -98,5 +90,49 @@ Ao entrar nesse link você pode ver o resultado do seu HTML.
 
 Mas suas modificações ainda não estão no ar no [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io) pois ainda precisamos publica-las!
 No próximo cápitulo vamos abordar mais sobre HTML e faremos nosso primeiro commit no git, que vai publicar nossas moficações na web.
+
+## Sem o ambiente
+
+Não tem problema não usar o ambiente do C9. Pra isso basta instalar e configurar o seu git em seu terminal. Veja aqui como [instalar](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+Para configurar basta configurar com os seguintes comandos:
+```bash
+# configurar nome
+git config --global 
+
+# configurar email
+git config --global 
+```
+
+E em seguida navegue no terminal e clone o projeto criado no github na sua pasta de preferencia
+```bash
+# cria pasta NOMEDASUACONTA.github.io
+git clone `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`
+
+# acessa a pasta NOMEDASUACONTA.github.io
+cd NOMEDASUACONTA.github.io
+```
+
+Agora já é possivel mexer com o github por meio do seu proprio terminal!
+
+crie dentro desta pasta do projeto que criamos um arquivo chamado **index.html** com o conteúdo
+```html
+<h1>Hello World</h1>
+<p>Campus Party 2018</p>
+```
+
+Nesse exemplo estamos colocando o `Hello World` dentro da tag de `h1`, que signfica que ele será um header, e o `Campus Party 2018` dentro da tag `p`, simbolizando que ele é um paragrafo.
+
+Para verificar suas modificações no navegador é necessário um webserver. Pra isso [instale o node.js aqui](https://nodejs.org/en/download/).
+Após a instalação digite no terminal:
+`npm install http-server -g`
+
+Npm pode funcionar como um gerenciador de pacotes e no caso desse comando, instalamos globalmente(pois usamos -g) o http-server.
+
+Para usa-lo bastante na pasta do seu projeto(NOMEDASUACONTA.github.io) escrever o comando 
+```bash
+http-server 8080
+````
+
+Com isso você pode acessar a url `http://localhost:8080` e ver seu website estático.
 
 #### [Ir para o passo 2](chapter2.md)

@@ -275,11 +275,6 @@ Enquanto git funciona na sua maquina local, Github &#xE9; como se fosse um repos
  <em>Nota 2: lembre-se que as contas gratuitas do GitHub se destinam a projetos OpenSource e por isso os seus reposit&#xF3;rios estar&#xE3;o abertos a qualquer interessado.</em></p>
 <p><img src="imgs/cap1-newRepo.png" alt="Exemplo novo reposit&#xF3;rio"></p>
 <p>Copie o link do reposit&#xF3;rio que acabou de ser criado (Algo como <code>https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io</code>). Ele vai ser usado mais tarde para voc&#xEA; criar seu ambiente de desenvolvimento.</p>
-<p>Clique em configura&#xE7;&#xF5;es no lado direito da pagina do seu reposit&#xF3;rio e na parte chamada <strong>&quot;Github Pages&quot;</strong>
-Selecione para a branch &quot;master&quot;, assim todas as modifica&#xE7;&#xF5;es que forem feitas no seu projeto dentro deste repositorio v&#xE3;o ser publicadas na url <code>NOMEDASUACONTA.github.io</code>.</p>
-<p><img src="imgs/cap1-config.png" alt="Exemplo configura&#xE7;&#xE3;o de github pages"></p>
-<p>Se voc&#xEA; receber uma mensagem de <code>&quot;Your site is ready to be published at http://NOMEDASUACONTA.github.io/.&quot;</code>
-&#xE9; porque tudo est&#xE1; ok.</p>
 <h2 id="ambiente-no-c9">Ambiente no C9</h2>
 <p>Se logue pelo icone do github no <a href="https://c9.io/" target="_blank">Cloud9</a>.</p>
 <p>Clique em &quot;Create Workspace&quot;
@@ -300,6 +295,37 @@ Ao entrar nesse link voc&#xEA; pode ver o resultado do seu HTML.</p>
 <p><img src="imgs/cap1-editor.png" alt="Exemplo de configura&#xE7;&#xE3;o c9"></p>
 <p>Mas suas modifica&#xE7;&#xF5;es ainda n&#xE3;o est&#xE3;o no ar no <a href="https://NOMEDASUACONTA.github.io" target="_blank">https://NOMEDASUACONTA.github.io</a> pois ainda precisamos publica-las!
 No pr&#xF3;ximo c&#xE1;pitulo vamos abordar mais sobre HTML e faremos nosso primeiro commit no git, que vai publicar nossas mofica&#xE7;&#xF5;es na web.</p>
+<h2 id="sem-o-ambiente">Sem o ambiente</h2>
+<p>N&#xE3;o tem problema n&#xE3;o usar o ambiente do C9. Pra isso basta instalar e configurar o seu git em seu terminal. Veja aqui como <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">instalar</a>.
+Para configurar basta configurar com os seguintes comandos:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># configurar nome</span>
+git config --global 
+
+<span class="hljs-comment"># configurar email</span>
+git config --global
+</code></pre>
+<p>E em seguida navegue no terminal e clone o projeto criado no github na sua pasta de preferencia</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># cria pasta NOMEDASUACONTA.github.io</span>
+git <span class="hljs-built_in">clone</span> `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`
+
+<span class="hljs-comment"># acessa a pasta NOMEDASUACONTA.github.io</span>
+<span class="hljs-built_in">cd</span> NOMEDASUACONTA.github.io
+</code></pre>
+<p>Agora j&#xE1; &#xE9; possivel mexer com o github por meio do seu proprio terminal!</p>
+<p>crie dentro desta pasta do projeto que criamos um arquivo chamado <strong>index.html</strong> com o conte&#xFA;do</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Campus Party 2018<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Nesse exemplo estamos colocando o <code>Hello World</code> dentro da tag de <code>h1</code>, que signfica que ele ser&#xE1; um header, e o <code>Campus Party 2018</code> dentro da tag <code>p</code>, simbolizando que ele &#xE9; um paragrafo.</p>
+<p>Para verificar suas modifica&#xE7;&#xF5;es no navegador &#xE9; necess&#xE1;rio um webserver. Pra isso <a href="https://nodejs.org/en/download/" target="_blank">instale o node.js aqui</a>.
+Ap&#xF3;s a instala&#xE7;&#xE3;o digite no terminal:
+<code>npm install http-server -g</code></p>
+<p>Npm pode funcionar como um gerenciador de pacotes e no caso desse comando, instalamos globalmente(pois usamos -g) o http-server.</p>
+<p>Para usa-lo bastante na pasta do seu projeto(NOMEDASUACONTA.github.io) escrever o comando </p>
+<pre><code class="lang-bash">http-server 8080
+`
+</code></pre>
+<p>Com isso voc&#xEA; pode acessar a url <code>http://localhost:8080</code> e ver seu website est&#xE1;tico.</p>
 <h4 id="ir-para-o-passo-2"><a href="chapter2.html">Ir para o passo 2</a></h4>
 
                                 
@@ -344,7 +370,7 @@ No pr&#xF3;ximo c&#xE1;pitulo vamos abordar mais sobre HTML e faremos nosso prim
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"next":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"previous":{"title":"Introdução","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter1.md","mtime":"2018-01-29T20:02:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-30T22:44:59.045Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"next":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"previous":{"title":"Introdução","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter1.md","mtime":"2018-08-04T18:41:04.108Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-04T18:41:29.998Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
