@@ -1,0 +1,578 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Passo 2 - HTML · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter3.html" />
+    
+    
+    <link rel="prev" href="chapter1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introdução ao desenvolvimento web</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    Passo 1 - Ambiente
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    Passo 2 - HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    Passo 3 - CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    Passo 4 - Bibliotecas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="guide.html">
+            
+                <a href="guide.html">
+            
+                    
+                    Guia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="final.html">
+            
+                <a href="final.html">
+            
+                    
+                    Conteúdos para estudar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Passo 2 - HTML</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="passo-2">Passo 2</h2>
+<h4 id="indice">Indice</h4>
+<ul>
+<li><a href="#O-que-e-HTML?">O que &#xE9; HTML</a></li>
+<li><a href="#adicionando-conteudo">Adicionando Conte&#xFA;do</a><ul>
+<li><a href="#headers-e-texto">Headers e texto</a></li>
+<li><a href="#formata&#xE7;&#xE3;o">Formata&#xE7;&#xE3;o</a>  </li>
+<li><a href="#listas">Listas</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#exemplo">Exemplo</a>  </li>
+</ul>
+</li>
+<li><a href="#seu-primeiro-commit">Seu primeiro commit</a></li>
+</ul>
+<h2 id="o-que-e-html">O que e HTML?</h2>
+<p><strong>HTML</strong> significa <strong>Hyper Text Markup Language</strong> e funciona para descrever cada parte da estrutura de uma pagina web no seu navegador.
+Quando voc&#xEA; visita um site ele consegue diferenciar cada tipo de texto pois ele os elementos s&#xE3;o diferenciados por tags HTML diferentes que contam pro navegador como ordenar e mostrar o conte&#xFA;do da p&#xE1;gina que renderizam de forma correta o conte&#xFA;do.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragrafo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Para nossa pagina copie e cole o seguinte.</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Campus Pary 2018<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code> define a vers&#xE3;o do HTML.</li>
+<li><code>&lt;html&gt;</code> &#xE9; a tag que define tudo dentro do HTML.</li>
+<li>O <code>&lt;head&gt;</code> tem meta informa&#xE7;&#xF5;es sobre a p&#xE1;gina </li>
+<li>O <code>&lt;body&gt;</code> cont&#xE9;m todo conte&#xFA;do visivel da p&#xE1;gina.</li>
+</ul>
+<p>Note que ao inv&#xE9;s de </p>
+<p><code>&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;Campus Pary 2018&lt;/p&gt;&lt;/body&gt;</code></p>
+<p>Fica muito mais legivel quando colocamos o conte&#xFA;do dentro do body  em outra linha.
+&#xC9; muito importante sempre dar <strong>tab</strong> ou <strong>4 espa&#xE7;os</strong> para simbolizar que o conte&#xFA;do do <code>h1</code> e do <code>p</code> est&#xE1; dentro do <code>body</code> e deixar o c&#xF3;digo mais legivel. O nome disso &#xE9; <strong>identa&#xE7;&#xE3;o</strong></p>
+<pre><code class="lang-css">&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;Campus Pary 2018&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+<p>Atualmente se apertamos o bot&#xE3;o de <strong>run</strong> n&#xE3;o temos nada demais al&#xE9;m de um Hello World.</p>
+<p><img src="imgs/cap2-hello.png" alt="Exemplo do estado atual"></p>
+<p>Mostrar <strong>&quot;Hello, World!&quot;</strong> &#xE9; como se fosse uma &quot;tradi&#xE7;&#xE3;o&quot; no mundo da programa&#xE7;&#xE3;o quando &#xE9; nossa primeira vez em alguma linguagem e geralmente &#xE9; usada pra mostrar sintaxe basica de algo funcional.</p>
+<h2 id="adicionando-conte&#xFA;do">Adicionando conte&#xFA;do</h2>
+<h3 id="headers-e-texto">Headers e texto</h3>
+<p>Headlines s&#xE3;o <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> enquanto paragrafos s&#xE3;o a tag <code>&lt;p&gt;</code>.</p>
+<p>Geralmente toda p&#xE1;gina tem um <code>&lt;h1&gt;</code> que &#xE9; o nome da pagina em si.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Maria L&#xFA;cia - Portfolio<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<h1 id="maria-l&#xFA;cia---portfolio">Maria L&#xFA;cia - Portfolio</h1>
+<p><hr></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Portfolio da Maria L&#xFA;cia<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<h2 id="portfolio-da-maria-l&#xFA;cia">Portfolio da Maria L&#xFA;cia</h2>
+<p><hr></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Test<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<h4 id="item">Item</h4>
+<hr>
+
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este site &#xE9; um portfolio de minha habilidades e experiencias<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Resultado:
+Este site &#xE9; um portfolio de minha habilidades e experiencias</p>
+<h3 id="formata&#xE7;&#xE3;o">Formata&#xE7;&#xE3;o</h3>
+<p>Para formatar textos usa-se estas tags em volta das palavras:</p>
+<ul>
+<li><code>&lt;b&gt;</code> - <b>Negrito</b></li>
+<li><code>&lt;strong&gt;</code> - <strong>Importante</strong></li>
+<li><code>&lt;i&gt;</code> - <i>Italico</i></li>
+<li><code>&lt;em&gt;</code> - <em>Emfatizado</em></li>
+<li><code>&lt;mark&gt;</code> - <mark>Marcado</mark></li>
+<li><code>&lt;small&gt;</code> - <small>Pequeno</small></li>
+<li><code>&lt;del&gt;</code> - <del>Deletado</del></li>
+<li><code>&lt;ins&gt;</code> - <ins>Inserido</ins></li>
+<li><code>&lt;sub&gt;</code> - <sub>Subscrito</sub></li>
+<li><code>&lt;sup&gt;</code> - <sup>Superscrito</sup></li>
+</ul>
+<h3 id="listas">Listas</h3>
+<p><strong>Listas n&#xE3;o-enumeradas</strong></p>
+<p>Listas n&#xE3;o enumeradas tem a tag <code>&lt;ul&gt;</code> e cada item da lista fica dentro da tag <code>&lt;li&gt;</code>.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Caf&#xE9;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ch&#xE1;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Leite<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<ul>
+<li>Caf&#xE9;</li>
+<li>Ch&#xE1;</li>
+<li>Leite</li>
+</ul>
+<p>Podemos colocar listas dentro de listas tamb&#xE9;m:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Caf&#xE9;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ch&#xE1;
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Black tea<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Green tea<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Leite<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<ul>
+<li>Caf&#xE9;</li>
+<li>Ch&#xE1;<ul>
+<li>Black tea</li>
+<li>Green tea</li>
+</ul>
+</li>
+<li>Leite</li>
+</ul>
+<p><strong>Listas enumeradas</strong></p>
+<p>Em listas enumeradas usa-se a tag <code>&lt;ol&gt;</code> ao inv&#xE9;s de <code>&lt;ul&gt;</code>. Cada item ainda fica dentro da tag <code>&lt;li&gt;</code>.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Coffee<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tea
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Black tea<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Green tea<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Milk<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<ol>
+<li>Caf&#xE9;</li>
+<li>Ch&#xE1;<ol>
+<li>Ch&#xE1; Preto</li>
+<li>Ch&#xE1; Verde</li>
+</ol>
+</li>
+<li>Leite</li>
+</ol>
+<h3 id="tables">Tables</h3>
+<p>Tables usam a tag <code>&lt;table&gt;</code>. <code>&lt;tr&gt;</code> define uma coluna da tabela enquanto <code>&lt;td&gt;</code> define a celular.
+Para o header da table usa-se a tag <code>&lt;th&gt;</code> conforme o exemplo:.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Nome<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Sobrenome<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Idade<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Jo&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Smith<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>50<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Eva<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Maria<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>94<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sobrenome</th> 
+    <th>Idade</th>
+  </tr>
+  <tr>
+    <td>Jo&#xE3;o</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eva</td>
+    <td>Maria</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+
+<h3 id="links">Links</h3>
+<p>Para linkar textos usa-se a tag <code>&lt;a&gt;</code>, em que a propriedade <code>href</code> &#xE9; a url do texto e o texto em si fica dentro da tag.</p>
+<p>Esta sintaxe:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://google.com&quot;</span>&gt;</span>Google<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://github.com&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<p><a href="http://fb.com" target="_blank">Facebook</a>
+<a href="http://google.com" target="_blank">Google</a> - <a href="http://github.com" target="_blank">Github</a></p>
+<h3 id="images">Images</h3>
+<p>Para adicionar imagens usa-se a tag <code>&lt;img&gt;</code>, em que a propriedade <code>src</code> &#xE9; a url da imagem ou ent&#xE3;o o caminho no projeto at&#xE9; a imagem. A propriedade <code>alt</code> descreve o conte&#xFA;do da imagem caso ela n&#xE3;o seja carregada corretamente.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;url imagem&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Foto da Maria L&#xFA;cia&quot;</span>&gt;</span>
+</code></pre>
+<h3 id="exemplo">Exemplo</h3>
+<p>Juntando tudo isso podemos ter algo assim:</p>
+<p><img src="imgs/cap2-exemplo.png" alt="Exemplo"></p>
+<p>Voc&#xEA; pode usar esse exemplo de refer&#xEA;ncia:</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Foto da Maria L&#xFA;cia&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Maria L&#xFA;cia do Carmo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Estudante de ci&#xEA;ncia da computa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Brasileira, solteira, 22 anos - S&#xE3;o Paulo - SP<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://github.com&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://twitter.com&quot;</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> maria@gmail.com<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> (+55)11-986993010<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Experi&#xEA;ncia<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>2017/06 ~ Atual<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> - Est&#xE1;giaria no Facebook - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Educa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Bacharelado em ciencia da computa&#xE7;&#xE3;o(<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>Cursando<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>) - USP<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Habilidades<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>HTML5 / CSS3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Fazer caf&#xE9;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Interesses<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Jogar LoLzinho<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>(Sou platina)<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Com HTML podemos tamb&#xE9;m adicionar audio, video, canvas, formul&#xE1;rios, dentre muitas outras coisas. No <a href="final.html">final do curso</a> tem v&#xE1;rios links com tutoriais e guias pra esse conte&#xFA;do remanescente.</p>
+<h2 id="seu-primeiro-commit">Seu primeiro commit</h2>
+<p>Nas abas de console existe uma chamada &quot;bash - &quot;seu nome&quot;&quot;</p>
+<p><img src="imgs/cap2-git.png" alt="Usando o bash do c9"></p>
+<p>Clique na aba e voc&#xEA; vai ter como se fosse um terminal em que podemos usar comandos git.
+Para inserir no nosso reposit&#xF3;rio as modifica&#xE7;&#xF5;es que fizemos &#xE9; preciso seguir os seguintes passos:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Verifique status do reposit&#xF3;rio.</span>
+git status
+<span class="hljs-comment"># Adicione arquivo index p/ staging</span>
+git add index.html
+<span class="hljs-comment"># Faz commit</span>
+git commit -m <span class="hljs-string">&quot;Initial Commit&quot;</span>
+<span class="hljs-comment"># Adiciona modifica&#xE7;&#xF5;es</span>
+git push
+</code></pre>
+<p>Clique em configura&#xE7;&#xF5;es no lado direito da pagina do seu reposit&#xF3;rio no github e na parte chamada <strong>&quot;Github Pages&quot;</strong>
+Selecione para a branch &quot;master&quot;, assim todas as modifica&#xE7;&#xF5;es que forem feitas no seu projeto dentro deste repositorio v&#xE3;o ser publicadas na url <code>NOMEDASUACONTA.github.io</code>.</p>
+<p><img src="imgs/cap1-config.png" alt="Exemplo configura&#xE7;&#xE3;o de github pages"></p>
+<p>Se voc&#xEA; receber uma mensagem de <code>&quot;Your site is ready to be published at http://NOMEDASUACONTA.github.io/.&quot;</code>
+&#xE9; porque tudo est&#xE1; ok.</p>
+<p>Agora se voc&#xEA; acessar o link <a href="https://NOMEDASUACONTA.github.io" target="_blank">https://NOMEDASUACONTA.github.io</a> ver&#xE1; o conte&#xFA;do do seu site
+Demora algns minutos para as mudan&#xE7;as realmente irem ao ar mas em pouco ser&#xE1; posivel ver suas modifica&#xE7;&#xF5;es no ar.</p>
+<h4 id="ir-para-o-passo-3"><a href="chapter3.html">Ir para o passo 3</a></h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter1.html" class="navigation navigation-prev " aria-label="Previous page: Passo 1 - Ambiente">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter3.html" class="navigation navigation-next " aria-label="Next page: Passo 3 - CSS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-09-17T14:56:08.669Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-17T15:05:40.295Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

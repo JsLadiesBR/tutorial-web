@@ -1,0 +1,608 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Passo 3 - CSS · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter4.html" />
+    
+    
+    <link rel="prev" href="chapter2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introdução ao desenvolvimento web</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    Passo 1 - Ambiente
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    Passo 2 - HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    Passo 3 - CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    Passo 4 - Bibliotecas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="guide.html">
+            
+                <a href="guide.html">
+            
+                    
+                    Guia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="final.html">
+            
+                <a href="final.html">
+            
+                    
+                    Conteúdos para estudar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Passo 3 - CSS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="passo-3">Passo 3</h2>
+<h4 id="indice">Indice</h4>
+<ul>
+<li><a href="#o-que-e-css">O que &#xE9; CSS</a></li>
+<li><a href="#estilizando-o-html">Estilizando o HTML</a></li>
+<li><a href="#seu-segundo-commit">Seu segundo commit</a></li>
+</ul>
+<h2 id="estilizando-com-css">Estilizando com CSS</h2>
+<h2 id="o-que-e-css">O que e CSS</h2>
+<p><strong>CSS</strong> vem de <strong>Cascading Stylesheets</strong>, que n&#xE3;o &#xE9; realmente uma linguagem de programa&#xE7;&#xE3;o. &#xC9; uma linguagem de folhas de estilos. Que s&#xE3;o c&#xF3;digos contam pro browser de que forma voc&#xEA; quer mostrar as tags HTML, mudando sua aparencia, posi&#xE7;&#xE3;o, etc e estilizar seletivamente os elementos no documentos HTML. </p>
+<h2 id="estilizando-o-html">Estilizando o HTML</h2>
+<p>Clique em <strong>&quot;File/New File&quot;</strong>, uma nova aba vai abrir no editor.
+Tecle <strong>Crtl + S</strong> ou ent&#xE3;o clique em <strong>&quot;File/Save as...&quot;</strong> e mude o Filename para <strong>style.css</strong> e clique no bot&#xE3;o verde de <strong>Save</strong>.</p>
+<p>No style.css cole:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: red;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Gill Sans Extrabold&quot;</span>, sans-serif;
+}
+</code></pre>
+<p>O que isso quer dizer? Tudo dentro do nosso body ficar&#xE1; com cor de background vermelho. O background pode ser uma cor em ingles, uma cor em hexadecimal e at&#xE9; uma imagem. E a fonte de tudo dentro do body vai ser&#xE1; <em>&quot;Gill Sans Extrabold&quot;</em></p>
+<p>O body &#xE9; o nosso <strong>seletor</strong>, ou seja, selecionamos tudo que est&#xE1; dentro do body. O que est&#xE1; entre parenteses &#xE9; a <strong>declara&#xE7;&#xE3;o</strong>, nela temos a <strong>propriedade</strong> e o valor dela seguido do <code>:</code>. Cada propriedade deve ter um <code>;</code> no final para representar o fim da linha.</p>
+<p>Agora, &#xE9; necess&#xE1;rio importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem.
+Pra isso, dentro do <code>&lt;head&gt;</code> cole esta linha <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+<p>Clique no bot&#xE3;o verde de <strong>Run</strong>. Logo abaixo no terminal e ao entrar no link verifique se o fundo est&#xE1; de fato vermelho.</p>
+<p><img src="imgs/cap3-css.png" alt="Exemplo do estado atual"></p>
+<h3 id="mais-css">Mais CSS</h3>
+<h4 id="fontes-e-cores">Fontes e Cores</h4>
+<p>Cores podem ser em hexadecimal os nomes defaults do CSS que voc&#xEA; pode ver aqui: <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a>.</p>
+<p>Ou voc&#xEA; pode selecionar sua cor em hexadecinal aqui: <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">https://www.w3schools.com/colors/colors_picker.asp</a>.</p>
+<p>Anteriormente definimos o background como <strong>red</strong> mas podemos tamb&#xE9;m usar o seu valor hexadecimal <strong>#FF0000</strong>:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FF0000</span>;
+}
+</code></pre>
+<p>Para modificar as caracteristicas de todos os paragrafos podemos usar diversas propriedades:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">color</span>: darkgray;
+  <span class="hljs-attribute">font-family</span>: Arial;
+  <span class="hljs-attribute">font-style</span>: bold;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">text-shadow</span>: <span class="hljs-number">3px</span> <span class="hljs-number">3px</span> <span class="hljs-number">1px</span> black;
+}
+</code></pre>
+<ul>
+<li><strong>font-size</strong> &#xE9; o tamanho da fonte em pixels.</li>
+<li><strong>color</strong> &#xE9; a cor do texto.</li>
+<li><strong>font-family</strong> &#xE9; a fonte do texto.</li>
+<li><strong>font-style</strong> &#xE9; propriedades como negrito ou italico.</li>
+<li><strong>line-height</strong> &#xE9; a altura da letra.</li>
+<li><strong>letter-spacing</strong> &#xE9; o espa&#xE7;amento das letras.</li>
+<li><strong>text-align</strong> &#xE9; o alinhamento do texto.</li>
+<li><strong>text-shadow</strong> sombra do texto.</li>
+</ul>
+<p><strong>N&#xE3;o precisa usar todas!!</strong></p>
+<h4 id="selecionando-elementos-html">Selecionando elementos HTML</h4>
+<p>Para n&#xE3;o selecionarmos sempre a propria tag html devemos usar uma propriedade <code>class</code> dentro de todos os elementos html que queremos selecionar.
+Assim podemos nomear o que o conte&#xFA;do &#xE9; e pela propria nomemclatura de <code>class</code> o selecionamos e estilizamos.</p>
+<p>No css colocamos um ponto e o nome da classe para definir os estilos da classe.</p>
+<p>HTML:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;titulo&quot;</span>&gt;</span>Titulo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-class">.titulo</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+}
+<span class="hljs-selector-class">.logo</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+}
+</code></pre>
+<p>No exemplo, criamos as classes <strong>&quot;titulo&quot;</strong> pra uma tag <code>&lt;p&gt;</code> e <strong>&quot;logo&quot;</strong> para uma imagem. Isso possibilita que possamos estilizar esses elementos especificos. Todo elemento que tiver classe <strong>titulo</strong> ter&#xE1; tamanho de fonte 30px, e todo elemento que tiver classe <strong>logo</strong> ter&#xE1; tamanho de 300px.</p>
+<p>&#xC9; importante usar classes pois podemos tamb&#xE9;m reutilizar estilos e definir o que cada coisa &#xE9;. Lembrando que cada elemento pode ter mais de uma classe.</p>
+<h4 id="background">Background</h4>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;https://i2.wp.com/likecoaching.com.br/wp-content/uploads/2016/11/Fundo-Estrelas.jpg&quot;</span>);
+   <span class="hljs-attribute">background-repeat</span>: no-repeat, repeat
+   background-color: <span class="hljs-number">#cccccc</span>;
+}
+</code></pre>
+<p>Gradiente</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#cccccc</span>;  
+   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(red, yellow);
+}
+</code></pre>
+<h4 id="tamanho">Tamanho</h4>
+<p>Uma coisa que voc&#xEA; vai notar sobre escrever CSS &#xE9; que um bocado disso &#xE9; sobre caixas &#x2014; indicar seu tamanho, cor, posi&#xE7;&#xE3;o, etc. Muitos dos elementos HTML da sua p&#xE1;gina podem ser pensados como caixas umas em cima das outras.
+Como esperado, o layout CSS &#xE9; baseado principalmente no modelo de caixas. Cada um dos blocks que ocupam espa&#xE7;o na sua p&#xE1;gina tem propriedades como essas:</p>
+<p><img src="imgs/cap3-pad.png" alt="Exemplo de padding e border"></p>
+<ul>
+<li><strong>padding</strong>: o espa&#xE7;o ao redor do conte&#xFA;do (ex.: ao redor do texto de um par&#xE1;grafo)</li>
+<li><strong>border</strong>: a linha s&#xF3;lida do lado de fora do padding</li>
+<li><strong>margin</strong>: o espa&#xE7;o externo a um elemento</li>
+</ul>
+<p>Pra isso vamos criar uma caixa com algum texto.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Campus Party 2018<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Se pintarmos a caixinha de azul, podemos ver mais claramente sua caixinha.</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">background-color</span>: blue;
+}
+</code></pre>
+<p>E a caixinha do texto est&#xE1; mais ou menos assim:</p>
+<div style="background-color: blue;" class="box">
+  <p>Campus Party 2018</p>
+</div>
+
+<p>O padding no css, representa o que est&#xE1; ao redor do conteudo antes da borda, ent&#xE3;o de aumentarmos para 10px ficar&#xE1; visivel o espa&#xE7;o que at&#xE9; ent&#xE3;o estava zerado.</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">background-color</span>: blue;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}
+</code></pre>
+<p>Fica algo assim:</p>
+<div style="background-color: blue;padding: 10px;" class="box">
+  <p>Campus Party 2018</p>
+</div>
+
+<p>O padding pode receber 4 valores como espa&#xE7;o no conte&#xFA;do. Se fosse <code>padding: 0 20px 20px 20px;</code> &#x2014; n&#xF3;s n&#xE3;o estamos indicando padding no topo do corpo, e 20 pixels na esquerda, ch&#xE3;o e direita. Os valores do padding s&#xE3;o topo, direita, ch&#xE3;o, esquerda, nessa ordem.</p>
+<p>Podemos ajustar o tamanho da altura e largura da caixinha</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">background-color</span>: gray;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+}
+</code></pre>
+<p>Mudando pra cinza, temos um resultado bem legal</p>
+<div style="background-color: gray;padding: 10px;height: 80px;width: 100px;" class="box">
+  <p>Campus Party 2018</p>
+</div>
+
+
+<h4 id="deixando-redondo">Deixando redondo</h4>
+<p>Para arredondar objetos usa-se a propriedade border-radius em que &quot;arredondamos&quot; as bordas do elemento:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.avatar</span>{
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+}
+</code></pre>
+<p>Supondo que temos um avatar de cachorro:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;avatar&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;imgs/cap3-dog.jpeg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Avatar do cachorro&quot;</span>&gt;</span>
+</code></pre>
+<p>A medida &#xE9; em porcentagem de arredondamento e 50% equivale a um circulo, tendo este resultado:</p>
+<p><img class="avatar" style="border-radius: 50%;width:150px;" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro"></p>
+<h4 id="centralizando-uma-imagem">Centralizando uma imagem</h4>
+<pre><code class="lang-css"><span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+</code></pre>
+<p> Ent&#xE3;o, para aplicar margens a uma imagem, n&#xF3;s temos que dar a ela um comportamento de bloco usando <code>display: block;</code>.</p>
+<p>Resultando em:</p>
+<p><img class="avatar" style="border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro"></p>
+<h4 id="estilizando-bordas">Estilizando Bordas</h4>
+<p>Como j&#xE1; vimos, todo elemento tem padding, border e margin. Podemos estilizar suas bordas.
+A borda recebe 3 valores, o seu tamanho, estilo e cor.</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black;
+}
+</code></pre>
+<p>No exemplo, acriamos uma borda de 2px, solida de cor preta.
+Resultando em:</p>
+<p><img class="avatar" style="border: 2px solid black;border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro"></p>
+<h4 id="posicionamento">Posicionamento</h4>
+<p>A propriedade de float &#xE9; usada para posicionamento e layout</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.avatar</span> {
+  <span class="hljs-attribute">float</span>: left;
+}
+</code></pre>
+<p>Seus valores significam:</p>
+<ul>
+<li><strong>left</strong> - O elemento flutua para a esquerda do seu container</li>
+<li><strong>right</strong>- O elemento flutua para a direita do seu container</li>
+<li><strong>none</strong> - O elemento n&#xE3;o flutua</li>
+<li><strong>inherit</strong> - O elemento herda de o float de seu elemento pai.</li>
+</ul>
+<p>Podemos tamb&#xE9;m posicionar pra esquerda, direita, cima e baixo por pixels:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.avatar</span> {
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">10px</span>;
+}
+</code></pre>
+<h4 id="exemplo">Exemplo</h4>
+<p><img src="imgs/cap3-exemplo.png" alt="Exemplo estilizado"></p>
+<p>Adicionando alguns estilos e classes no HTML anterior podemos chegar nesse resultado sem muitas linhas de c&#xF3;digo.
+Usamos o <em>background-image</em> para criar um fundo gradiente e encapsulamos a biografia dentro de uma <code>&lt;div&gt;</code> com a classe <code>.bio</code>.</p>
+<p>Nele, criamos uma caixinha de com 50% de largura e 90% de altura, pintamos o fundo de branco, alinhamos o texto para o centro e adicionamos uma borda solida e deixamos um padding de 30px na caixinha.</p>
+<p>O avatar ficou com a classe <code>.avatar</code> e teve sua largura alterada para 300px, adicionamos uma leve borda circular e flutuamos a imagem pra esquerda.</p>
+<p>Criamos uma classe <code>.center</code> com as propriedades que centralizam blocos, assim, tudo que tiver a classe <code>center</code> estar&#xE1; centralizado.</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: lightblue;
+    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(lightblue, rgb(93, 93, 192));
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Gill Sans Extrabold&quot;</span>, sans-serif;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#383838</span>;
+
+}
+
+<span class="hljs-selector-class">.avatar</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20%</span>;
+    <span class="hljs-attribute">float</span>: left;
+}
+
+<span class="hljs-selector-class">.bio</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">90%</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">background</span>: white;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid gray;
+}
+
+<span class="hljs-selector-class">.center</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">70px</span>;
+}
+</code></pre>
+<p>Adicionando suas respectivas classes no HTML:</p>
+<pre><code class="lang-html">
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;main.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bio center&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Maria L&#xFA;cia do Carmo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;avatar center&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Foto da Maria L&#xFA;cia&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Estudante de ci&#xEA;ncia da computa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Brasileira, solteira, 22 anos - S&#xE3;o Paulo - SP<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://github.com&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://twitter.com&quot;</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> maria@gmail.com<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> (+55)11-986993010<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Experi&#xEA;ncia<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>2017/06 ~ Atual<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> - Est&#xE1;giaria no Facebook - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Educa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Bacharelado em ciencia da computa&#xE7;&#xE3;o(<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>Cursando<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>) - USP<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Habilidades<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>HTML5 / CSS3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Fazer caf&#xE9;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Interesses<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Jogar LoLzinho<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>(Sou platina)<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2 id="seu-segundo-commit">Seu segundo commit</h2>
+<p>Repita o mesmo procedimento anterior:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Verifique status do reposit&#xF3;rio</span>
+git status
+<span class="hljs-comment"># Adiciona todos os arquivos modificados p/ staging</span>
+git add *
+<span class="hljs-comment"># Ou individualmente</span>
+git add style.css
+git add index.html
+<span class="hljs-comment"># Faz commit</span>
+git commit -m <span class="hljs-string">&quot;Adicionando estilos&quot;</span>
+<span class="hljs-comment"># Adiciona modifica&#xE7;&#xF5;es</span>
+git push
+</code></pre>
+<p>Escrever o que foi desenvolvido para cada commit &#xE9; muito importante pois ajuda pode te guiar e tamb&#xE9;m ajudar ao grupo de pessosas trabalhando no mesmo projeto ao verificar o que foi desenvolvido em cada passo do projeto.</p>
+<h4 id="ir-para-o-passo-4"><a href="chapter4.html">Ir para o passo 4</a></h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter2.html" class="navigation navigation-prev " aria-label="Previous page: Passo 2 - HTML">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter4.html" class="navigation navigation-next " aria-label="Next page: Passo 4 - Bibliotecas">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"next":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"path":"chapter/chapter4.md","ref":"chapter/chapter4.md","articles":[]},"previous":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter3.md","mtime":"2018-09-17T14:56:08.675Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-17T15:05:40.295Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
