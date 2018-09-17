@@ -1,8 +1,7 @@
 ## Tutorial Desenvolvimento Web
 
 
-Criado para o workshop da Campus Party 2018 de [Introdução ao Desenvolvimento Web](https://campuse.ro/events/campus-party-brasil-2018/workshop/introducao-ao-desenvolvimento-web/).
-Os slides estão salvos no [Speaker Deck](https://speakerdeck.com/anabastos/campus-party-2018-workshop-introducao-a-web)
+Este tutorial foi criado para o workshop do JSLadies RJ, realizado no dia 22/09/2018 na [Caelum](https://www.caelum.com.br).
 
 ## Conteúdo
 - [Passo 1 - Ambiente](chapter/chapter1.md)
@@ -12,25 +11,29 @@ Os slides estão salvos no [Speaker Deck](https://speakerdeck.com/anabastos/camp
 - [Guia](chapter/guide.md)
 - [Para estudar](chapter/final.md)
 
-## Ferramental
+## Ferramentas
 - Computador com internet
-- Git / Github pages
+- Git / Github Pages
 - Cloud9
 
 ## Objetivo
-Gradualmente criar um site com HTML5/CSS3 usando git para controlar a versão do projeto em cada parte do aprendizado.
+Neste workshop iremos ensinar conceitos básicos de HTML e CSS, que serão suficientes para que você consiga criar o seu site. Também ensinaremos Git, uma ferramenta que irá te ajudar a colocar no ar tudo o que você construiu durante o evento :)
 
 ## Sobre o JSLadies
+Nós somos o primeiro grupo nacional e exclusivamente feminino focado em ensinar e ajudar mais mulheres a programar.
+Nossa iniciativa nasceu da necessidade de promover um ambiente seguro, agradável e produtivo para qualquer pessoa cis, trans, binária ou não-binária que se identifique com o gênero feminino e que se interesse por computação.
 
-Grupo para unir mulheres interessadas em desenvolvimento web e javascript com encontros abertos e gratuitos com o intuito de preparar mulheres(participantes, palestrantes e coachs) e gerar representatividade feminina no desenvolvimento web! Voltado pra qualquer uma com interesse em aprender.
+Conheça nossas redes sociais:
 
-[Facebook](https://facebook.com/jsladiesbr/) - [Meetup](https://www.meetup.com/JsLadies-BR/) - [GitHub](http://github.com/jsladiesbr) - [Twitter](https://twitter.com/jsladiessp)
+- [Facebook](https://facebook.com/jsladiesbr/)
+- [Meetup](https://www.meetup.com/JsLadies-BR/)
+- [GitHub](http://github.com/jsladiesbr)
+- [Twitter](https://twitter.com/jsladiesrj)
 
-Esse repósitório está em [github.com/JsLadiesBR/tutorial-web](https://github.com/JsLadiesBR/tutorial-web)
+Temos também um grupo no Telegram! Se caso você tiver interesse em participar dele, por favor entre em contato com as organizadoras, pois elas te enviarão um convite :)
 
-## Colaborar com o tutorial
-Como instalar, servir e buildar esse tutorial.
-Para quem quiser adicionar conteúdo ou corrigir erros :)
+## Quer colaborar com o tutorial?
+Segue abaixo um pequeno manual de como instalar, servir e buildar esse tutorial:
 
 #### Install
 ```bash
@@ -42,7 +45,7 @@ npm install -g gitbook-cli
 gitbook serve
 ```
 
-#### Build to gh-pages
+#### Build
 ```bash
 gitbook install && gitbook build
 cp -R _book/* .
