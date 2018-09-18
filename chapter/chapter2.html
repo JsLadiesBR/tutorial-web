@@ -7,7 +7,7 @@
         <title>Passo 2 - HTML · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -228,98 +228,88 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="passo-2">Passo 2</h2>
-<h4 id="indice">Indice</h4>
-<ul>
-<li><a href="#O-que-e-HTML?">O que &#xE9; HTML</a></li>
-<li><a href="#adicionando-conteudo">Adicionando Conte&#xFA;do</a><ul>
-<li><a href="#headers-e-texto">Headers e texto</a></li>
-<li><a href="#formata&#xE7;&#xE3;o">Formata&#xE7;&#xE3;o</a>  </li>
-<li><a href="#listas">Listas</a></li>
-<li><a href="#tables">Tables</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#images">Images</a></li>
-<li><a href="#exemplo">Exemplo</a>  </li>
-</ul>
-</li>
-<li><a href="#seu-primeiro-commit">Seu primeiro commit</a></li>
-</ul>
-<h2 id="o-que-e-html">O que e HTML?</h2>
-<p><strong>HTML</strong> significa <strong>Hyper Text Markup Language</strong> e funciona para descrever cada parte da estrutura de uma pagina web no seu navegador.
-Quando voc&#xEA; visita um site ele consegue diferenciar cada tipo de texto pois ele os elementos s&#xE3;o diferenciados por tags HTML diferentes que contam pro navegador como ordenar e mostrar o conte&#xFA;do da p&#xE1;gina que renderizam de forma correta o conte&#xFA;do.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragrafo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<h2 id="o-que-&#xE9;-html">O que &#xE9; HTML?</h2>
+<p><strong>HTML</strong> significa <strong>Hyper Text Markup Language</strong> e como o pr&#xF3;prio nome j&#xE1; diz, &#xE9; uma linguagem de marca&#xE7;&#xE3;o de texto, que serve para definir quais informa&#xE7;&#xF5;es sua p&#xE1;gina ir&#xE1; exibir. Essas marca&#xE7;&#xF5;es de texto s&#xE3;o feitas atrav&#xE9;s das tags, que dizem para o navegador o que significa cada informa&#xE7;&#xE3;o inserida no documento HTML:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>T&#xED;tulo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Par&#xE1;grafo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
-<p>Para nossa pagina copie e cole o seguinte.</p>
+<p>Para criarmos nossa p&#xE1;gina, copie e cole o seguinte c&#xF3;digo:</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha p&#xE1;gina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Campus Pary 2018<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>JSLadies RJ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <ul>
-<li><code>&lt;!DOCTYPE html&gt;</code> define a vers&#xE3;o do HTML.</li>
-<li><code>&lt;html&gt;</code> &#xE9; a tag que define tudo dentro do HTML.</li>
-<li>O <code>&lt;head&gt;</code> tem meta informa&#xE7;&#xF5;es sobre a p&#xE1;gina </li>
-<li>O <code>&lt;body&gt;</code> cont&#xE9;m todo conte&#xFA;do visivel da p&#xE1;gina.</li>
+<li><code>&lt;!DOCTYPE html&gt;</code> - tag que avisa aos browsers qual &#xE9; o tipo de documento que est&#xE1; sendo renderizado.</li>
+<li><code>&lt;html&gt;</code> - tag que define o in&#xED;cio do documento, indicando ao navegador que todo o conte&#xFA;do dentro dele &#xE9; um c&#xF3;digo HTML.</li>
+<li><code>&lt;head&gt;</code> - tag de cabe&#xE7;alho, que traz informa&#xE7;&#xF5;es sobre o documento que est&#xE1; sendo aberto.</li>
+<li><code>&lt;title&gt;</code> - tag que indica o t&#xED;tulo do seu documento.</li>
+<li><code>&lt;body&gt;</code> - tag que indica o corpo do documento, que engloba toda a parte vis&#xED;vel pelo navegador. &#xC9; aqui que colocamos os textos, imagens, links etc.</li>
 </ul>
-<p>Note que ao inv&#xE9;s de </p>
-<p><code>&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;Campus Pary 2018&lt;/p&gt;&lt;/body&gt;</code></p>
-<p>Fica muito mais legivel quando colocamos o conte&#xFA;do dentro do body  em outra linha.
-&#xC9; muito importante sempre dar <strong>tab</strong> ou <strong>4 espa&#xE7;os</strong> para simbolizar que o conte&#xFA;do do <code>h1</code> e do <code>p</code> est&#xE1; dentro do <code>body</code> e deixar o c&#xF3;digo mais legivel. O nome disso &#xE9; <strong>identa&#xE7;&#xE3;o</strong></p>
-<pre><code class="lang-css">&lt;body&gt;
-    &lt;h1&gt;Hello World&lt;/h1&gt;
-    &lt;p&gt;Campus Pary 2018&lt;/p&gt;
-&lt;/body&gt;
-</code></pre>
-<p>Atualmente se apertamos o bot&#xE3;o de <strong>run</strong> n&#xE3;o temos nada demais al&#xE9;m de um Hello World.</p>
-<p><img src="imgs/cap2-hello.png" alt="Exemplo do estado atual"></p>
-<p>Mostrar <strong>&quot;Hello, World!&quot;</strong> &#xE9; como se fosse uma &quot;tradi&#xE7;&#xE3;o&quot; no mundo da programa&#xE7;&#xE3;o quando &#xE9; nossa primeira vez em alguma linguagem e geralmente &#xE9; usada pra mostrar sintaxe basica de algo funcional.</p>
+<p>Note que o seu c&#xF3;digo ficar&#xE1; muito mais leg&#xED;vel se voc&#xEA; colocar o conte&#xFA;do dentro da tag <code>&lt;body&gt;</code> em outras linhas. &#xC9; muito importante dar <strong>tab</strong> ou <strong>4 espa&#xE7;os</strong>, pois assim voc&#xEA; simboliza que os conte&#xFA;dos do <code>&lt;h1&gt;</code> e do <code>&lt;p&gt;</code> est&#xE3;o dentro da tag <code>&lt;body&gt;</code>. Essa estrutura se chama <strong>indenta&#xE7;&#xE3;o</strong>.</p>
 <h2 id="adicionando-conte&#xFA;do">Adicionando conte&#xFA;do</h2>
-<h3 id="headers-e-texto">Headers e texto</h3>
-<p>Headlines s&#xE3;o <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> enquanto paragrafos s&#xE3;o a tag <code>&lt;p&gt;</code>.</p>
-<p>Geralmente toda p&#xE1;gina tem um <code>&lt;h1&gt;</code> que &#xE9; o nome da pagina em si.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Maria L&#xFA;cia - Portfolio<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<h3 id="t&#xED;tulos">T&#xED;tulos</h3>
+<p>No HTML temos seis tipos de marca&#xE7;&#xF5;es espec&#xED;ficas para t&#xED;tulos:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>T&#xED;tulo n&#xED;vel 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>T&#xED;tulo n&#xED;vel 2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>T&#xED;tulo n&#xED;vel 3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>T&#xED;tulo n&#xED;vel 4<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>T&#xED;tulo n&#xED;vel 5<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>T&#xED;tulo n&#xED;vel 6<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+</code></pre>
+<p>Note que quanto menor o n&#xFA;mero, menor e menos importante ser&#xE1; o t&#xED;tulo dentro do documento. Logo, o exemplo acima ficar&#xE1; assim:</p>
+<h1 id="t&#xED;tulo-n&#xED;vel-1">T&#xED;tulo n&#xED;vel 1</h1>
+<h2 id="t&#xED;tulo-n&#xED;vel-2">T&#xED;tulo n&#xED;vel 2</h2>
+<h3 id="t&#xED;tulo-n&#xED;vel-3">T&#xED;tulo n&#xED;vel 3</h3>
+<h4 id="t&#xED;tulo-n&#xED;vel-4">T&#xED;tulo n&#xED;vel 4</h4>
+<h5 id="t&#xED;tulo-n&#xED;vel-5">T&#xED;tulo n&#xED;vel 5</h5>
+<h6 id="t&#xED;tulo-n&#xED;vel-6">T&#xED;tulo n&#xED;vel 6</h6>
+<p>Obs: n&#xE3;o confundir as tags de t&#xED;tulos com a tag <code>&lt;title&gt;</code>. Enquanto a tag <code>&lt;title&gt;</code> define o t&#xED;tulo que ir&#xE1; ser exibido na barra de t&#xED;tulo dos navegadores, as tags de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> representam as marca&#xE7;&#xF5;es de t&#xED;tulos que s&#xE3;o exibidos dentro do documento HTML.</p>
+<h3 id="par&#xE1;grafo">Par&#xE1;grafo</h3>
+<p>A marca&#xE7;&#xE3;o que indica um par&#xE1;grafo &#xE9; representada pela tag <code>&lt;p&gt;</code>:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  Este site &#xE9; um portf&#xF3;lio de minhas habilidades e experi&#xEA;ncias.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 <p>Resultado:</p>
-<h1 id="maria-l&#xFA;cia---portfolio">Maria L&#xFA;cia - Portfolio</h1>
-<p><hr></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Portfolio da Maria L&#xFA;cia<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-</code></pre>
-<p>Resultado:</p>
-<h2 id="portfolio-da-maria-l&#xFA;cia">Portfolio da Maria L&#xFA;cia</h2>
-<p><hr></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Test<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-</code></pre>
-<p>Resultado:</p>
-<h4 id="item">Item</h4>
-<hr>
-
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este site &#xE9; um portfolio de minha habilidades e experiencias<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-</code></pre>
-<p>Resultado:
-Este site &#xE9; um portfolio de minha habilidades e experiencias</p>
+<p>Este site &#xE9; um portf&#xF3;lio de minhas habilidades e experi&#xEA;ncias.</p>
 <h3 id="formata&#xE7;&#xE3;o">Formata&#xE7;&#xE3;o</h3>
-<p>Para formatar textos usa-se estas tags em volta das palavras:</p>
+<p>Existem diversas tags de formata&#xE7;&#xE3;o de texto no HTML. Segue abaixo uma lista das que s&#xE3;o mais usadas:</p>
 <ul>
-<li><code>&lt;b&gt;</code> - <b>Negrito</b></li>
-<li><code>&lt;strong&gt;</code> - <strong>Importante</strong></li>
-<li><code>&lt;i&gt;</code> - <i>Italico</i></li>
-<li><code>&lt;em&gt;</code> - <em>Emfatizado</em></li>
-<li><code>&lt;mark&gt;</code> - <mark>Marcado</mark></li>
-<li><code>&lt;small&gt;</code> - <small>Pequeno</small></li>
-<li><code>&lt;del&gt;</code> - <del>Deletado</del></li>
-<li><code>&lt;ins&gt;</code> - <ins>Inserido</ins></li>
-<li><code>&lt;sub&gt;</code> - <sub>Subscrito</sub></li>
-<li><code>&lt;sup&gt;</code> - <sup>Superscrito</sup></li>
+<li><code>&lt;b&gt;</code> - <b>negrito</b></li>
+<li><code>&lt;i&gt;</code> - <i>it&#xE1;lico</i></li>
+<li><code>&lt;u&gt;</code> - <u>sublinhado</u></li>
+<li><code>&lt;mark&gt;</code> - <mark>marcado</mark></li>
+<li><code>&lt;small&gt;</code> - <small>pequeno</small></li>
+<li><code>&lt;del&gt;</code>  ou <code>&lt;s&gt;</code>- <s>riscado</s></li>
 </ul>
+<p>Vale lembrar que podemos usar essas tags de formata&#xE7;&#xE3;o dentro dos t&#xED;tulos e dos par&#xE1;grafos:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Hello, World em negrito<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>JSLadies RJ em it&#xE1;lico<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Resultado:</p>
+<p></p><h2 id="
+----hello-world-em-negrito
+">
+    <b>Hello, World em negrito</b>
+</h2><p></p>
+<p>
+    <i>JSLadies RJ em it&#xE1;lico</i>
+</p>
+
 <h3 id="listas">Listas</h3>
-<p><strong>Listas n&#xE3;o-enumeradas</strong></p>
-<p>Listas n&#xE3;o enumeradas tem a tag <code>&lt;ul&gt;</code> e cada item da lista fica dentro da tag <code>&lt;li&gt;</code>.</p>
+<h4 id="listas-n&#xE3;o-enumeradas">Listas n&#xE3;o-enumeradas</h4>
+<p>Listas n&#xE3;o enumeradas s&#xE3;o marcadas pela tag <code>&lt;ul&gt;</code>. J&#xE1; cada item dessa lista &#xE9; marcado pela tag <code>&lt;li&gt;</code>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Caf&#xE9;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ch&#xE1;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -354,8 +344,8 @@ Este site &#xE9; um portfolio de minha habilidades e experiencias</p>
 </li>
 <li>Leite</li>
 </ul>
-<p><strong>Listas enumeradas</strong></p>
-<p>Em listas enumeradas usa-se a tag <code>&lt;ol&gt;</code> ao inv&#xE9;s de <code>&lt;ul&gt;</code>. Cada item ainda fica dentro da tag <code>&lt;li&gt;</code>.</p>
+<h4 id="listas-enumeradas">Listas enumeradas</h4>
+<p>Em listas enumeradas usamos a tag <code>&lt;ol&gt;</code> ao inv&#xE9;s de <code>&lt;ul&gt;</code>. Cada item dentro dessa lista &#xE9; marcado pela tag <code>&lt;li&gt;</code>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Coffee<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tea
@@ -377,9 +367,9 @@ Este site &#xE9; um portfolio de minha habilidades e experiencias</p>
 </li>
 <li>Leite</li>
 </ol>
-<h3 id="tables">Tables</h3>
-<p>Tables usam a tag <code>&lt;table&gt;</code>. <code>&lt;tr&gt;</code> define uma coluna da tabela enquanto <code>&lt;td&gt;</code> define a celular.
-Para o header da table usa-se a tag <code>&lt;th&gt;</code> conforme o exemplo:.</p>
+<h3 id="tabelas">Tabelas</h3>
+<p>Tabelas usam a tag <code>&lt;table&gt;</code>. J&#xE1; a tag <code>&lt;tr&gt;</code> define uma coluna dessa tabela, enquanto <code>&lt;td&gt;</code> define uma c&#xE9;lula.</p>
+<p>Para definir o cabe&#xE7;alho da tabela, usamos a tag <code>&lt;th&gt;</code>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Nome<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -419,29 +409,33 @@ Para o header da table usa-se a tag <code>&lt;th&gt;</code> conforme o exemplo:.
 
 
 <h3 id="links">Links</h3>
-<p>Para linkar textos usa-se a tag <code>&lt;a&gt;</code>, em que a propriedade <code>href</code> &#xE9; a url do texto e o texto em si fica dentro da tag.</p>
-<p>Esta sintaxe:</p>
+<p>Para linkar textos usamos a tag <code>&lt;a&gt;</code>. Essa tag possui um atributo <code>href</code>, que receber&#xE1; a url de destino. J&#xE1; o nome do link ficar&#xE1; dentro da marca&#xE7;&#xE3;o:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://google.com&quot;</span>&gt;</span>Google<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://github.com&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://google.com&quot;</span>&gt;</span>Google<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://github.com&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 <p>Resultado:</p>
 <p><a href="http://fb.com" target="_blank">Facebook</a>
-<a href="http://google.com" target="_blank">Google</a> - <a href="http://github.com" target="_blank">Github</a></p>
-<h3 id="images">Images</h3>
-<p>Para adicionar imagens usa-se a tag <code>&lt;img&gt;</code>, em que a propriedade <code>src</code> &#xE9; a url da imagem ou ent&#xE3;o o caminho no projeto at&#xE9; a imagem. A propriedade <code>alt</code> descreve o conte&#xFA;do da imagem caso ela n&#xE3;o seja carregada corretamente.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;url imagem&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Foto da Maria L&#xFA;cia&quot;</span>&gt;</span>
+<a href="http://google.com" target="_blank">Google</a>
+<a href="http://github.com" target="_blank">Github</a></p>
+<h3 id="imagens">Imagens</h3>
+<p>Para adicionar imagens no documento, usamos a tag <code>&lt;img&gt;</code>. Ela receber&#xE1; um atributo <code>src</code> com a url ou o caminho da imagem. </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://avatars1.githubusercontent.com/u/28883362?s=200&amp;v=4&quot;</span> /&gt;</span>
 </code></pre>
-<h3 id="exemplo">Exemplo</h3>
-<p>Juntando tudo isso podemos ter algo assim:</p>
+<p>Resultado:</p>
+<p><img src="https://avatars1.githubusercontent.com/u/28883362?s=200&amp;v=4" alt="https://avatars1.githubusercontent.com/u/28883362?s=200&amp;v=4"></p>
+<p>Ao contr&#xE1;rio das outras tags que j&#xE1; vimos at&#xE9; agora, a tag <code>&lt;img&gt;</code> n&#xE3;o possui uma tag espec&#xED;fica para fechamento. Neste caso, ela poder&#xE1; ser fechada de maneira diferente das demais, bastando apenas colocar uma barra no final.</p>
+<h2 id="montando-o-portf&#xF3;lio">Montando o portf&#xF3;lio</h2>
+<p>Juntando tudo o que n&#xF3;s vimos at&#xE9; agora, j&#xE1; podemos fazer algo assim:</p>
 <p><img src="imgs/cap2-exemplo.png" alt="Exemplo"></p>
 <p>Voc&#xEA; pode usar esse exemplo de refer&#xEA;ncia:</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha Pagina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha p&#xE1;gina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Foto da Maria L&#xFA;cia&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Maria L&#xFA;cia do Carmo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Estudante de ci&#xEA;ncia da computa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
@@ -454,7 +448,7 @@ Para o header da table usa-se a tag <code>&lt;th&gt;</code> conforme o exemplo:.
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>2017/06 ~ Atual<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> - Est&#xE1;giaria no Facebook - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Educa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Bacharelado em ciencia da computa&#xE7;&#xE3;o(<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>Cursando<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>) - USP<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Bacharelado em ci&#xEA;ncia da computa&#xE7;&#xE3;o(<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>cursando<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>) - USP<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Habilidades<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
@@ -464,16 +458,16 @@ Para o header da table usa-se a tag <code>&lt;th&gt;</code> conforme o exemplo:.
 
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Interesses<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Jogar LoLzinho<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>(Sou platina)<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Jogar LoLzinho <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>(sou platina)<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>Com HTML podemos tamb&#xE9;m adicionar audio, video, canvas, formul&#xE1;rios, dentre muitas outras coisas. No <a href="final.html">final do curso</a> tem v&#xE1;rios links com tutoriais e guias pra esse conte&#xFA;do remanescente.</p>
+<p>Com HTML podemos tamb&#xE9;m adicionar &#xE1;udio, v&#xED;deo, canvas, formul&#xE1;rios, dentre muitas outras coisas. No <a href="final.html">final do curso</a> temos v&#xE1;rios links com tutoriais e guias pra esse conte&#xFA;do remanescente.</p>
 <h2 id="seu-primeiro-commit">Seu primeiro commit</h2>
 <p>Nas abas de console existe uma chamada &quot;bash - &quot;seu nome&quot;&quot;</p>
 <p><img src="imgs/cap2-git.png" alt="Usando o bash do c9"></p>
-<p>Clique na aba e voc&#xEA; vai ter como se fosse um terminal em que podemos usar comandos git.
+<p>Clique na aba e voc&#xEA; vai ter como se fosse um terminal em que podemos usar comandos Git.
 Para inserir no nosso reposit&#xF3;rio as modifica&#xE7;&#xF5;es que fizemos &#xE9; preciso seguir os seguintes passos:</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># Verifique status do reposit&#xF3;rio.</span>
 git status
@@ -484,13 +478,11 @@ git commit -m <span class="hljs-string">&quot;Initial Commit&quot;</span>
 <span class="hljs-comment"># Adiciona modifica&#xE7;&#xF5;es</span>
 git push
 </code></pre>
-<p>Clique em configura&#xE7;&#xF5;es no lado direito da pagina do seu reposit&#xF3;rio no github e na parte chamada <strong>&quot;Github Pages&quot;</strong>
-Selecione para a branch &quot;master&quot;, assim todas as modifica&#xE7;&#xF5;es que forem feitas no seu projeto dentro deste repositorio v&#xE3;o ser publicadas na url <code>NOMEDASUACONTA.github.io</code>.</p>
+<p>Clique em configura&#xE7;&#xF5;es no lado direito da pagina do seu reposit&#xF3;rio no Github e na parte chamada <strong>Github Pages</strong> selecione a branch <code>master</code>. Assim, todas as modifica&#xE7;&#xF5;es que forem feitas no seu projeto dentro deste reposit&#xF3;rio v&#xE3;o ser publicadas na url <code>NOMEDASUACONTA.github.io</code>.</p>
 <p><img src="imgs/cap1-config.png" alt="Exemplo configura&#xE7;&#xE3;o de github pages"></p>
-<p>Se voc&#xEA; receber uma mensagem de <code>&quot;Your site is ready to be published at http://NOMEDASUACONTA.github.io/.&quot;</code>
+<p>Se voc&#xEA; receber uma mensagem como <code>Your site is ready to be published at http://NOMEDASUACONTA.github.io/.</code>
 &#xE9; porque tudo est&#xE1; ok.</p>
-<p>Agora se voc&#xEA; acessar o link <a href="https://NOMEDASUACONTA.github.io" target="_blank">https://NOMEDASUACONTA.github.io</a> ver&#xE1; o conte&#xFA;do do seu site
-Demora algns minutos para as mudan&#xE7;as realmente irem ao ar mas em pouco ser&#xE1; posivel ver suas modifica&#xE7;&#xF5;es no ar.</p>
+<p>Agora se voc&#xEA; acessar o link <a href="https://NOMEDASUACONTA.github.io" target="_blank">https://NOMEDASUACONTA.github.io</a>, voc&#xEA; ver&#xE1; o conte&#xFA;do do seu site! Demora alguns minutos para as mudan&#xE7;as realmente irem ao ar, mas em pouco tempo ser&#xE1; poss&#xED;vel ver as suas modifica&#xE7;&#xF5;es.</p>
 <h4 id="ir-para-o-passo-3"><a href="chapter3.html">Ir para o passo 3</a></h4>
 
                                 
@@ -535,7 +527,7 @@ Demora algns minutos para as mudan&#xE7;as realmente irem ao ar mas em pouco ser
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-08-04T18:29:35.560Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-04T18:41:29.998Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-09-18T13:50:00.102Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T13:50:45.303Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
