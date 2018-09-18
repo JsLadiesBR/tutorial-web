@@ -1,122 +1,114 @@
 ## Passo 2
 
-#### Indice
-* [O que é HTML](#O-que-e-HTML?)
-* [Adicionando Conteúdo](#adicionando-conteudo)
-  * [Headers e texto](#headers-e-texto)
-  * [Formatação](#formatação)  
-  * [Listas](#listas)
-  * [Tables](#tables)
-  * [Links](#links)
-  * [Images](#images)
-  * [Exemplo](#exemplo)  
-* [Seu primeiro commit](#seu-primeiro-commit)
+## O que é HTML?
 
-## O que e HTML?
-
-**HTML** significa **Hyper Text Markup Language** e funciona para descrever cada parte da estrutura de uma pagina web no seu navegador.
-Quando você visita um site ele consegue diferenciar cada tipo de texto pois ele os elementos são diferenciados por tags HTML diferentes que contam pro navegador como ordenar e mostrar o conteúdo da página que renderizam de forma correta o conteúdo.
+**HTML** significa **Hyper Text Markup Language** e como o próprio nome já diz, é uma linguagem de marcação de texto, que serve para definir quais informações sua página irá exibir. Essas marcações de texto são feitas através das tags, que dizem para o navegador o que significa cada informação inserida no documento HTML:
 
 ```html
-<h1>Headline</h1>
-<p>Paragrafo</p>
+<h1>Título</h1>
+<p>Parágrafo</p>
 ```
 
-Para nossa pagina copie e cole o seguinte.
+Para criarmos nossa página, copie e cole o seguinte código:
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minha Pagina</title>
+    <title>Minha página</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Campus Pary 2018</p>
+    <h1>Hello, World!</h1>
+    <p>JSLadies RJ</p>
 </body>
 </html>
 ```
 
-- `<!DOCTYPE html>` define a versão do HTML.
-- `<html>` é a tag que define tudo dentro do HTML.
-- O `<head>` tem meta informações sobre a página 
-- O `<body>` contém todo conteúdo visivel da página.
+- `<!DOCTYPE html>` - tag que avisa aos browsers qual é o tipo de documento que está sendo renderizado.
+- `<html>` - tag que define o início do documento, indicando ao navegador que todo o conteúdo dentro dele é um código HTML.
+- `<head>` - tag de cabeçalho, que traz informações sobre o documento que está sendo aberto.
+- `<title>` - tag que indica o título do seu documento.
+- `<body>` - tag que indica o corpo do documento, que engloba toda a parte visível pelo navegador. É aqui que colocamos os textos, imagens, links etc.
 
+Note que o seu código ficará muito mais legível se você colocar o conteúdo dentro da tag `<body>` em outras linhas. É muito importante dar **tab** ou **4 espaços**, pois assim você simboliza que os conteúdos do `<h1>` e do `<p>` estão dentro da tag `<body>`. Essa estrutura se chama **indentação**.
 
-
-Note que ao invés de 
-
-`<body><h1>Hello World</h1><p>Campus Pary 2018</p></body>`
-
-Fica muito mais legivel quando colocamos o conteúdo dentro do body  em outra linha.
-É muito importante sempre dar **tab** ou **4 espaços** para simbolizar que o conteúdo do `h1` e do `p` está dentro do `body` e deixar o código mais legivel. O nome disso é **identação**
-
-```css
-<body>
-    <h1>Hello World</h1>
-    <p>Campus Pary 2018</p>
-</body>
-```
-
-Atualmente se apertamos o botão de **run** não temos nada demais além de um Hello World.
-
-![Exemplo do estado atual](imgs/cap2-hello.png)
-
-Mostrar **"Hello, World!"** é como se fosse uma "tradição" no mundo da programação quando é nossa primeira vez em alguma linguagem e geralmente é usada pra mostrar sintaxe basica de algo funcional.
 
 ## Adicionando conteúdo
 
-### Headers e texto
+### Títulos
 
-Headlines são `<h1>`, `<h2>`, `<h3>` enquanto paragrafos são a tag `<p>`.
-
-Geralmente toda página tem um `<h1>` que é o nome da pagina em si.
+No HTML temos seis tipos de marcações específicas para títulos:
 
 ```html
-<h1>Maria Lúcia - Portfolio</h1>
+<h1>Título nível 1</h1>
+<h2>Título nível 2</h2>
+<h3>Título nível 3</h3>
+<h4>Título nível 4</h4>
+<h5>Título nível 5</h5>
+<h6>Título nível 6</h6>
 ```
-Resultado:
-# Maria Lúcia - Portfolio
-<hr>
-```html
-<h2>Portfolio da Maria Lúcia</h2>
-```
-Resultado:
-## Portfolio da Maria Lúcia
-<hr>
-```html
-<h4>Test</h4>
-```
-Resultado:
-#### Item
-<hr>
+
+Note que quanto menor o número, menor e menos importante será o título dentro do documento. Logo, o exemplo acima ficará assim:
+
+# Título nível 1
+## Título nível 2
+### Título nível 3
+#### Título nível 4
+##### Título nível 5
+###### Título nível 6
+
+Obs: não confundir as tags de títulos com a tag `<title>`. Enquanto a tag `<title>` define o título que irá ser exibido na barra de título dos navegadores, as tags de `<h1>` a `<h6>` representam as marcações de títulos que são exibidos dentro do documento HTML.
+
+### Parágrafo
+
+A marcação que indica um parágrafo é representada pela tag `<p>`:
 
 ```html
-<p>Este site é um portfolio de minha habilidades e experiencias<p>
+<p>
+  Este site é um portfólio de minhas habilidades e experiências.
+</p>
 ```
+
 Resultado:
-Este site é um portfolio de minha habilidades e experiencias
+
+Este site é um portfólio de minhas habilidades e experiências.
 
 ### Formatação
 
-Para formatar textos usa-se estas tags em volta das palavras:
+Existem diversas tags de formatação de texto no HTML. Segue abaixo uma lista das que são mais usadas:
 
-- `<b>` - <b>Negrito</b>
-- `<strong>` - <strong>Importante</strong>
-- `<i>` - <i>Italico</i>
-- `<em>` - <em>Emfatizado</em>
-- `<mark>` - <mark>Marcado</mark>
-- `<small>` - <small>Pequeno</small>
-- `<del>` - <del>Deletado</del>
-- `<ins>` - <ins>Inserido</ins>
-- `<sub>` - <sub>Subscrito</sub>
-- `<sup>` - <sup>Superscrito</sup>
+- `<b>` - <b>negrito</b>
+- `<i>` - <i>itálico</i>
+- `<u>` - <u>sublinhado</u>
+- `<mark>` - <mark>marcado</mark>
+- `<small>` - <small>pequeno</small>
+- `<del>`  ou `<s>`- <s>riscado</s>
+
+Vale lembrar que podemos usar essas tags de formatação dentro dos títulos e dos parágrafos:
+
+```html
+<h2>
+    <b>Hello, World em negrito</b>
+</h2>
+<p>
+    <i>JSLadies RJ em itálico</i>
+</p>
+```
+
+Resultado:
+
+<h2>
+    <b>Hello, World em negrito</b>
+</h2>
+<p>
+    <i>JSLadies RJ em itálico</i>
+</p>
 
 ### Listas
 
-**Listas não-enumeradas**
+#### Listas não-enumeradas
 
-Listas não enumeradas tem a tag `<ul>` e cada item da lista fica dentro da tag `<li>`.
+Listas não enumeradas são marcadas pela tag `<ul>`. Já cada item dessa lista é marcado pela tag `<li>`:
 
 ```html
 <ul>
@@ -125,6 +117,7 @@ Listas não enumeradas tem a tag `<ul>` e cada item da lista fica dentro da tag 
   <li>Leite</li>
 </ul>
 ```
+
 Resultado:
 
 - Café
@@ -145,6 +138,7 @@ Podemos colocar listas dentro de listas também:
   <li>Leite</li>
 </ul>
 ```
+
 Resultado:
 
 - Café
@@ -154,9 +148,9 @@ Resultado:
 - Leite
 
 
-**Listas enumeradas**
+#### Listas enumeradas
 
-Em listas enumeradas usa-se a tag `<ol>` ao invés de `<ul>`. Cada item ainda fica dentro da tag `<li>`.
+Em listas enumeradas usamos a tag `<ol>` ao invés de `<ul>`. Cada item dentro dessa lista é marcado pela tag `<li>`:
 
 ```html
 <ol>
@@ -170,6 +164,7 @@ Em listas enumeradas usa-se a tag `<ol>` ao invés de `<ul>`. Cada item ainda fi
   <li>Milk</li>
 </ol>
 ```
+
 Resultado:
 
 1. Café
@@ -179,10 +174,11 @@ Resultado:
 1. Leite
 
 
-### Tables
+### Tabelas
 
-Tables usam a tag `<table>`. `<tr>` define uma coluna da tabela enquanto `<td>` define a celular.
-Para o header da table usa-se a tag `<th>` conforme o exemplo:.
+Tabelas usam a tag `<table>`. Já a tag `<tr>` define uma coluna dessa tabela, enquanto `<td>` define uma célula.
+
+Para definir o cabeçalho da tabela, usamos a tag `<th>`:
 
 ```html
 <table>
@@ -203,6 +199,7 @@ Para o header da table usa-se a tag `<th>` conforme o exemplo:.
   </tr>
 </table>
 ```
+
 Resultado:
 
 <table>
@@ -226,41 +223,51 @@ Resultado:
 
 ### Links
 
-Para linkar textos usa-se a tag `<a>`, em que a propriedade `href` é a url do texto e o texto em si fica dentro da tag.
+Para linkar textos usamos a tag `<a>`. Essa tag possui um atributo `href`, que receberá a url de destino. Já o nome do link ficará dentro da marcação:
 
-Esta sintaxe:
 ```html
 <a href="http://fb.com">Facebook</a>
-<a href="http://google.com">Google</a> - <a href="http://github.com">Github</a>
+<a href="http://google.com">Google</a>
+<a href="http://github.com">Github</a>
 ```
+
 Resultado:
 
 [Facebook](http://fb.com)
-[Google](http://google.com) - [Github](http://github.com)
+[Google](http://google.com)
+[Github](http://github.com)
 
-### Images
 
-Para adicionar imagens usa-se a tag `<img>`, em que a propriedade `src` é a url da imagem ou então o caminho no projeto até a imagem. A propriedade `alt` descreve o conteúdo da imagem caso ela não seja carregada corretamente.
+### Imagens
+
+Para adicionar imagens no documento, usamos a tag `<img>`. Ela receberá um atributo `src` com a url ou o caminho da imagem. 
 
 ```html
-<img src="url imagem" alt="Foto da Maria Lúcia">
+<img src="https://scontent.fsdu5-1.fna.fbcdn.net/v/t1.0-1/p200x200/37758491_256605184932707_3724406097889460224_n.png?_nc_cat=0&oh=11f49ebdd3a2856ce476edf3bd562bfd&oe=5C38A05C" />
 ```
 
-### Exemplo
+Resultado:
 
-Juntando tudo isso podemos ter algo assim:
+![https://scontent.fsdu5-1.fna.fbcdn.net/v/t1.0-1/p200x200/37758491_256605184932707_3724406097889460224_n.png?_nc_cat=0&oh=11f49ebdd3a2856ce476edf3bd562bfd&oe=5C38A05C](https://scontent.fsdu5-1.fna.fbcdn.net/v/t1.0-1/p200x200/37758491_256605184932707_3724406097889460224_n.png?_nc_cat=0&oh=11f49ebdd3a2856ce476edf3bd562bfd&oe=5C38A05C)
+
+Ao contrário das outras tags que já vimos até agora, a tag `<img>` não possui uma tag específica para fechamento. Neste caso, ela poderá ser fechada de maneira diferente das demais, bastando apenas colocar uma barra no final.
+
+## Montando o portfólio
+
+Juntando tudo o que nós vimos até agora, já podemos fazer algo assim:
 
 ![Exemplo](imgs/cap2-exemplo.png)
 
 Você pode usar esse exemplo de referência:
+
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minha Pagina</title>
+    <title>Minha página</title>
 </head>
 <body>
-    <img src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg" alt="Foto da Maria Lúcia">
+    <img src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg">
     <h1>Maria Lúcia do Carmo</h1>
     <h2>Estudante de ciência da computação</h3>
 
@@ -273,7 +280,7 @@ Você pode usar esse exemplo de referência:
     <p><i>2017/06 ~ Atual</i> - Estágiaria no Facebook - <a href="http://fb.com">Facebook.com</a></p>
 
     <h3>Educação</h3>
-    <p> Bacharelado em ciencia da computação(<i>Cursando</i>) - USP</p>
+    <p> Bacharelado em ciência da computação(<i>cursando</i>) - USP</p>
 
     <h3>Habilidades</h3>
     <ul>
@@ -283,13 +290,13 @@ Você pode usar esse exemplo de referência:
 
     <h3>Interesses<h3>
     <ul>
-      <li>Jogar LoLzinho<i>(Sou platina)</i></li>
+      <li>Jogar LoLzinho <i>(sou platina)</i></li>
     </ul>
 </body>
 </html>
 ```
 
-Com HTML podemos também adicionar audio, video, canvas, formulários, dentre muitas outras coisas. No [final do curso](final.md) tem vários links com tutoriais e guias pra esse conteúdo remanescente.
+Com HTML podemos também adicionar áudio, vídeo, canvas, formulários, dentre muitas outras coisas. No [final do curso](final.md) temos vários links com tutoriais e guias pra esse conteúdo remanescente.
 
 ## Seu primeiro commit
 
@@ -297,8 +304,9 @@ Nas abas de console existe uma chamada "bash - "seu nome""
 
 ![Usando o bash do c9](imgs/cap2-git.png)
 
-Clique na aba e você vai ter como se fosse um terminal em que podemos usar comandos git.
+Clique na aba e você vai ter como se fosse um terminal em que podemos usar comandos Git.
 Para inserir no nosso repositório as modificações que fizemos é preciso seguir os seguintes passos:
+
 ```bash
 # Verifique status do repositório.
 git status
@@ -310,15 +318,13 @@ git commit -m "Initial Commit"
 git push
 ```
 
-Clique em configurações no lado direito da pagina do seu repositório no github e na parte chamada **"Github Pages"**
-Selecione para a branch "master", assim todas as modificações que forem feitas no seu projeto dentro deste repositorio vão ser publicadas na url `NOMEDASUACONTA.github.io`.
+Clique em configurações no lado direito da pagina do seu repositório no Github e na parte chamada **Github Pages** selecione a branch `master`. Assim, todas as modificações que forem feitas no seu projeto dentro deste repositório vão ser publicadas na url `NOMEDASUACONTA.github.io`.
 
 ![Exemplo configuração de github pages](imgs/cap1-config.png)
 
-Se você receber uma mensagem de `"Your site is ready to be published at http://NOMEDASUACONTA.github.io/."`
+Se você receber uma mensagem como `Your site is ready to be published at http://NOMEDASUACONTA.github.io/.`
 é porque tudo está ok.
 
-Agora se você acessar o link [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io) verá o conteúdo do seu site
-Demora algns minutos para as mudanças realmente irem ao ar mas em pouco será posivel ver suas modificações no ar.
+Agora se você acessar o link [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io), você verá o conteúdo do seu site! Demora alguns minutos para as mudanças realmente irem ao ar, mas em pouco tempo será possível ver as suas modificações.
 
 #### [Ir para o passo 3](chapter3.md)

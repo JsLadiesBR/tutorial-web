@@ -1,13 +1,5 @@
 ## Passo 1
 
-#### Índice
-* [Desenvolvimento Web](#desenvolvimento-web)
-* [Ambiente no C9](#ambiente-no-c9)
-* [Conta no github](#conta-no-github)
-* [Comandos comuns do git](#comandos-comuns-do-git)
-
----
-
 ## Desenvolvimento Web
 
 Nesse workshop vamos aprender o básico de duas linguagens voltadas para o desenvolvimento web: HTML e CSS. 
