@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+    background-image: linear-gradient(lightblue, rgb(93, 93, 192));
+    font-family: "Gill Sans Extrabold", sans-serif;
+    color: #383838;
+    
+}
+
+.avatar {
+    width: 300px;
+    border-radius: 20%;
+    float: left;
+}
+
+.bio {
+    height: 90%;
+    text-align: center;
+    background: white;
+    width: 50%;
+    padding: 30px;
+    border: 1px solid gray;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 70px;
+}
