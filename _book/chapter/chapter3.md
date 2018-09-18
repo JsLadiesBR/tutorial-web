@@ -1,22 +1,18 @@
 ## Passo 3
 
-#### Indice
-- [O que é CSS](#o-que-e-css)
-- [Estilizando o HTML](#estilizando-o-html)
-- [Seu segundo commit](#seu-segundo-commit)
-
 ## Estilizando com CSS
 
-## O que e CSS
+## O que é CSS
 
-**CSS** vem de **Cascading Stylesheets**, que não é realmente uma linguagem de programação. É uma linguagem de folhas de estilos. Que são códigos contam pro browser de que forma você quer mostrar as tags HTML, mudando sua aparencia, posição, etc e estilizar seletivamente os elementos no documentos HTML. 
+**CSS** vem de **Cascading Style Sheets**, que é uma linguagem de folhas de estilos. Ela é que irá tornar sua página apresentável na web, modificando a aparência dos elementos HTML.
 
 ## Estilizando o HTML
 
-Clique em **"File/New File"**, uma nova aba vai abrir no editor.
-Tecle **Crtl + S** ou então clique em **"File/Save as..."** e mude o Filename para **style.css** e clique no botão verde de **Save**.
+Clique em **File/New File** e uma nova aba vai abrir no editor.
+Tecle **ctrl + S** ou então clique em **File/Save as...** e mude o Filename para **style.css** e clique no botão verde de **Save**.
 
 No style.css cole:
+
 ```css
 body {
     background-color: red;
@@ -24,17 +20,18 @@ body {
 }
 ```
 
-O que isso quer dizer? Tudo dentro do nosso body ficará com cor de background vermelho. O background pode ser uma cor em ingles, uma cor em hexadecimal e até uma imagem. E a fonte de tudo dentro do body vai será *"Gill Sans Extrabold"*
+O que isso quer dizer? Tudo dentro da nossa tag `<body>` terá uma cor de fundo vermelha. A cor de fundo pode ser uma cor em inglês, em hexadecimal e até mesmo uma imagem. E a fonte do texto inserido na tag `<body>` será *Gill Sans Extrabold*.
 
-O body é o nosso **seletor**, ou seja, selecionamos tudo que está dentro do body. O que está entre parenteses é a **declaração**, nela temos a **propriedade** e o valor dela seguido do `:`. Cada propriedade deve ter um `;` no final para representar o fim da linha.
+O `body` é o nosso **seletor**, o que está entre chaves é a **declaração** do estilo e nele temos as **propriedades** com os seus respectivos **valores**.
 
-Agora, é necessário importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem.
-Pra isso, dentro do `<head>` cole esta linha `<link rel="stylesheet" type="text/css" href="style.css">`
+Agora, é necessário importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem. Pra isso, no nosso HTML, dentro da tag `<head>`, cole esta linha:
+
+`<link rel="stylesheet" type="text/css" href="style.css">`
 
 ```html
 <head>
-    <title>Minha Pagina</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Minha página</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 ```
 
@@ -44,12 +41,14 @@ Clique no botão verde de **Run**. Logo abaixo no terminal e ao entrar no link v
 
 ### Mais CSS
 
-#### Fontes e Cores
-Cores podem ser em hexadecimal os nomes defaults do CSS que você pode ver aqui: [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp).
+#### Fontes e cores
 
-Ou você pode selecionar sua cor em hexadecinal aqui: [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp).
+Como já dito mais acima, as cores podem estar em inglês ou em hexadecimal. Se caso quiser saber os nomes ou os seus respectivos códigos hexadecimais, você pode consultar estes links:
 
-Anteriormente definimos o background como **red** mas podemos também usar o seu valor hexadecimal **#FF0000**:
+- [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
+- [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp)
+
+Anteriormente definimos o background como red, mas podemos também usar o seu valor hexadecimal **#FF0000**:
 
 ```css
 body {
@@ -57,7 +56,7 @@ body {
 }
 ```
 
-Para modificar as caracteristicas de todos os paragrafos podemos usar diversas propriedades:
+Para modificar as características de todos os parágrafos, podemos usar diversas propriedades:
 
 ```css
 p {
@@ -72,96 +71,104 @@ p {
   text-shadow: 3px 3px 1px black;
 }
 ```
-- **font-size** é o tamanho da fonte em pixels.
+
+- **font-size** é o tamanho da fonte. Pode estar em pixels, como no exemplo acima.
 - **color** é a cor do texto.
 - **font-family** é a fonte do texto.
-- **font-style** é propriedades como negrito ou italico.
-- **line-height** é a altura da letra.
-- **letter-spacing** é o espaçamento das letras.
-- **text-align** é o alinhamento do texto.
-- **text-shadow** sombra do texto.
+- **font-style** define propriedades como negrito ou itálico.
+- **line-height** define a altura da letra.
+- **letter-spacing** define o espaçamento entre as letras.
+- **text-align** define o alinhamento do texto.
+- **text-shadow** é a sombra do texto. Nele podemos definir a direção da sombra (tanto na horizontal quanto na vertical), o seu tamanho e cor.
 
-**Não precisa usar todas!!**
+Lembre-se que você não precisa usar todas essas propriedades!
 
 
 #### Selecionando elementos HTML
 
-Para não selecionarmos sempre a propria tag html devemos usar uma propriedade `class` dentro de todos os elementos html que queremos selecionar.
-Assim podemos nomear o que o conteúdo é e pela propria nomemclatura de `class` o selecionamos e estilizamos.
+Para não selecionarmos sempre tags para estilizar, podemos optar por selecionar as classes dos elementos HTML. Sempre que você tiver elementos que merecerem ser agrupados de alguma forma, você pode usar uma classe para indicar que todos eles tem algo em comum.
 
-No css colocamos um ponto e o nome da classe para definir os estilos da classe.
+No CSS colocamos um ponto antes do nome da classe para definir os estilos inerentes a ela.
 
-HTML:
+No seu HTML, adicionamos classes assim:
+
 ```html
-<p class="titulo">Titulo</p>
-<img class="logo" src="url">
+<h4 class="titulo">
+  Título
+</h4>
+<img class="logo" src="https://avatars1.githubusercontent.com/u/28883362?s=200&v=4" />
 ```
+
+No arquivo CSS, estilizamos por classes assim:
 
 ```css
 .titulo {
   font-size: 30px;
 }
+
 .logo {
   width: 300px;
 }
 ```
 
-No exemplo, criamos as classes **"titulo"** pra uma tag `<p>` e **"logo"** para uma imagem. Isso possibilita que possamos estilizar esses elementos especificos. Todo elemento que tiver classe **titulo** terá tamanho de fonte 30px, e todo elemento que tiver classe **logo** terá tamanho de 300px.
+No exemplo, criamos as classes `titulo` pra uma tag `<h4>` e `logo` para uma tag `<img>`. Isso permite que possamos estilizar esses elementos específicos. Todo elemento que tiver uma classe **titulo** terá tamanho de fonte 30px e todo elemento que tiver uma classe **logo** terá tamanho de 300px.
 
 É importante usar classes pois podemos também reutilizar estilos e definir o que cada coisa é. Lembrando que cada elemento pode ter mais de uma classe.
 
-#### Background
+#### Fundo
 
+Com imagem:
 ```css
 body {
-   background-image: url("https://i2.wp.com/likecoaching.com.br/wp-content/uploads/2016/11/Fundo-Estrelas.jpg");
-   background-repeat: no-repeat, repeat
-   background-color: #cccccc;
+  background-image: url("https://avatars1.githubusercontent.com/u/28883362?s=200&v=4");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
 }
 ```
 
-
-Gradiente
+Gradiente:
 ```css
 body {
-   background-color: #cccccc;  
-   background-image: linear-gradient(red, yellow);
+  background-color: #cccccc;  
+  background-image: linear-gradient(red, yellow);
 }
 ```
 
 #### Tamanho
 
-Uma coisa que você vai notar sobre escrever CSS é que um bocado disso é sobre caixas — indicar seu tamanho, cor, posição, etc. Muitos dos elementos HTML da sua página podem ser pensados como caixas umas em cima das outras.
-Como esperado, o layout CSS é baseado principalmente no modelo de caixas. Cada um dos blocks que ocupam espaço na sua página tem propriedades como essas:
+Uma coisa que você vai notar sobre escrever CSS é que um bocado disso é sobre caixas. Muitos dos elementos HTML da sua página podem ser pensados como caixas.
 
-<img src="imgs/cap3-pad.png" alt="Exemplo de padding e border">
+Como esperado, o layout CSS é baseado principalmente no modelo de caixas. Cada um dos blocos que ocupam espaço na sua página tem propriedades como essas:
 
-- **padding**: o espaço ao redor do conteúdo (ex.: ao redor do texto de um parágrafo)
-- **border**: a linha sólida do lado de fora do padding
-- **margin**: o espaço externo a um elemento
+<img src="imgs/cap3-pad.png" />
 
-Pra isso vamos criar uma caixa com algum texto.
+- **margin**: é o espaçamento externo, referente à margem de um elemento.
+- **padding**: é o espaçamento interno;
+- **border**: é a linha que contorna o elemento.
+
+Para isso vamos criar uma caixa com algum texto:
 
 ```html
 <div class="box">
-  <p>Campus Party 2018</p>
+  <p>JSLadies RJ</p>
 </div>
 ```
 
-Se pintarmos a caixinha de azul, podemos ver mais claramente sua caixinha.
+Se pintarmos a caixinha de azul, podemos ver mais claramente:
 
 ```css
 .box {
   background-color: blue;
 }
 ```
-E a caixinha do texto está mais ou menos assim:
+
+Resultado:
 
 <div style="background-color: blue;" class="box">
-  <p>Campus Party 2018</p>
+  <p>JSLadies RJ</p>
 </div>
 
-O padding no css, representa o que está ao redor do conteudo antes da borda, então de aumentarmos para 10px ficará visivel o espaço que até então estava zerado.
+O padding no css representa o espaçamento que está ao redor do conteúdo dentro da borda, então se aumentarmos o padding para 10px ficará visível o espaço que até então estava zerado.
 
 ```css
 .box {
@@ -170,15 +177,13 @@ O padding no css, representa o que está ao redor do conteudo antes da borda, en
 }
 ```
 
-Fica algo assim:
+Resultado:
 
-<div style="background-color: blue;padding: 10px;" class="box">
-  <p>Campus Party 2018</p>
+<div style="background-color: blue; padding: 10px;" class="box">
+  <p>JSLadies RJ</p>
 </div>
 
-O padding pode receber 4 valores como espaço no conteúdo. Se fosse `padding: 0 20px 20px 20px;` — nós não estamos indicando padding no topo do corpo, e 20 pixels na esquerda, chão e direita. Os valores do padding são topo, direita, chão, esquerda, nessa ordem.
-
-Podemos ajustar o tamanho da altura e largura da caixinha
+Podemos ajustar o tamanho da altura e largura da caixinha também:
 
 ```css
 .box {
@@ -189,31 +194,32 @@ Podemos ajustar o tamanho da altura e largura da caixinha
 }
 ```
 
-Mudando pra cinza, temos um resultado bem legal
+Mudando pra cinza, temos um resultado bem legal:
 
 <div style="background-color: gray;padding: 10px;height: 80px;width: 100px;" class="box">
-  <p>Campus Party 2018</p>
+  <p>JSLadies RJ</p>
 </div>
 
 
 #### Deixando redondo
 
-Para arredondar objetos usa-se a propriedade border-radius em que "arredondamos" as bordas do elemento:
+Para arredondar as bordas dos objetos usamos a propriedade `border-radius`:
 
 ```css
-.avatar{
+.avatar {
   border-radius: 50%;
 }
 ```
 
 Supondo que temos um avatar de cachorro:
+
 ```html
-<img class="avatar" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro">
+<img class="avatar" src="imgs/cap3-dog.jpeg" />
 ```
 
-A medida é em porcentagem de arredondamento e 50% equivale a um circulo, tendo este resultado:
+A medida é em porcentagem de arredondamento e 50% equivale a um círculo, tendo este resultado:
 
-<img class="avatar" style="border-radius: 50%;width:150px;" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro">
+<img class="avatar" style="border-radius: 50%;width:150px;" src="imgs/cap3-dog.jpeg" />
 
 #### Centralizando uma imagem
 
@@ -224,16 +230,14 @@ img {
   margin: 0 auto;
 }
 ```
- Então, para aplicar margens a uma imagem, nós temos que dar a ela um comportamento de bloco usando `display: block;`.
 
-Resultando em:
+Para aplicar margens a uma imagem, nós temos que dar a ela um comportamento de bloco usando `display: block;`, resultando em:
 
-<img class="avatar" style="border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro">
+<img class="avatar" style="border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" />
 
 #### Estilizando Bordas
 
-Como já vimos, todo elemento tem padding, border e margin. Podemos estilizar suas bordas.
-A borda recebe 3 valores, o seu tamanho, estilo e cor.
+Como já vimos, todo elemento tem padding, border e margin. Então podemos estilizar suas bordas. Ela receberá 3 valores: tamanho, estilo e cor:
 
 ```css
 img {
@@ -243,15 +247,14 @@ img {
   border: 2px solid black;
 }
 ```
-No exemplo, acriamos uma borda de 2px, solida de cor preta.
-Resultando em:
+No exemplo, criamos uma borda de 2px, sólida e de cor preta, resultando em:
 
-<img class="avatar" style="border: 2px solid black;border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" alt="Avatar do cachorro">
+<img class="avatar" style="border: 2px solid black;border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" />
 
 
 #### Posicionamento
 
-A propriedade de float é usada para posicionamento e layout
+A propriedade de float é usada para posicionamento no layout:
 
 ```css
 .avatar {
@@ -260,20 +263,11 @@ A propriedade de float é usada para posicionamento e layout
 ```
 
 Seus valores significam:
-- **left** - O elemento flutua para a esquerda do seu container
+- **left** - O elemento flutua para a esquerda do seu container;;
 - **right**- O elemento flutua para a direita do seu container
-- **none** - O elemento não flutua
-- **inherit** - O elemento herda de o float de seu elemento pai.
+- **none** - O elemento não flutua;
+- **inherit** - O elemento herda o float de seu elemento pai.
 
-Podemos também posicionar pra esquerda, direita, cima e baixo por pixels:
-```css
-.avatar {
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
-```
 
 #### Exemplo
 
@@ -282,7 +276,7 @@ Podemos também posicionar pra esquerda, direita, cima e baixo por pixels:
 Adicionando alguns estilos e classes no HTML anterior podemos chegar nesse resultado sem muitas linhas de código.
 Usamos o *background-image* para criar um fundo gradiente e encapsulamos a biografia dentro de uma `<div>` com a classe `.bio`.
 
-Nele, criamos uma caixinha de com 50% de largura e 90% de altura, pintamos o fundo de branco, alinhamos o texto para o centro e adicionamos uma borda solida e deixamos um padding de 30px na caixinha.
+Nele, criamos uma caixinha de com 50% de largura e 90% de altura, pintamos o fundo de branco, alinhamos o texto para o centro e adicionamos uma borda sólida e deixamos um padding de 30px na caixinha.
 
 O avatar ficou com a classe `.avatar` e teve sua largura alterada para 300px, adicionamos uma leve borda circular e flutuamos a imagem pra esquerda.
 
@@ -290,52 +284,50 @@ Criamos uma classe `.center` com as propriedades que centralizam blocos, assim, 
 
 ```css
 body {
-    background-color: lightblue;
-    background-image: linear-gradient(lightblue, rgb(93, 93, 192));
-    font-family: "Gill Sans Extrabold", sans-serif;
-    color: #383838;
-    
+  background-color: lightblue;
+  background-image: linear-gradient(lightblue, rgb(93, 93, 192));
+  font-family: "Gill Sans Extrabold", sans-serif;
+  color: #383838;
 }
 
 .avatar {
-    width: 300px;
-    border-radius: 20%;
-    float: left;
+  width: 300px;
+  border-radius: 20%;
+  float: left;
 }
 
 .bio {
-    height: 90%;
-    text-align: center;
-    background: white;
-    width: 50%;
-    padding: 30px;
-    border: 1px solid gray;
+  height: 90%;
+  text-align: center;
+  background: white;
+  width: 50%;
+  padding: 30px;
+  border: 1px solid gray;
 }
 
 .center {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .content {
-    margin: 70px;
+  margin: 70px;
 }
 ```
 
 Adicionando suas respectivas classes no HTML:
 
 ```html
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minha Pagina</title>
+    <title>Minha página</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <div class="bio center">
       <h1>Maria Lúcia do Carmo</h1>
-      <img class="avatar center" src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg" alt="Foto da Maria Lúcia">
+      <img class="avatar center" src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg" />
       
       <h2>Estudante de ciência da computação</h3>
       <p>Brasileira, solteira, 22 anos - São Paulo - SP<p>
@@ -349,7 +341,7 @@ Adicionando suas respectivas classes no HTML:
         <p><i>2017/06 ~ Atual</i> - Estágiaria no Facebook - <a href="http://fb.com">Facebook.com</a></p>
 
         <h3>Educação</h3>
-        <p> Bacharelado em ciencia da computação(<i>Cursando</i>) - USP</p>
+        <p>Bacharelado em ciencia da computação (<i>cursando</i>) - USP</p>
 
         <h3>Habilidades</h3>
         <ul>
@@ -359,7 +351,7 @@ Adicionando suas respectivas classes no HTML:
 
         <h3>Interesses<h3>
         <ul>
-          <li>Jogar LoLzinho<i>(Sou platina)</i></li>
+          <li>Jogar LoLzinho <i>(Sou platina)</i></li>
         </ul>
       </div>
     </div>
@@ -385,6 +377,6 @@ git commit -m "Adicionando estilos"
 git push
 ```
 
-Escrever o que foi desenvolvido para cada commit é muito importante pois ajuda pode te guiar e também ajudar ao grupo de pessosas trabalhando no mesmo projeto ao verificar o que foi desenvolvido em cada passo do projeto.
+Escrever o que foi desenvolvido para cada commit é muito importante pois isso pode te guiar e também ajudar outras pessoas que estiverem trabalhando no mesmo projeto, ao verificar o que foi desenvolvido anteriormente.
 
 #### [Ir para o passo 4](chapter4.md)

@@ -243,12 +243,12 @@ Resultado:
 Para adicionar imagens no documento, usamos a tag `<img>`. Ela receberá um atributo `src` com a url ou o caminho da imagem. 
 
 ```html
-<img src="https://scontent.fsdu5-1.fna.fbcdn.net/v/t1.0-1/p200x200/37758491_256605184932707_3724406097889460224_n.png?_nc_cat=0&oh=11f49ebdd3a2856ce476edf3bd562bfd&oe=5C38A05C" />
+<img src="https://avatars1.githubusercontent.com/u/28883362?s=200&v=4" />
 ```
 
 Resultado:
 
-![https://scontent.fsdu5-1.fna.fbcdn.net/v/t1.0-1/p200x200/37758491_256605184932707_3724406097889460224_n.png?_nc_cat=0&oh=11f49ebdd3a2856ce476edf3bd562bfd&oe=5C38A05C](https://scontent.fsdu5-1.fna.fbcdn.net/v/t1.0-1/p200x200/37758491_256605184932707_3724406097889460224_n.png?_nc_cat=0&oh=11f49ebdd3a2856ce476edf3bd562bfd&oe=5C38A05C)
+![https://avatars1.githubusercontent.com/u/28883362?s=200&v=4](https://avatars1.githubusercontent.com/u/28883362?s=200&v=4)
 
 Ao contrário das outras tags que já vimos até agora, a tag `<img>` não possui uma tag específica para fechamento. Neste caso, ela poderá ser fechada de maneira diferente das demais, bastando apenas colocar uma barra no final.
 
