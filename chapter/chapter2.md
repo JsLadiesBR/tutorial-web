@@ -269,7 +269,7 @@ Você pode usar esse exemplo de referência:
 <body>
     <img src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg">
     <h1>Maria Lúcia do Carmo</h1>
-    <h2>Estudante de ciência da computação</h3>
+    <h2>Estudante de ciência da computação</h2>
 
     <p>Brasileira, solteira, 22 anos - São Paulo - SP<p>
     <a href="http://fb.com">Facebook</a> - <a href="http://github.com">Github</a> - <a href="http://twitter.com">Twitter</a>
