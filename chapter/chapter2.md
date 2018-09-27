@@ -176,7 +176,7 @@ Resultado:
 
 ### Tabelas
 
-Tabelas usam a tag `<table>`. Já a tag `<tr>` define uma coluna dessa tabela, enquanto `<td>` define uma célula.
+Tabelas usam a tag `<table>`. Já a tag `<tr>` define uma linha dessa tabela, enquanto `<td>` define uma célula.
 
 Para definir o cabeçalho da tabela, usamos a tag `<th>`:
 
@@ -269,28 +269,28 @@ Você pode usar esse exemplo de referência:
 <body>
     <img src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg">
     <h1>Maria Lúcia do Carmo</h1>
-    <h2>Estudante de ciência da computação</h2>
+    <h3>Estudante de ciência da computação</h3>
 
-    <p>Brasileira, solteira, 22 anos - São Paulo - SP<p>
+    <p>Brasileira, solteira, 22 anos - Rio de Janeiro - RJ<p>
     <a href="http://fb.com">Facebook</a> - <a href="http://github.com">Github</a> - <a href="http://twitter.com">Twitter</a>
     <p><b>Email:</b> maria@gmail.com</p>
-    <p><b>Phone:</b> (+55)11-986993010</p>
+    <p><b>Phone:</b> (21) 98765-4321</p>
 
-    <h3>Experiência</h3>
-    <p><i>2017/06 ~ Atual</i> - Estágiaria no Facebook - <a href="http://fb.com">Facebook.com</a></p>
+    <h4>Experiência</h4>
+    <p><i>2017/06 ~ atual</i> - estágiaria no Facebook - <a href="http://fb.com">Facebook.com</a></p>
 
-    <h3>Educação</h3>
-    <p> Bacharelado em ciência da computação(<i>cursando</i>) - USP</p>
+    <h4>Educação</h4>
+    <p> Bacharelado em ciência da computação - <i>cursando</i> - UFRJ</p>
 
-    <h3>Habilidades</h3>
+    <h4>Habilidades</h4>
     <ul>
       <li>HTML5 / CSS3</li>
       <li>Fazer café</li>
     </ul>
 
-    <h3>Interesses<h3>
+    <h4>Interesses</h4>
     <ul>
-      <li>Jogar LoLzinho <i>(sou platina)</i></li>
+      <li>Estudar</li>
     </ul>
 </body>
 </html>
@@ -300,11 +300,6 @@ Com HTML podemos também adicionar áudio, vídeo, canvas, formulários, dentre 
 
 ## Seu primeiro commit
 
-Nas abas de console existe uma chamada "bash - "seu nome""
-
-![Usando o bash do c9](imgs/cap2-git.png)
-
-Clique na aba e você vai ter como se fosse um terminal em que podemos usar comandos Git.
 Para inserir no nosso repositório as modificações que fizemos é preciso seguir os seguintes passos:
 
 ```bash

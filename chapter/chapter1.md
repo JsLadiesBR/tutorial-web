@@ -39,46 +39,14 @@ O propósito do Github é lidar com o projeto, que é um conjunto de diversos ar
 Após a criação da sua conta, crie um repositório pelo [https://github.com/new](https://github.com/new) com o nome **NOMEDASUACONTA.github.io**, substituindo **NOMEDASUACONTA** pelo nome da conta que você acabou de criar. 
 
  *Nota 1: O nome do repositório precisa ser necessariamente nesse formato!*
+ 
  *Nota 2: lembre-se que as contas gratuitas do GitHub se destinam a projetos OpenSource e por isso os seus repositórios estarão abertos a qualquer interessado.*
 
 ![Exemplo novo repositório](imgs/cap1-newRepo.png)
 
 Copie o link do repositório que acabou de ser criado (algo como `https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io`). Ele vai ser usado mais tarde para você criar o seu ambiente de desenvolvimento.
 
-## Ambiente no C9
-
-Se logue pelo icone do Github no [Cloud9](https://c9.io/).
-
-Clique em "Create Workspace". Dessa forma o Cloud9 vai criar um ambiente de desenvolvimento online para você :)
-Preencha o formulário com o nome da workspace: "Minha Página"
-E na opção "Clone from Git or Mercurial URL (optional)" coloque o link do repositório que você criou.
-
-![Exemplo de configuração c9](imgs/cap1-c9.png)
-
-Se reclamar de não ter e-mail registrado, vá para o [dashboard](https://codeanywhere.com/dashboard) e clique em **Resend Verification Email**. Nesse caso você precisa verificar o seu e-mail cadastrado no github.
-
-Clique em **File/New File** e uma nova aba vai abrir no editor.
-Tecle **Crtl + S** ou então clique em **File/Save as...**, mude o filename para **index.html** e clique no botão verde de **save**.
-
-Com o index.html aberto, escreva:
-```html
-<h1>Hello World</h1>
-<p>JS Ladies RJ</p>
-```
-
-Nesse exemplo estamos colocando o `Hello World` dentro da tag de `h1`, que signfica que ele será um título e o `JS Ladies RJ` dentro da tag `p`, simbolizando que ele é um paragrafo.
-
-Clique no botão verde de **run**. Logo abaixo no terminal vai aparecer um link.
-Ao entrar nesse link você pode ver o resultado do seu HTML.
-
-![Exemplo de configuração c9](imgs/cap1-editor.png)
-
-Mas suas modificações ainda não estão no ar no [https://NOMEDASUACONTA.github.io](https://NOMEDASUACONTA.github.io), pois ainda precisamos publicá-las!
-No próximo cápitulo vamos abordar mais sobre HTML e faremos o nosso primeiro commit no Git, que vai publicar nossas modificações na web.
-
-## Sem o ambiente
-
-Não tem problema se você não quiser usar o ambiente do C9. Pra isso basta instalar e configurar o seu Git em seu terminal. Veja aqui como [instalar](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+Depois basta instalar e configurar o seu Git em seu terminal. Veja aqui como [instalar](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 Para configurar basta configurar com os seguintes comandos:
 ```bash
@@ -102,17 +70,6 @@ Crie dentro da sua pasta do projeto um arquivo chamado **index.html** com o cont
 <p>JS Ladies RJ</p>
 ```
 
-Para verificar suas modificações no navegador, é necessário um webserver. Pra isso [instale o Node.js aqui](https://nodejs.org/en/download/).
-Após a instalação digite no terminal:
-`npm install http-server -g`
-
-O NPM pode funcionar como um gerenciador de pacotes e, no caso desse comando, instalamos globalmente o pacote `http-server`.
-
-Para usá-lo na pasta do seu projeto (NOMEDASUACONTA.github.io), basta escrever o comando no terminal:
-```bash
-http-server 8080
-```
-
-Com isso você pode acessar a url `http://localhost:8080` e ver o seu website rodando na sua máquina :)
+Para ver o seu website rodando na sua máquina, basta abrir o arquivo no seu navegador :)
 
 #### [Ir para o passo 2](chapter2.md)
