@@ -257,31 +257,11 @@
 <p>Primeiramente, crie uma conta no Github aqui: <a href="https://github.com/join" target="_blank">https://github.com/join</a>.</p>
 <p>O prop&#xF3;sito do Github &#xE9; lidar com o projeto, que &#xE9; um conjunto de diversos arquivos que ser&#xE3;o modificados atrav&#xE9;s do seu desenvolvimento. O Github salva toda a estrutura de dados em um &quot;rep&#xF3;sitorio&quot;, que &#xE9; o nosso ambiente de trabalho.</p>
 <p>Ap&#xF3;s a cria&#xE7;&#xE3;o da sua conta, crie um reposit&#xF3;rio pelo <a href="https://github.com/new" target="_blank">https://github.com/new</a> com o nome <strong>NOMEDASUACONTA.github.io</strong>, substituindo <strong>NOMEDASUACONTA</strong> pelo nome da conta que voc&#xEA; acabou de criar. </p>
-<p> <em>Nota 1: O nome do reposit&#xF3;rio precisa ser necessariamente nesse formato!</em>
- <em>Nota 2: lembre-se que as contas gratuitas do GitHub se destinam a projetos OpenSource e por isso os seus reposit&#xF3;rios estar&#xE3;o abertos a qualquer interessado.</em></p>
+<p> <em>Nota 1: O nome do reposit&#xF3;rio precisa ser necessariamente nesse formato!</em></p>
+<p> <em>Nota 2: lembre-se que as contas gratuitas do GitHub se destinam a projetos OpenSource e por isso os seus reposit&#xF3;rios estar&#xE3;o abertos a qualquer interessado.</em></p>
 <p><img src="imgs/cap1-newRepo.png" alt="Exemplo novo reposit&#xF3;rio"></p>
 <p>Copie o link do reposit&#xF3;rio que acabou de ser criado (algo como <code>https://github.com/NOMEDASUACONTA/NOMEDASUACONTA.github.io</code>). Ele vai ser usado mais tarde para voc&#xEA; criar o seu ambiente de desenvolvimento.</p>
-<h2 id="ambiente-no-c9">Ambiente no C9</h2>
-<p>Se logue pelo icone do Github no <a href="https://c9.io/" target="_blank">Cloud9</a>.</p>
-<p>Clique em &quot;Create Workspace&quot;. Dessa forma o Cloud9 vai criar um ambiente de desenvolvimento online para voc&#xEA; :)
-Preencha o formul&#xE1;rio com o nome da workspace: &quot;Minha P&#xE1;gina&quot;
-E na op&#xE7;&#xE3;o &quot;Clone from Git or Mercurial URL (optional)&quot; coloque o link do reposit&#xF3;rio que voc&#xEA; criou.</p>
-<p><img src="imgs/cap1-c9.png" alt="Exemplo de configura&#xE7;&#xE3;o c9"></p>
-<p>Se reclamar de n&#xE3;o ter e-mail registrado, v&#xE1; para o <a href="https://codeanywhere.com/dashboard" target="_blank">dashboard</a> e clique em <strong>Resend Verification Email</strong>. Nesse caso voc&#xEA; precisa verificar o seu e-mail cadastrado no github.</p>
-<p>Clique em <strong>File/New File</strong> e uma nova aba vai abrir no editor.
-Tecle <strong>Crtl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...</strong>, mude o filename para <strong>index.html</strong> e clique no bot&#xE3;o verde de <strong>save</strong>.</p>
-<p>Com o index.html aberto, escreva:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>JS Ladies RJ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-</code></pre>
-<p>Nesse exemplo estamos colocando o <code>Hello World</code> dentro da tag de <code>h1</code>, que signfica que ele ser&#xE1; um t&#xED;tulo e o <code>JS Ladies RJ</code> dentro da tag <code>p</code>, simbolizando que ele &#xE9; um paragrafo.</p>
-<p>Clique no bot&#xE3;o verde de <strong>run</strong>. Logo abaixo no terminal vai aparecer um link.
-Ao entrar nesse link voc&#xEA; pode ver o resultado do seu HTML.</p>
-<p><img src="imgs/cap1-editor.png" alt="Exemplo de configura&#xE7;&#xE3;o c9"></p>
-<p>Mas suas modifica&#xE7;&#xF5;es ainda n&#xE3;o est&#xE3;o no ar no <a href="https://NOMEDASUACONTA.github.io" target="_blank">https://NOMEDASUACONTA.github.io</a>, pois ainda precisamos public&#xE1;-las!
-No pr&#xF3;ximo c&#xE1;pitulo vamos abordar mais sobre HTML e faremos o nosso primeiro commit no Git, que vai publicar nossas modifica&#xE7;&#xF5;es na web.</p>
-<h2 id="sem-o-ambiente">Sem o ambiente</h2>
-<p>N&#xE3;o tem problema se voc&#xEA; n&#xE3;o quiser usar o ambiente do C9. Pra isso basta instalar e configurar o seu Git em seu terminal. Veja aqui como <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">instalar</a>.</p>
+<p>Depois basta instalar e configurar o seu Git em seu terminal. Veja aqui como <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">instalar</a>.</p>
 <p>Para configurar basta configurar com os seguintes comandos:</p>
 <pre><code class="lang-bash">git config --global
 </code></pre>
@@ -297,14 +277,7 @@ git <span class="hljs-built_in">clone</span> `https://github.com/NOMEDASUACONTA/
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>JS Ladies RJ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
-<p>Para verificar suas modifica&#xE7;&#xF5;es no navegador, &#xE9; necess&#xE1;rio um webserver. Pra isso <a href="https://nodejs.org/en/download/" target="_blank">instale o Node.js aqui</a>.
-Ap&#xF3;s a instala&#xE7;&#xE3;o digite no terminal:
-<code>npm install http-server -g</code></p>
-<p>O NPM pode funcionar como um gerenciador de pacotes e, no caso desse comando, instalamos globalmente o pacote <code>http-server</code>.</p>
-<p>Para us&#xE1;-lo na pasta do seu projeto (NOMEDASUACONTA.github.io), basta escrever o comando no terminal:</p>
-<pre><code class="lang-bash">http-server 8080
-</code></pre>
-<p>Com isso voc&#xEA; pode acessar a url <code>http://localhost:8080</code> e ver o seu website rodando na sua m&#xE1;quina :)</p>
+<p>Para ver o seu website rodando na sua m&#xE1;quina, basta abrir o arquivo no seu navegador :)</p>
 <h4 id="ir-para-o-passo-2"><a href="chapter2.html">Ir para o passo 2</a></h4>
 
                                 
@@ -349,7 +322,7 @@ Ap&#xF3;s a instala&#xE7;&#xE3;o digite no terminal:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"next":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"previous":{"title":"Introdução","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter1.md","mtime":"2018-09-18T02:12:30.426Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T13:46:53.794Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"next":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"previous":{"title":"Introdução","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter1.md","mtime":"2018-09-27T19:14:48.307Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-27T19:14:59.014Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

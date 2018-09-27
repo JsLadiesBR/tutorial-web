@@ -1,7 +1,5 @@
 ## Passo 3
 
-## Estilizando com CSS
-
 ## O que é CSS
 
 **CSS** vem de **Cascading Style Sheets**, que é uma linguagem de folhas de estilos. Ela é que irá tornar sua página apresentável na web, modificando a aparência dos elementos HTML.
@@ -16,11 +14,11 @@ No style.css cole:
 ```css
 body {
     background-color: red;
-    font-family: "Gill Sans Extrabold", sans-serif;
+    font-family: Arial, sans-serif;
 }
 ```
 
-O que isso quer dizer? Tudo dentro da nossa tag `<body>` terá uma cor de fundo vermelha. A cor de fundo pode ser uma cor em inglês, em hexadecimal e até mesmo uma imagem. E a fonte do texto inserido na tag `<body>` será *Gill Sans Extrabold*.
+O que isso quer dizer? Tudo dentro da nossa tag `<body>` terá uma cor de fundo vermelha. A cor de fundo pode ser uma cor em inglês, em hexadecimal e até mesmo uma imagem. E a fonte do texto inserido na tag `<body>` será *Arial*.
 
 O `body` é o nosso **seletor**, o que está entre chaves é a **declaração** do estilo e nele temos as **propriedades** com os seus respectivos **valores**.
 
@@ -35,13 +33,11 @@ Agora, é necessário importar esse arquivo CSS dentro do nosso HTML para que os
 </head>
 ```
 
-Clique no botão verde de **Run**. Logo abaixo no terminal e ao entrar no link verifique se o fundo está de fato vermelho.
+Note que a sua página ficará com o fundo vermelho e com a fonte diferente!
 
-![Exemplo do estado atual](imgs/cap3-css.png)
+## Mais CSS
 
-### Mais CSS
-
-#### Fontes e cores
+### Fontes e cores
 
 Como já dito mais acima, as cores podem estar em inglês ou em hexadecimal. Se caso quiser saber os nomes ou os seus respectivos códigos hexadecimais, você pode consultar estes links:
 
@@ -63,7 +59,7 @@ p {
   font-size: 20px;
   color: darkgray;
   font-family: Arial;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
   line-height: 2;
   letter-spacing: 1px;
@@ -75,7 +71,7 @@ p {
 - **font-size** é o tamanho da fonte. Pode estar em pixels, como no exemplo acima.
 - **color** é a cor do texto.
 - **font-family** é a fonte do texto.
-- **font-style** define propriedades como negrito ou itálico.
+- **font-weight** define propriedades como negrito ou itálico.
 - **line-height** define a altura da letra.
 - **letter-spacing** define o espaçamento entre as letras.
 - **text-align** define o alinhamento do texto.
@@ -84,7 +80,7 @@ p {
 Lembre-se que você não precisa usar todas essas propriedades!
 
 
-#### Selecionando elementos HTML
+### Selecionando elementos HTML
 
 Para não selecionarmos sempre tags para estilizar, podemos optar por selecionar as classes dos elementos HTML. Sempre que você tiver elementos que merecerem ser agrupados de alguma forma, você pode usar uma classe para indicar que todos eles tem algo em comum.
 
@@ -115,7 +111,7 @@ No exemplo, criamos as classes `titulo` pra uma tag `<h4>` e `logo` para uma tag
 
 É importante usar classes pois podemos também reutilizar estilos e definir o que cada coisa é. Lembrando que cada elemento pode ter mais de uma classe.
 
-#### Fundo
+### Fundo
 
 Com imagem:
 ```css
@@ -134,7 +130,7 @@ body {
 }
 ```
 
-#### Tamanho
+### Tamanho
 
 Uma coisa que você vai notar sobre escrever CSS é que um bocado disso é sobre caixas. Muitos dos elementos HTML da sua página podem ser pensados como caixas.
 
@@ -201,7 +197,7 @@ Mudando pra cinza, temos um resultado bem legal:
 </div>
 
 
-#### Deixando redondo
+### Deixando redondo
 
 Para arredondar as bordas dos objetos usamos a propriedade `border-radius`:
 
@@ -221,7 +217,7 @@ A medida é em porcentagem de arredondamento e 50% equivale a um círculo, tendo
 
 <img class="avatar" style="border-radius: 50%;width:150px;" src="imgs/cap3-dog.jpeg" />
 
-#### Centralizando uma imagem
+### Centralizando uma imagem
 
 ```css
 img {
@@ -235,7 +231,7 @@ Para aplicar margens a uma imagem, nós temos que dar a ela um comportamento de 
 
 <img class="avatar" style="border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" />
 
-#### Estilizando Bordas
+### Estilizando bordas
 
 Como já vimos, todo elemento tem padding, border e margin. Então podemos estilizar suas bordas. Ela receberá 3 valores: tamanho, estilo e cor:
 
@@ -252,7 +248,7 @@ No exemplo, criamos uma borda de 2px, sólida e de cor preta, resultando em:
 <img class="avatar" style="border: 2px solid black;border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg" />
 
 
-#### Posicionamento
+### Posicionamento
 
 A propriedade de float é usada para posicionamento no layout:
 
@@ -269,7 +265,7 @@ Seus valores significam:
 - **inherit** - O elemento herda o float de seu elemento pai.
 
 
-#### Exemplo
+## Continuando a montar o portfólio
 
 ![Exemplo estilizado](imgs/cap3-exemplo.png)
 
@@ -286,8 +282,12 @@ Criamos uma classe `.center` com as propriedades que centralizam blocos, assim, 
 body {
   background-color: lightblue;
   background-image: linear-gradient(lightblue, rgb(93, 93, 192));
-  font-family: "Gill Sans Extrabold", sans-serif;
+  font-family: Arial, sans-serif;
   color: #383838;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 .avatar {
@@ -310,6 +310,10 @@ body {
   margin: 0 auto;
 }
 
+.list {
+  text-align: left;
+}
+
 .content {
   margin: 70px;
 }
@@ -329,29 +333,29 @@ Adicionando suas respectivas classes no HTML:
       <h1>Maria Lúcia do Carmo</h1>
       <img class="avatar center" src="http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg" />
       
-      <h2>Estudante de ciência da computação</h3>
-      <p>Brasileira, solteira, 22 anos - São Paulo - SP<p>
+      <h3>Estudante de ciência da computação</h3>
+      <p>Brasileira, solteira, 22 anos - Rio de Janeiro - RJ<p>
       <a href="http://fb.com">Facebook</a> - <a href="http://github.com">Github</a> - <a href="http://twitter.com">Twitter</a>
 
       <div class="content">
         <p><b>Email:</b> maria@gmail.com</p>
-        <p><b>Phone:</b> (+55)11-986993010</p>
+        <p><b>Phone:</b> (21) 98765-4321</p>
 
-        <h3>Experiência</h3>
-        <p><i>2017/06 ~ Atual</i> - Estágiaria no Facebook - <a href="http://fb.com">Facebook.com</a></p>
+        <h4>Experiência</h4>
+        <p><i>2017/06 ~ atual</i> - estágiaria no Facebook - <a href="http://fb.com">Facebook.com</a></p>
 
-        <h3>Educação</h3>
-        <p>Bacharelado em ciencia da computação (<i>cursando</i>) - USP</p>
+        <h4>Educação</h4>
+        <p>Bacharelado em ciência da computação - <i>cursando</i> - UFRJ</p>
 
-        <h3>Habilidades</h3>
-        <ul>
+        <h4>Habilidades</h4>
+        <ul class="list">
           <li>HTML5 / CSS3</li>
           <li>Fazer café</li>
         </ul>
 
-        <h3>Interesses<h3>
-        <ul>
-          <li>Jogar LoLzinho <i>(Sou platina)</i></li>
+        <h4>Interesses</h4>
+        <ul class="list">
+          <li>Estudar</i></li>
         </ul>
       </div>
     </div>

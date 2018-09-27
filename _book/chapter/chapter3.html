@@ -228,7 +228,6 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="passo-3">Passo 3</h2>
-<h2 id="estilizando-com-css">Estilizando com CSS</h2>
 <h2 id="o-que-&#xE9;-css">O que &#xE9; CSS</h2>
 <p><strong>CSS</strong> vem de <strong>Cascading Style Sheets</strong>, que &#xE9; uma linguagem de folhas de estilos. Ela &#xE9; que ir&#xE1; tornar sua p&#xE1;gina apresent&#xE1;vel na web, modificando a apar&#xEA;ncia dos elementos HTML.</p>
 <h2 id="estilizando-o-html">Estilizando o HTML</h2>
@@ -237,10 +236,10 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 <p>No style.css cole:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
     <span class="hljs-attribute">background-color</span>: red;
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Gill Sans Extrabold&quot;</span>, sans-serif;
+    <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
 }
 </code></pre>
-<p>O que isso quer dizer? Tudo dentro da nossa tag <code>&lt;body&gt;</code> ter&#xE1; uma cor de fundo vermelha. A cor de fundo pode ser uma cor em ingl&#xEA;s, em hexadecimal e at&#xE9; mesmo uma imagem. E a fonte do texto inserido na tag <code>&lt;body&gt;</code> ser&#xE1; <em>Gill Sans Extrabold</em>.</p>
+<p>O que isso quer dizer? Tudo dentro da nossa tag <code>&lt;body&gt;</code> ter&#xE1; uma cor de fundo vermelha. A cor de fundo pode ser uma cor em ingl&#xEA;s, em hexadecimal e at&#xE9; mesmo uma imagem. E a fonte do texto inserido na tag <code>&lt;body&gt;</code> ser&#xE1; <em>Arial</em>.</p>
 <p>O <code>body</code> &#xE9; o nosso <strong>seletor</strong>, o que est&#xE1; entre chaves &#xE9; a <strong>declara&#xE7;&#xE3;o</strong> do estilo e nele temos as <strong>propriedades</strong> com os seus respectivos <strong>valores</strong>.</p>
 <p>Agora, &#xE9; necess&#xE1;rio importar esse arquivo CSS dentro do nosso HTML para que os estilos funcionem. Pra isso, no nosso HTML, dentro da tag <code>&lt;head&gt;</code>, cole esta linha:</p>
 <p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code></p>
@@ -249,10 +248,9 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
-<p>Clique no bot&#xE3;o verde de <strong>Run</strong>. Logo abaixo no terminal e ao entrar no link verifique se o fundo est&#xE1; de fato vermelho.</p>
-<p><img src="imgs/cap3-css.png" alt="Exemplo do estado atual"></p>
-<h3 id="mais-css">Mais CSS</h3>
-<h4 id="fontes-e-cores">Fontes e cores</h4>
+<p>Note que a sua p&#xE1;gina ficar&#xE1; com o fundo vermelho e com a fonte diferente!</p>
+<h2 id="mais-css">Mais CSS</h2>
+<h3 id="fontes-e-cores">Fontes e cores</h3>
 <p>Como j&#xE1; dito mais acima, as cores podem estar em ingl&#xEA;s ou em hexadecimal. Se caso quiser saber os nomes ou os seus respectivos c&#xF3;digos hexadecimais, voc&#xEA; pode consultar estes links:</p>
 <ul>
 <li><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a></li>
@@ -268,7 +266,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
   <span class="hljs-attribute">color</span>: darkgray;
   <span class="hljs-attribute">font-family</span>: Arial;
-  <span class="hljs-attribute">font-style</span>: bold;
+  <span class="hljs-attribute">font-weight</span>: bold;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">2</span>;
   <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
@@ -280,14 +278,14 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 <li><strong>font-size</strong> &#xE9; o tamanho da fonte. Pode estar em pixels, como no exemplo acima.</li>
 <li><strong>color</strong> &#xE9; a cor do texto.</li>
 <li><strong>font-family</strong> &#xE9; a fonte do texto.</li>
-<li><strong>font-style</strong> define propriedades como negrito ou it&#xE1;lico.</li>
+<li><strong>font-weight</strong> define propriedades como negrito ou it&#xE1;lico.</li>
 <li><strong>line-height</strong> define a altura da letra.</li>
 <li><strong>letter-spacing</strong> define o espa&#xE7;amento entre as letras.</li>
 <li><strong>text-align</strong> define o alinhamento do texto.</li>
 <li><strong>text-shadow</strong> &#xE9; a sombra do texto. Nele podemos definir a dire&#xE7;&#xE3;o da sombra (tanto na horizontal quanto na vertical), o seu tamanho e cor.</li>
 </ul>
 <p>Lembre-se que voc&#xEA; n&#xE3;o precisa usar todas essas propriedades!</p>
-<h4 id="selecionando-elementos-html">Selecionando elementos HTML</h4>
+<h3 id="selecionando-elementos-html">Selecionando elementos HTML</h3>
 <p>Para n&#xE3;o selecionarmos sempre tags para estilizar, podemos optar por selecionar as classes dos elementos HTML. Sempre que voc&#xEA; tiver elementos que merecerem ser agrupados de alguma forma, voc&#xEA; pode usar uma classe para indicar que todos eles tem algo em comum.</p>
 <p>No CSS colocamos um ponto antes do nome da classe para definir os estilos inerentes a ela.</p>
 <p>No seu HTML, adicionamos classes assim:</p>
@@ -307,7 +305,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 </code></pre>
 <p>No exemplo, criamos as classes <code>titulo</code> pra uma tag <code>&lt;h4&gt;</code> e <code>logo</code> para uma tag <code>&lt;img&gt;</code>. Isso permite que possamos estilizar esses elementos espec&#xED;ficos. Todo elemento que tiver uma classe <strong>titulo</strong> ter&#xE1; tamanho de fonte 30px e todo elemento que tiver uma classe <strong>logo</strong> ter&#xE1; tamanho de 300px.</p>
 <p>&#xC9; importante usar classes pois podemos tamb&#xE9;m reutilizar estilos e definir o que cada coisa &#xE9;. Lembrando que cada elemento pode ter mais de uma classe.</p>
-<h4 id="fundo">Fundo</h4>
+<h3 id="fundo">Fundo</h3>
 <p>Com imagem:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;https://avatars1.githubusercontent.com/u/28883362?s=200&amp;v=4&quot;</span>);
@@ -321,7 +319,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(red, yellow);
 }
 </code></pre>
-<h4 id="tamanho">Tamanho</h4>
+<h3 id="tamanho">Tamanho</h3>
 <p>Uma coisa que voc&#xEA; vai notar sobre escrever CSS &#xE9; que um bocado disso &#xE9; sobre caixas. Muitos dos elementos HTML da sua p&#xE1;gina podem ser pensados como caixas.</p>
 <p>Como esperado, o layout CSS &#xE9; baseado principalmente no modelo de caixas. Cada um dos blocos que ocupam espa&#xE7;o na sua p&#xE1;gina tem propriedades como essas:</p>
 <p><img src="imgs/cap3-pad.png"></p>
@@ -370,7 +368,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 </div>
 
 
-<h4 id="deixando-redondo">Deixando redondo</h4>
+<h3 id="deixando-redondo">Deixando redondo</h3>
 <p>Para arredondar as bordas dos objetos usamos a propriedade <code>border-radius</code>:</p>
 <pre><code class="lang-css"><span class="hljs-selector-class">.avatar</span> {
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
@@ -381,7 +379,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 </code></pre>
 <p>A medida &#xE9; em porcentagem de arredondamento e 50% equivale a um c&#xED;rculo, tendo este resultado:</p>
 <p><img class="avatar" style="border-radius: 50%;width:150px;" src="imgs/cap3-dog.jpeg"></p>
-<h4 id="centralizando-uma-imagem">Centralizando uma imagem</h4>
+<h3 id="centralizando-uma-imagem">Centralizando uma imagem</h3>
 <pre><code class="lang-css"><span class="hljs-selector-tag">img</span> {
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
   <span class="hljs-attribute">display</span>: block;
@@ -390,7 +388,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 </code></pre>
 <p>Para aplicar margens a uma imagem, n&#xF3;s temos que dar a ela um comportamento de bloco usando <code>display: block;</code>, resultando em:</p>
 <p><img class="avatar" style="border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg"></p>
-<h4 id="estilizando-bordas">Estilizando Bordas</h4>
+<h3 id="estilizando-bordas">Estilizando bordas</h3>
 <p>Como j&#xE1; vimos, todo elemento tem padding, border e margin. Ent&#xE3;o podemos estilizar suas bordas. Ela receber&#xE1; 3 valores: tamanho, estilo e cor:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">img</span> {
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
@@ -401,7 +399,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 </code></pre>
 <p>No exemplo, criamos uma borda de 2px, s&#xF3;lida e de cor preta, resultando em:</p>
 <p><img class="avatar" style="border: 2px solid black;border-radius: 50%;width:150px;display: block;margin: 0 auto;" src="imgs/cap3-dog.jpeg"></p>
-<h4 id="posicionamento">Posicionamento</h4>
+<h3 id="posicionamento">Posicionamento</h3>
 <p>A propriedade de float &#xE9; usada para posicionamento no layout:</p>
 <pre><code class="lang-css"><span class="hljs-selector-class">.avatar</span> {
   <span class="hljs-attribute">float</span>: left;
@@ -414,7 +412,7 @@ Tecle <strong>ctrl + S</strong> ou ent&#xE3;o clique em <strong>File/Save as...<
 <li><strong>none</strong> - O elemento n&#xE3;o flutua;</li>
 <li><strong>inherit</strong> - O elemento herda o float de seu elemento pai.</li>
 </ul>
-<h4 id="exemplo">Exemplo</h4>
+<h2 id="continuando-a-montar-o-portf&#xF3;lio">Continuando a montar o portf&#xF3;lio</h2>
 <p><img src="imgs/cap3-exemplo.png" alt="Exemplo estilizado"></p>
 <p>Adicionando alguns estilos e classes no HTML anterior podemos chegar nesse resultado sem muitas linhas de c&#xF3;digo.
 Usamos o <em>background-image</em> para criar um fundo gradiente e encapsulamos a biografia dentro de uma <code>&lt;div&gt;</code> com a classe <code>.bio</code>.</p>
@@ -424,8 +422,12 @@ Usamos o <em>background-image</em> para criar um fundo gradiente e encapsulamos 
 <pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">background-color</span>: lightblue;
   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(lightblue, rgb(93, 93, 192));
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Gill Sans Extrabold&quot;</span>, sans-serif;
+  <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#383838</span>;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-weight</span>: bold;
 }
 
 <span class="hljs-selector-class">.avatar</span> {
@@ -448,6 +450,10 @@ Usamos o <em>background-image</em> para criar um fundo gradiente e encapsulamos 
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
 }
 
+<span class="hljs-selector-class">.list</span> {
+  <span class="hljs-attribute">text-align</span>: left;
+}
+
 <span class="hljs-selector-class">.content</span> {
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">70px</span>;
 }
@@ -464,29 +470,29 @@ Usamos o <em>background-image</em> para criar um fundo gradiente e encapsulamos 
       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Maria L&#xFA;cia do Carmo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;avatar center&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://vidadiaria.com.br/images/2017/educacao/agosto/estudante3.jpg&quot;</span> /&gt;</span>
 
-      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Estudante de ci&#xEA;ncia da computa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Brasileira, solteira, 22 anos - S&#xE3;o Paulo - SP<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Estudante de ci&#xEA;ncia da computa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Brasileira, solteira, 22 anos - Rio de Janeiro - RJ<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://github.com&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://twitter.com&quot;</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> maria@gmail.com<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> (+55)11-986993010<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> (21) 98765-4321<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Experi&#xEA;ncia<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>2017/06 ~ Atual<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> - Est&#xE1;giaria no Facebook - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Experi&#xEA;ncia<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>2017/06 ~ atual<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> - est&#xE1;giaria no Facebook - <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://fb.com&quot;</span>&gt;</span>Facebook.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Educa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Bacharelado em ciencia da computa&#xE7;&#xE3;o (<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>cursando<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>) - USP<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Educa&#xE7;&#xE3;o<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Bacharelado em ci&#xEA;ncia da computa&#xE7;&#xE3;o - <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>cursando<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> - UFRJ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Habilidades<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Habilidades<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>HTML5 / CSS3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Fazer caf&#xE9;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Interesses<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Jogar LoLzinho <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>(Sou platina)<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Interesses<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Estudar<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -552,7 +558,7 @@ git push
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"next":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"path":"chapter/chapter4.md","ref":"chapter/chapter4.md","articles":[]},"previous":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter3.md","mtime":"2018-09-18T03:31:23.607Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T13:46:53.794Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"next":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"path":"chapter/chapter4.md","ref":"chapter/chapter4.md","articles":[]},"previous":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"path":"chapter/chapter2.md","ref":"chapter/chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter3.md","mtime":"2018-09-27T18:51:07.444Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-27T19:14:59.014Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
