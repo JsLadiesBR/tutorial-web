@@ -241,90 +241,89 @@
 </code></pre>
 <p>Podemos tamb&#xE9;m baixar o Bootstrap no nosso projeto e import&#xE1;-lo no nosso HTML especificando o caminho dele, assim como fizemos no <code>style.css</code>.</p>
 <h4 id="adicionando-componentes">Adicionando componentes</h4>
-<p>O Bootstrap oferece uma infinidade de componentes que podem ser usados em qualquer projeto. Se quiser dar uma olhada, &#xE9; s&#xF3; acessar <a href="https://getbootstrap.com/docs/4.0/components/" target="_blank">este link</a>.</p>
+<p>O Bootstrap oferece uma infinidade de componentes que podem ser usados em qualquer projeto. Se quiser dar uma olhada, &#xE9; s&#xF3; acessar <a href="http://getbootstrap.com/docs/4.1/components/" target="_blank">este link</a>.</p>
 <h4 id="sistema-de-grids">Sistema de grids</h4>
-<p>O Bootstrap nos permite usar um sistema de grids, isto &#xE9;, um sistema que permite alinhar o conte&#xFA;do dispon&#xED;vel em colunas.</p>
-<p>Coloque este c&#xF3;digo no <code>&lt;body&gt;</code> do seu HTML:</p>
+<p>O Bootstrap nos permite usar um sistema de grids, isto &#xE9;, um sistema que permite alinhar o conte&#xFA;do dispon&#xED;vel em colunas. Voc&#xEA; pode ver no exemplo abaixo:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm&quot;</span>&gt;</span>
-      Primeira Coluna
+      Primeira coluna
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm&quot;</span>&gt;</span>
-      Segunda Coluna
+      Segunda coluna
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm&quot;</span>&gt;</span>
-      Terceira Coluna
+      Terceira coluna
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<h2 id="importando-fontawesome">Importando FontAwesome</h2>
+<p><img src="imgs/bootstrap_sample.png" alt="Exemplo"></p>
+<h2 id="importando-font-awesome">Importando Font Awesome</h2>
 <p>O FontAwesome &#xE9; uma ferramenta que oferece uma grande variedade de &#xED;cones escal&#xE1;veis e customiz&#xE1;veis.</p>
-<p>V&#xE1; em <a href="http://fontawesome.io/get-started/" target="_blank">&quot;Get Started&quot;</a> no site oficial do FontAwesome. Nele voc&#xEA; precisar&#xE1; colocar o seu e-mail para receber o link que ser&#xE1; colocado no <code>&lt;head&gt;</code>.</p>
-<h4 id="&#xED;cones-em-colunas">&#xCD;cones em colunas</h4>
-<p>Importe o FontAwesome no seu arquivo HTML (veja a pen&#xFA;ltima linha deste c&#xF3;digo):</p>
+<p>V&#xE1; em <a href="https://fontawesome.com/how-to-use" target="_blank">&quot;how to use&quot;</a> no site oficial do Font Awesome. Na se&#xE7;&#xE3;o &quot;Use Font Awesome&apos;s Free CDN
+&quot; e copie a tag <code>&lt;link&gt;</code> disponibilizada. Em seguida, v&#xE1; no seu arquivo <code>index.html</code> e cole dentro da tag <code>&lt;head&gt;</code>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha p&#xE1;gina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;main.css&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;link_do_font_awesome_que_vc_receber&#xE1;_por_email&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://use.fontawesome.com/releases/v5.3.1/css/all.css&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
-<p>Ap&#xF3;s importar, cole dentro da tag <code>&lt;body&gt;</code> o seguinte c&#xF3;digo:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<p>Pronto! Agora voc&#xEA; poder&#xE1; usar qualquer &#xED;cone do Font Awesome.</p>
+<p>No exemplo abaixo, criamos uma tag <code>&lt;i&gt;</code> que receber&#xE1; as classes do Font Awesome, renderizando o &#xED;cone do Facebook:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-facebook&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
 </code></pre>
-<p>Perceba que ir&#xE1; aparecer na sua p&#xE1;gina um &#xED;cone do Facebook!</p>
-<p>Podemos aumentar ou diminuir esse &#xED;cone adicinando mais classes:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official fa-2x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<p><img src="imgs/face-icon.png" alt="Exemplo"></p>
+<p>Se quisermos aumentar ou diminuir os &#xED;cones, podemos fazer isso colocando mais uma classe. No exemplo abaixo, o &#xED;cone ter&#xE1; o seu tamanho duplicado:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-facebook fa-2x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
 </code></pre>
-<p>Podemos tamb&#xE9;m colocar &#xED;cones em listas, rotacion&#xE1;-los e at&#xE9; anim&#xE1;-los de acordo com os <a href="http://fontawesome.io/examples/" target="_blank">exemplos do FontAwesome</a>.</p>
-<p>Para tornar esse &#xED;cone link&#xE1;vel basta coloc&#xE1;-lo dentro da tag <code>&lt;a&gt;</code>:</p>
+<p>Podemos tamb&#xE9;m colocar &#xED;cones em listas, rotacion&#xE1;-los e at&#xE9; anim&#xE1;-los de acordo com os <a href="https://fontawesome.com/how-to-use/on-the-web/styling/" target="_blank">exemplos do Font Awesome</a>.</p>
+<p>Para tornar esse &#xED;cone link&#xE1;vel, podemos coloc&#xE1;-lo dentro da tag <code>&lt;a&gt;</code>:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-facebook&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
+<p>Obs: o atributo <code>target</code> da tag <code>&lt;a&gt;</code> indica como que a url indicada ser&#xE1; aberta. Nesse caso, o valor <code>_blank</code> ir&#xE1; fazer com que o Facebook seja aberto em uma nova aba do seu navegador.</p>
 <h4 id="&#xED;cones-responsivos">&#xCD;cones responsivos</h4>
-<p>Para tornar os &#xED;cones do FontAwesome responsivos com o Bootstrap, vamos misturar o sistema de grids com os &#xED;cones link&#xE1;veis. Para isso vamos colocar os &#xED;cones como conte&#xFA;do das colunas:</p>
+<p>Para tornar os &#xED;cones do Font Awesome responsivos com o Bootstrap, vamos misturar o sistema de grids com os &#xED;cones link&#xE1;veis. &#xC9; s&#xF3; colocar esse c&#xF3;digo abaixo da sua lista de interesses, no arquivo HTML:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-sm-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 col-lg-3&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.facebook.com/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-facebook fa-3x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-sm-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 col-lg-3&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.google.com/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-google fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-google fa-3x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-sm-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 col-lg-3&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.twitter.com/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-twitter fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-twitter fa-3x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-xs-6 col-sm-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 col-lg-3&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.github.com/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-github fa-3x&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fab fa-github fa-3x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<p>A classe <code>col-sm</code> significa quanto de espa&#xE7;amento do grid esse elemento vai ter quando estiver em telas de tamanho tablet para cima. Isso significa que se ele vai ter um espa&#xE7;amento de 3, conseguindo ter espa&#xE7;o para ficar alinhados j&#xE1; que o grid total &#xE9; 12. O alinhamento da coluna ficar&#xE1; assim:</p>
-<p><img class="avatar" src="imgs/cap4-colsm.png"></p>
-<p>J&#xE1; a classe <code>col-xs</code> servir&#xE1; para quando estivermos em telas de tamanho mobile. Portanto os 4 &#xED;cones v&#xE3;o ter um espa&#xE7;amento como nas imagens do dobro do tamanho, por ter 6 de espa&#xE7;amento quebramos os &#xED;cones em duas colunas, sendo mais visual em telas mobile:</p>
-<p><img class="avatar" src="imgs/cap4-colxs.png" alt="Exemplo xs"></p>
-<p>Usamos a classe <code>fa-3x</code> pois ela indicar&#xE1; que o &#xED;cone ir&#xE1; aumentar em 3x com rela&#xE7;&#xE3;o ao seu tamanho original.</p>
-<p>Para alterar a cor do &#xED;cone, basta selecionar a pr&#xF3;pria classe do &#xED;cone e estiliz&#xE1;-la no seu arquivo CSS:</p>
-<pre><code class="lang-css"><span class="hljs-selector-class">.fa</span> {
+<p>Para alterar a cor dos &#xED;cones, basta selecionar a pr&#xF3;pria classe do &#xED;cone e estiliz&#xE1;-la no seu arquivo CSS:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.fab</span> {
   <span class="hljs-attribute">color</span>: gray;
 }
 </code></pre>
-<p>Assim temos o seguinte resultado (primeira imagem para desktop e segunda para mobile):</p>
-<p><img class="avatar" style="width:300px;" src="imgs/cap4-desktop.png" alt="Exemplo mobile"></p>
-<p><img class="avatar" style="width:300px;" src="imgs/cap4-mobile.png" alt="Exemplo mobile"></p>
+<p>Como podemos perceber, colocamos v&#xE1;rios links de redes sociais gra&#xE7;as ao Font Awesome e usamos a classe <code>fa-3x</code> para indicar que os &#xED;cones ter&#xE3;o o triplo do tamanho original. Al&#xE9;m disso, posicionamos os &#xED;cones em grids (colunas), para que eles fiquem corretamente alinhados na p&#xE1;gina.</p>
+<p>A classe <code>col-lg</code> do Bootstrap significa quanto de espa&#xE7;amento da coluna cada elemento vai ter quando a tela tiver um tamanho grande. O alinhamento ficar&#xE1; assim:</p>
+<p><img src="imgs/cap4-colsm.png" alt="Exemplo"></p>
+<p>J&#xE1; a classe <code>col-md</code> significa quanto de espa&#xE7;amento da coluna cada elemento vai ter quando a tela tiver um tamanho m&#xE9;dio. O alinhamento das colunas ficar&#xE1; assim:</p>
+<p><img src="imgs/cap4-colxs.png" alt="Exemplo"></p>
+<p>Depois que as altera&#xE7;&#xF5;es forem feitas, voc&#xEA; pode brincar de aumentar e diminuir o tamanho da sua p&#xE1;gina, redimensionando a janela do seu navegador. Voc&#xEA; perceber&#xE1; que a forma como os &#xED;cones est&#xE3;o alinhados ir&#xE1; mudar dependendo do tamanho em que a sua p&#xE1;gina estiver.</p>
 <h2 id="terceiro-commit">Terceiro commit</h2>
 <p>Voc&#xEA; pode usar o comando Git Log para verificar os seus commits at&#xE9; agora:</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># Logs</span>
@@ -386,7 +385,7 @@ Demora alguns minutinhos para as mudan&#xE7;as realmente irem ao ar ;)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"next":{"title":"Guia","level":"1.6","depth":1,"path":"chapter/guide.md","ref":"chapter/guide.md","articles":[]},"previous":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter4.md","mtime":"2018-09-18T13:50:00.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-18T13:50:45.303Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 4 - Bibliotecas","level":"1.5","depth":1,"next":{"title":"Guia","level":"1.6","depth":1,"path":"chapter/guide.md","ref":"chapter/guide.md","articles":[]},"previous":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter4.md","mtime":"2018-09-27T19:10:15.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-27T19:14:59.014Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

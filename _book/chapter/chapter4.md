@@ -21,39 +21,36 @@ Podemos também baixar o Bootstrap no nosso projeto e importá-lo no nosso HTML 
 
 #### Adicionando componentes
 
-O Bootstrap oferece uma infinidade de componentes que podem ser usados em qualquer projeto. Se quiser dar uma olhada, é só acessar [este link](https://getbootstrap.com/docs/4.0/components/).
+O Bootstrap oferece uma infinidade de componentes que podem ser usados em qualquer projeto. Se quiser dar uma olhada, é só acessar [este link](http://getbootstrap.com/docs/4.1/components/).
 
 #### Sistema de grids
 
-O Bootstrap nos permite usar um sistema de grids, isto é, um sistema que permite alinhar o conteúdo disponível em colunas.
-
-Coloque este código no `<body>` do seu HTML:
+O Bootstrap nos permite usar um sistema de grids, isto é, um sistema que permite alinhar o conteúdo disponível em colunas. Você pode ver no exemplo abaixo:
 
 ```html
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      Primeira Coluna
+      Primeira coluna
     </div>
     <div class="col-sm">
-      Segunda Coluna
+      Segunda coluna
     </div>
     <div class="col-sm">
-      Terceira Coluna
+      Terceira coluna
     </div>
   </div>
 </div>
 ```
 
-## Importando FontAwesome
+![Exemplo](imgs/bootstrap_sample.png)
+
+## Importando Font Awesome
 
 O FontAwesome é uma ferramenta que oferece uma grande variedade de ícones escaláveis e customizáveis.
 
-Vá em ["Get Started"](http://fontawesome.io/get-started/) no site oficial do FontAwesome. Nele você precisará colocar o seu e-mail para receber o link que será colocado no `<head>`.
-
-#### Ícones em colunas 
-
-Importe o FontAwesome no seu arquivo HTML (veja a penúltima linha deste código):
+Vá em ["how to use"](https://fontawesome.com/how-to-use) no site oficial do Font Awesome. Na seção "Use Font Awesome's Free CDN
+" e copie a tag `<link>` disponibilizada. Em seguida, vá no seu arquivo `index.html` e cole dentro da tag `<head>`:
 
 ```html
 <head>
@@ -61,88 +58,90 @@ Importe o FontAwesome no seu arquivo HTML (veja a penúltima linha deste código
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="link_do_font_awesome_que_vc_receberá_por_email"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 ```
 
-Após importar, cole dentro da tag `<body>` o seguinte código:
+Pronto! Agora você poderá usar qualquer ícone do Font Awesome.
+
+No exemplo abaixo, criamos uma tag `<i>` que receberá as classes do Font Awesome, renderizando o ícone do Facebook:
 
 ```html
-<i class="fa fa-facebook-official" aria-hidden="true"></i>
+<i class="fab fa-facebook"></i>
 ```
 
-Perceba que irá aparecer na sua página um ícone do Facebook!
+![Exemplo](imgs/face-icon.png)
 
-Podemos aumentar ou diminuir esse ícone adicinando mais classes:
+Se quisermos aumentar ou diminuir os ícones, podemos fazer isso colocando mais uma classe. No exemplo abaixo, o ícone terá o seu tamanho duplicado:
 
 ```html
-<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+<i class="fab fa-facebook fa-2x"></i>
 ```
 
-Podemos também colocar ícones em listas, rotacioná-los e até animá-los de acordo com os [exemplos do FontAwesome](http://fontawesome.io/examples/).
+Podemos também colocar ícones em listas, rotacioná-los e até animá-los de acordo com os [exemplos do Font Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/).
 
-Para tornar esse ícone linkável basta colocá-lo dentro da tag `<a>`:
+Para tornar esse ícone linkável, podemos colocá-lo dentro da tag `<a>`:
 
 ```html
 <a href="https://www.facebook.com/" target="_blank">
-  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+  <i class="fab fa-facebook"></i>
 </a>
 ```
 
+Obs: o atributo `target` da tag `<a>` indica como que a url indicada será aberta. Nesse caso, o valor `_blank` irá fazer com que o Facebook seja aberto em uma nova aba do seu navegador.
+
 #### Ícones responsivos
 
-Para tornar os ícones do FontAwesome responsivos com o Bootstrap, vamos misturar o sistema de grids com os ícones linkáveis. Para isso vamos colocar os ícones como conteúdo das colunas:
+Para tornar os ícones do Font Awesome responsivos com o Bootstrap, vamos misturar o sistema de grids com os ícones linkáveis. É só colocar esse código abaixo da sua lista de interesses, no arquivo HTML:
 
 ```html
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-md-6 col-lg-3">
       <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+        <i class="fab fa-facebook fa-3x"></i>
       </a>
     </div>
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-md-6 col-lg-3">
         <a href="https://www.google.com/" target="_blank">
-          <i class="fa fa-google fa-3x" aria-hidden="true"></i>
+          <i class="fab fa-google fa-3x"></i>
         </a>
     </div>
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-md-6 col-lg-3">
       <a href="https://www.twitter.com/" target="_blank">
-        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+        <i class="fab fa-twitter fa-3x"></i>
       </a>
     </div>
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-md-6 col-lg-3">
       <a href="https://www.github.com/" target="_blank">
-        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+        <i class="fab fa-github fa-3x"></i>
       </a>
     </div>
   </div>
 </div>
 ```
 
-A classe `col-sm` significa quanto de espaçamento do grid esse elemento vai ter quando estiver em telas de tamanho tablet para cima. Isso significa que se ele vai ter um espaçamento de 3, conseguindo ter espaço para ficar alinhados já que o grid total é 12. O alinhamento da coluna ficará assim:
-
-<img class="avatar" src="imgs/cap4-colsm.png" />
-
-Já a classe `col-xs` servirá para quando estivermos em telas de tamanho mobile. Portanto os 4 ícones vão ter um espaçamento como nas imagens do dobro do tamanho, por ter 6 de espaçamento quebramos os ícones em duas colunas, sendo mais visual em telas mobile:
-
-<img class="avatar" src="imgs/cap4-colxs.png" alt="Exemplo xs">
-
-Usamos a classe `fa-3x` pois ela indicará que o ícone irá aumentar em 3x com relação ao seu tamanho original.
-
-Para alterar a cor do ícone, basta selecionar a própria classe do ícone e estilizá-la no seu arquivo CSS:
+Para alterar a cor dos ícones, basta selecionar a própria classe do ícone e estilizá-la no seu arquivo CSS:
 
 ```css
-.fa {
+.fab {
   color: gray;
 }
 ```
 
-Assim temos o seguinte resultado (primeira imagem para desktop e segunda para mobile):
+Como podemos perceber, colocamos vários links de redes sociais graças ao Font Awesome e usamos a classe `fa-3x` para indicar que os ícones terão o triplo do tamanho original. Além disso, posicionamos os ícones em grids (colunas), para que eles fiquem corretamente alinhados na página.
 
-<img class="avatar" style="width:300px;" src="imgs/cap4-desktop.png" alt="Exemplo mobile" />
+A classe `col-lg` do Bootstrap significa quanto de espaçamento da coluna cada elemento vai ter quando a tela tiver um tamanho grande. O alinhamento ficará assim:
 
-<img class="avatar" style="width:300px;" src="imgs/cap4-mobile.png" alt="Exemplo mobile" />
+![Exemplo](imgs/cap4-colsm.png)
+
+Já a classe `col-md` significa quanto de espaçamento da coluna cada elemento vai ter quando a tela tiver um tamanho médio. O alinhamento das colunas ficará assim:
+
+![Exemplo](imgs/cap4-colxs.png)
+
+
+Depois que as alterações forem feitas, você pode brincar de aumentar e diminuir o tamanho da sua página, redimensionando a janela do seu navegador. Você perceberá que a forma como os ícones estão alinhados irá mudar dependendo do tamanho em que a sua página estiver.
+
 
 ## Terceiro commit
 
