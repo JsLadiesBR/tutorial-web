@@ -233,10 +233,11 @@
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>T&#xED;tulo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Par&#xE1;grafo<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
-<p>Para criarmos nossa p&#xE1;gina, copie e cole o seguinte c&#xF3;digo:</p>
+<p>Crie dentro do seu projeto um arquivo de nome <code>index.html</code> com o seguinte conte&#xFA;do:</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha p&#xE1;gina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -249,6 +250,7 @@
 <li><code>&lt;!DOCTYPE html&gt;</code> - tag que avisa aos browsers qual &#xE9; o tipo de documento que est&#xE1; sendo renderizado.</li>
 <li><code>&lt;html&gt;</code> - tag que define o in&#xED;cio do documento, indicando ao navegador que todo o conte&#xFA;do dentro dele &#xE9; um c&#xF3;digo HTML.</li>
 <li><code>&lt;head&gt;</code> - tag de cabe&#xE7;alho, que traz informa&#xE7;&#xF5;es sobre o documento que est&#xE1; sendo aberto.</li>
+<li><code>&lt;meta&gt;</code>- tag que informa ao navegador qual &#xE9; o formato de codifica&#xE7;&#xE3;o dos caracteres usados no seu HTML.</li>
 <li><code>&lt;title&gt;</code> - tag que indica o t&#xED;tulo do seu documento.</li>
 <li><code>&lt;body&gt;</code> - tag que indica o corpo do documento, que engloba toda a parte vis&#xED;vel pelo navegador. &#xC9; aqui que colocamos os textos, imagens, links etc.</li>
 </ul>
@@ -432,6 +434,7 @@
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Minha p&#xE1;gina<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -524,7 +527,7 @@ git push
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-09-27T19:17:27.254Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-27T19:19:06.098Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Passo 2 - HTML","level":"1.3","depth":1,"next":{"title":"Passo 3 - CSS","level":"1.4","depth":1,"path":"chapter/chapter3.md","ref":"chapter/chapter3.md","articles":[]},"previous":{"title":"Passo 1 - Ambiente","level":"1.2","depth":1,"path":"chapter/chapter1.md","ref":"chapter/chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter/chapter2.md","mtime":"2018-10-02T19:37:29.723Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-02T19:46:36.683Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -532,6 +535,10 @@ git push
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

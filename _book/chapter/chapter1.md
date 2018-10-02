@@ -64,12 +64,4 @@ cd NOMEDASUACONTA.github.io
 
 Agora já é possivel mexer com o Github por meio do seu proprio terminal!
 
-Crie dentro da sua pasta do projeto um arquivo chamado **index.html** com o conteúdo:
-```html
-<h1>Hello World</h1>
-<p>JS Ladies RJ</p>
-```
-
-Para ver o seu website rodando na sua máquina, basta abrir o arquivo no seu navegador :)
-
 #### [Ir para o passo 2](chapter2.md)

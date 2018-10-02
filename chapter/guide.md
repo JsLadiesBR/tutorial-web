@@ -1,15 +1,4 @@
-## Guia
-
-<!-- - [HTML5](html5) -->
-<!-- - [CSS3](css3) -->
-- [Git / Github](git-/-github)
-
-<!-- ### HTML5 -->
-<!-- ### CSS3 -->
-
-### Git / Github
-
-## Comandos Comuns do git
+## Comandos comuns do Git
 
 ```bash
 # Como clonar um repositório
@@ -23,7 +12,7 @@ git commit -m "A message describing what you have done to make this snapshot dif
 git status
 git log
 
-# CUIDADO: Comando para adicionar os commits que você motificou ao repositório
+# CUIDADO: Comando para adicionar os commits que você modificou ao repositório
 git push
 
 # Criar branch
