@@ -9,12 +9,13 @@
 <p>Parágrafo</p>
 ```
 
-Para criarmos nossa página, copie e cole o seguinte código:
+Crie dentro do seu projeto um arquivo de nome `index.html` com o seguinte conteúdo:
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Minha página</title>
 </head>
 <body>
@@ -27,6 +28,7 @@ Para criarmos nossa página, copie e cole o seguinte código:
 - `<!DOCTYPE html>` - tag que avisa aos browsers qual é o tipo de documento que está sendo renderizado.
 - `<html>` - tag que define o início do documento, indicando ao navegador que todo o conteúdo dentro dele é um código HTML.
 - `<head>` - tag de cabeçalho, que traz informações sobre o documento que está sendo aberto.
+- `<meta>`- tag que informa ao navegador qual é o formato de codificação dos caracteres usados no seu HTML.
 - `<title>` - tag que indica o título do seu documento.
 - `<body>` - tag que indica o corpo do documento, que engloba toda a parte visível pelo navegador. É aqui que colocamos os textos, imagens, links etc.
 
@@ -169,8 +171,8 @@ Resultado:
 
 1. Café
 1. Chá
-   1. Chá Preto
-   1. Chá Verde
+  1. Chá Preto
+  1. Chá Verde
 1. Leite
 
 
@@ -264,6 +266,7 @@ Você pode usar esse exemplo de referência:
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Minha página</title>
 </head>
 <body>

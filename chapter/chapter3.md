@@ -28,6 +28,7 @@ Agora, é necessário importar esse arquivo CSS dentro do nosso HTML para que os
 
 ```html
 <head>
+    <meta charset="UTF-8">
     <title>Minha página</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -325,6 +326,7 @@ Adicionando suas respectivas classes no HTML:
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Minha página</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>

@@ -14,7 +14,6 @@ Este tutorial foi criado para o workshop do JSLadies RJ, realizado no dia 22/09/
 ## Ferramentas
 - Computador com internet
 - Git / Github Pages
-- Cloud9
 
 ## Objetivo
 Neste workshop iremos ensinar conceitos básicos de HTML e CSS, que serão suficientes para que você consiga criar o seu site. Também ensinaremos Git, uma ferramenta que irá te ajudar a colocar no ar tudo o que você construiu durante o evento :)

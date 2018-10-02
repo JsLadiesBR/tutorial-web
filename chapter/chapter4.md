@@ -10,6 +10,7 @@ Para usá-la no seu projeto, basta entrar na [página de downloads do bootstrap]
 
 ```html
 <head>
+  <meta charset="UTF-8">
   <title>Minha página</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -54,6 +55,7 @@ Vá em ["how to use"](https://fontawesome.com/how-to-use) no site oficial do Fon
 
 ```html
 <head>
+  <meta charset="UTF-8">
   <title>Minha página</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -92,7 +94,7 @@ Obs: o atributo `target` da tag `<a>` indica como que a url indicada será abert
 
 #### Ícones responsivos
 
-Para tornar os ícones do Font Awesome responsivos com o Bootstrap, vamos misturar o sistema de grids com os ícones linkáveis. É só colocar esse código abaixo da sua lista de interesses, no arquivo HTML:
+Para tornar os ícones do Font Awesome responsivos com o Bootstrap, vamos misturar o sistema de grids com os ícones linkáveis. É só colocar esse código **abaixo da sua lista de interesses**, no arquivo HTML:
 
 ```html
 <div class="container">
